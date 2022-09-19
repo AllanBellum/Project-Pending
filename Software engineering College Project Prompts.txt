@@ -75,7 +75,8 @@ You miss the communal space of campus life, but hey, what are you going to do?
 
 Answer 2: Continue living on campus
 
-Result 2: You’re glad you continue living on campus. While your bank account is as empty as a Wild West ghost town, but that’s okay. Despite its ups and downs, living on campus is still better than living with your parents.
+Result 2: You’re glad you continue living on campus. While your bank account is as empty as a Wild West ghost town, but that’s okay. 
+Despite its ups and downs, living on campus is still better than living with your parents.
 ++Mental Health
 --Money
 
