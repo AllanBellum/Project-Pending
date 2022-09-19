@@ -1,0 +1,62 @@
+﻿Question 1: It’s Freshman Orientation Day! You don’t really want to go, but it might be important. Do you go? 
+
+
+Answer 1: Don’t go to Freshman Orientation. 
+Result 1: You decide that there are other things you’d like to do today. You relax for most of the day, take a nice walk, watch a show you like, and generally chill out.
++Mental Health
+
+
+Answer 2: Go to Freshman Orientation.
+Result 2: You think that getting to know what the next four years of your life is pretty important. You’d rather be as ready as you can be for them. You find it dull, but you do feel more prepared for the path ahead.
++GPA
+
+
+Question 2: Oh no! You're sick, but you have class today. And it’s the one you’re behind in! Do you risk going to class?
+Answer 1: Stay home and recover.
+Result 1: You decide that it’s better to try and recover from your illness rather than tough it out. The next day you feel a lot better! You are really able to buckle down and catch up on your classwork! You feel great!
++GPA 
++Mental Health
+
+
+Answer 2: You go to class and tough it out.
+Result 2: Doing this was a mistake; you can barely pay attention in class. You can also feel your classmates stare as you hack and cough all throughout the lecture. You didn’t learn anything and you are thoroughly embarrassed.
+-GPA
+-Mental Health
+
+
+Question 3: Your friends want to hang out and play some video games with you. But you have a test tomorrow. You feel underprepared, but you have also felt super stressed out lately. Do you hang out with your friends? 
+Answer 1: Hang out with your friends
+Result 1: You decide that you need a break. You go and hang out with your bros. You play a varied assortment of games like Minecraft, Mario Kart 8, Guilty Gear, Halo 3, Power Stone 2, Windjammers, and even give Ratchet and Clank: Up Your Arsenal’s multiplayer mode a try. It was a blast, it was just the break you needed. Come the day of the test you remember a lot more than you expected to, but ultimately do just okay. You're satisfied with the result, but felt you could have done better.
+++Mental Health
+-GPA
+
+
+Answer 2: Study for the test
+Result 2: You really buckle down and go into a HARDCORE study session. The information is filling up your brain giving you a better understanding of the material than before. The day of the test you fly through the questions you know every answer and you ace the test. You’re relieved it’s over, but you feel burnt out.
+++GPA
+-Mental Health
+
+
+Question 4: You think that living on campus is getting expensive, and your parents live close enough to school that you could reasonably commute to class. But you love the experience of dorm life and feel that commuting wouldn’t be as fulfilling. Do you start commuting to class?
+Answer 1: Start commuting to class
+Result 1: You are able to save a lot more money and are more able to pay your tuition in upcoming semesters. You miss the communal space of campus life, but hey, what are you going to do?
+++Money
+
+
+Answer 2: Continue living on campus
+Result 2: You’re glad you continue living on campus. While your bank account is as empty as a Wild West ghost town, but that’s okay. Despite its ups and downs, living on campus is still better than living with your parents.
+++Mental Health
+--Money
+
+
+Question 5: You feel that with all of the things going on and the clubs you’ve been attending that you need a way to keep up with both your friends and club activities. And all of the are on legally distinct social media platform™, do you create an account or do you live unconnected from your peers
+Answer 1: Stay unconnected
+Result 1: You wonder what could be if you join, but decide you really don’t want to link another thing to your email account. “Too much hassle” you state audibly as you discard the idea and move on with your life.
+No Effect
+
+
+Answer 2: Create the account
+Result 2: BIG MISTAKE!!!!!! This is quite possibly the biggest mistake of your life, at least second to that time you broke your arm skateboarding trying to do a 2160°. You waste so much of your time aimlessly scrolling the depths of the platform forgetting to do schoolwork, you end up getting scammed multiple times, and you have noticed a significant worsening in your mood recently. As you get angry at random controversies that no sane person cares about.
+---Money
+---Mental Health
+---GPA
