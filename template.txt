@@ -1,0 +1,49 @@
+// This is a basic template
+
+vWidth = 1366;
+vHeight = 768;
+
+progressBar = [];
+let myFont;
+
+function setup() {  
+  createCanvas(vWidth, vHeight, WEBGL);
+  //Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
+  ortho();
+  background(220);
+  
+  addCard();
+  addProgressBar();
+  // GPA text should be at position x=-536 y=310
+  // Money text is position x=-100 y=310
+  // Mental Health is position x=383 y=310
+}
+
+
+// This is the center notecard
+function addCard() {
+  push();
+  translate(0, -7, 0);
+  box(569, 344, 10);
+  pop();
+}
+
+
+// This is the progress bar
+function addProgressBar() {
+  // Bar dimensions
+  let w = 1000;
+  let h = 39;
+  let y = -338;
+  
+  //Sections
+  let cardsPerYr = 16;
+  let total = 16 * 4;
+  
+  for(let i = 0; i < total; i++) {
+    push();
+    translate(-(w / 2) + ((w / total) * i), y, 0);
+    append(progressBar, box(w / total, h, 10));
+    pop();
+  }
+}
