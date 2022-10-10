@@ -201,6 +201,9 @@ function redrawCanvas() {
     progressBar = [];
   addProgressBar();
   UpdateProgressBar();
+  displayGPA();
+  displayMoney();
+  displayMH();
     buttons = [];
   addCard();
 }
