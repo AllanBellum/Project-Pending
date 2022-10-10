@@ -35,7 +35,7 @@ class Button {
 
 
 function preload(){  
-  lines = loadStrings('Cards.txt');
+  lines = loadStrings('templatedCards.txt');
   myFont = loadFont('Assets/Helvetica.otf');
 }
 
@@ -143,13 +143,13 @@ function displayCardText(){
   if (cardFace == "back1"){
     text(cardStorage[currentCard][4], -275, -175, 565, 330); // Outcome 1
     fill(0,0,0);
-    new Button(0, -7, 569, 344, function(){ cardFace = "front"; redrawCanvas();});
+    new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
 
   }
   if (cardFace == "back2"){
     text(cardStorage[currentCard][5], -275, -175, 565, 330); // Outcome 2
     fill(0,0,0);
-      new Button(0, -7, 569, 344, function(){ cardFace = "front"; redrawCanvas();});
+      new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
    }
 }
 
