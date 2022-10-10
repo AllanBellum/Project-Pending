@@ -8,11 +8,37 @@ var cardStorage = new Array();
 let currentCard; //card being read by program
 let cardFace;
 
+let buttons = [];
+
 let lines;
+
+
+// This class will create a button that detects a mouse click and does a function
+class Button {
+    constructor(x, y, width, height, action) {
+        this.x = (vWidth / 2) + x;
+        this.y = (vHeight / 2) + y;
+        this.width = width;
+        this.height = height;
+        this.action = action;
+        append(buttons, this);
+    }
+    
+    clicked(mouseX, mouseY) {
+        if (mouseX >= this.x - (this.width / 2) && mouseX <= this.x + (this.width / 2) && 
+            mouseY >= this.y - (this.height / 2) && mouseY <= this.y + (this.height / 2)) {
+            print("Yes");
+            this.action();
+        }
+    }
+}
+
+
 function preload(){  
   lines = loadStrings('Cards.txt');
   myFont = loadFont('Assets/Helvetica.otf');
 }
+
 
 function setup() {  
   createCanvas(vWidth, vHeight, WEBGL);
@@ -47,20 +73,33 @@ function setup() {
 
   currentCard = 0;
   cardFace = "front"; 
+    
+    mousePressed();
 }
+
+
 function draw(){
   displayCardText();
-  
+}
+
+function mousePressed() {
+    
+    // Button clicks
+    for(i = 0; i < buttons.length; i++) {
+        buttons[i].clicked(mouseX, mouseY);
+    }
+
 }
 
 
 // This is the center notecard
 function addCard() {
-  push();
-  fill(100, 100, 100);
-  translate(0, -7, 0);
-  box(569, 344, 10);
-  pop();
+    push();
+    fill(100, 100, 100);
+    translate(0, -7, 0);
+    box(569, 344, 10);
+    pop();
+
 }
 
 
@@ -77,31 +116,48 @@ function addProgressBar() {
   
   for(let i = 0; i < total; i++) {
     push();
+      fill(100, 100, 100);
     translate(-(w / 2) + ((w / total) * i), y, 0);
     append(progressBar, box(w / total, h, 10));
     pop();
   }
 }
 
+
 function displayCardText(){
   textFont(myFont);
-  textSize(30)
+  textSize(30);
+    fill(0,0,0);
   if (cardFace == "front"){
     text(cardStorage[currentCard][1], -275, -175, 565, 170); // Dilema Text
-    fill(0,0,0);
+    
 
-    text(cardStorage[currentCard][2], -275, 0, 275, 150); //Option 1
+      text(cardStorage[currentCard][2], -275, 0, 275, 150); //Option 1
    
 
     text(cardStorage[currentCard][3], 10, 0, 280, 150); //Option 2
+      
+      new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; redrawCanvas();});
+    new Button(137, 75, 275, 150, function(){ cardFace = "back2";redrawCanvas();});
   }
   if (cardFace == "back1"){
     text(cardStorage[currentCard][4], -275, -175, 565, 330); // Outcome 1
     fill(0,0,0);
+    new Button(0, -7, 569, 344, function(){ cardFace = "front"; redrawCanvas();});
 
   }
   if (cardFace == "back2"){
     text(cardStorage[currentCard][5], -275, -175, 565, 330); // Outcome 2
     fill(0,0,0);
+      new Button(0, -7, 569, 344, function(){ cardFace = "front"; redrawCanvas();});
    }
+}
+
+
+function redrawCanvas() {
+    background(220);
+    progressBar = [];
+  addProgressBar();
+    buttons = [];
+  addCard();
 }
