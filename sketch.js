@@ -48,9 +48,9 @@ function setup() {
   background(220);
   addProgressBar();
   addCard();
-  // GPA text should be at position x=-536 y=310
-  // Money text is position x=-100 y=310
-  // Mental Health is position x=383 y=310
+  displayGPA();// GPA text should be at position x=-536 y=310
+  displayMoney();// Money text is position x=-100 y=310
+  displayMH();// Mental Health is position x=383 y=310
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
 //Loads cards into memory
   i = 0; //line
@@ -175,6 +175,26 @@ function displayCardText(){
    }
 }
 
+function displayGPA(){ 
+  textFont(myFont);
+  textSize(30);
+  fill('green');
+  text('GPA : 4.0',-536,310);
+}
+
+function displayMoney(){
+  textFont(myFont);
+  textSize(30);
+  fill('red');
+  text('Money : N/A',-100,310);  
+}
+
+function displayMH(){
+  textFont(myFont);
+  textSize(30);
+  fill('blue');
+  text('Mental Health: ?',383,310);  
+}
 
 function redrawCanvas() {
     background(220);
