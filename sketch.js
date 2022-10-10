@@ -12,6 +12,7 @@ let buttons = [];
 
 let lines;
 
+let day = 1; 
 
 // This class will create a button that detects a mouse click and does a function
 class Button {
@@ -114,13 +115,34 @@ function addProgressBar() {
   let cardsPerYr = 16;
   let total = 16 * 4;
   
+  //default fill
   for(let i = 0; i < total; i++) {
     push();
-      fill(100, 100, 100);
+      fill(255);
     translate(-(w / 2) + ((w / total) * i), y, 0);
     append(progressBar, box(w / total, h, 10));
     pop();
+
   }
+}
+  
+  
+function UpdateProgressBar(){
+  // Bar dimensions
+  let w = 1000;
+  let h = 39;
+  let y = -338;
+  
+  //Sections
+  let cardsPerYr = 16;
+  let total = 16 * 4;
+  
+  push();
+    fill(0,255,0);
+  translate(-(w / 2) + ((w / total) * day), y, 0);
+  append(progressBar, box(w / total, h, 10));
+  pop();
+
 }
 
 
@@ -143,13 +165,13 @@ function displayCardText(){
   if (cardFace == "back1"){
     text(cardStorage[currentCard][4], -275, -175, 565, 330); // Outcome 1
     fill(0,0,0);
-    new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
+    new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas(); day++});
 
   }
   if (cardFace == "back2"){
     text(cardStorage[currentCard][5], -275, -175, 565, 330); // Outcome 2
     fill(0,0,0);
-      new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
+      new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas(); day++});
    }
 }
 
@@ -158,6 +180,7 @@ function redrawCanvas() {
     background(220);
     progressBar = [];
   addProgressBar();
+  UpdateProgressBar();
     buttons = [];
   addCard();
 }
