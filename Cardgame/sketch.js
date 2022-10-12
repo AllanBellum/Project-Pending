@@ -27,7 +27,6 @@ class Button {
     clicked(mouseX, mouseY) {
         if (mouseX >= this.x - (this.width / 2) && mouseX <= this.x + (this.width / 2) && 
             mouseY >= this.y - (this.height / 2) && mouseY <= this.y + (this.height / 2)) {
-            print("Yes");
             this.action();
         }
     }
@@ -36,7 +35,8 @@ class Button {
 
 function preload(){  
   lines = loadStrings('templatedCards.txt');
-  myFont = loadFont('Assets/Helvetica.otf');
+  myFont = loadFont('Assets/Fonts/Papernotes.ttf');
+  notecardImg = loadImage('Assets/Imgs/Notecard.jpg');
 }
 
 
@@ -96,6 +96,7 @@ function mousePressed() {
 function addCard() {
     push();
     fill(100, 100, 100);
+    texture(notecardImg);
     translate(0, -7, 0);
     box(569, 344, 10);
     pop();
