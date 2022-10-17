@@ -126,33 +126,81 @@ function addProgressBar() {
   }
 }
 
+function getTextSize(width, height, minSize, txt) {
+    txtSize = 1 * sqrt((width * height) / (txt.length + 50));
+    
+    if(txtSize > minSize) {
+        txtSize = minSize
+    }
+    
+    return txtSize;
+}
+
 
 function displayCardText(){
+    push();
     textFont(myFont);
-    textAlign(CENTER);
-    //textLeading(10);
-    textSize(37);
     fill(0,0,0);
     if (cardFace == "front"){
-        text(cardStorage[currentCard][1], -284, -175, 569, 170); // Dilema Text
+        textAlign(CENTER);
+        textLeading(37);
+        // Calculate text size to fit in area
+        
+        textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
+        
+        text(cardStorage[currentCard][1], -280, -147, 560, 170); // Dilema Text
+        pop();
     
-        text(cardStorage[currentCard][2], -275, 0, 275, 150); //Option 1
+        push();
+        fill(0,0,0);
+        textFont(myFont);
+        textAlign(CENTER);
+        textLeading(30);
+        // Calculate text size to fit in area
+        textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
+
+        text(cardStorage[currentCard][2], -275, 25, 260, 150); //Option 1
+        pop();
    
 
-        text(cardStorage[currentCard][3], 10, 0, 280, 150); //Option 2
+        push();
+        fill(0,0,0);
+        textFont(myFont);
+        textAlign(CENTER);
+        textLeading(30);
+        // Calculate text size to fit in area
+        textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
+        
+        text(cardStorage[currentCard][3], 10, 25, 280, 150); //Option 2
+        pop();
       
         new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; redrawCanvas();});
         new Button(137, 75, 275, 150, function(){ cardFace = "back2";redrawCanvas();});
     }
     if (cardFace == "back1"){
-        text(cardStorage[currentCard][4], -275, -175, 565, 330); // Outcome 1
-        fill(0,0,0);
+        textAlign(CENTER);
+        textLeading(37);
+        // Calculate text size to fit in area
+        
+        textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
+        
+        text(cardStorage[currentCard][4],  -280, -147, 560, 320); // Outcome 1
+        pop();
+        
         new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
 
     }
     if (cardFace == "back2"){
-        text(cardStorage[currentCard][5], -275, -175, 565, 330); // Outcome 2
-        fill(0,0,0);
+        textAlign(CENTER);
+        textLeading(37);
+        // Calculate text size to fit in area
+        
+        textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
+        
+        text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
+        pop();
+        
+        
         new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
     }
 }
