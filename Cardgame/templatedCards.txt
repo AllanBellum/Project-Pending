@@ -35,7 +35,7 @@ You’re glad you continue living on campus. While your bank account is as empty
 ++mentalHealth; --money
 
 0005
-You feel that with all of the things going on and the clubs you’ve been attending that you need a way to keep up with both your friends and club activities. And all of the are on legally distinct social media platform™, do you create an account or do you live unconnected from your peers?
+You feel that with all of the things going on and the clubs you’ve been attending that you need a way to keep up with both your friends and club activities. And all of the are on legally distinct social media platform, do you create an account or do you live unconnected from your peers?
 Stay unconnected
 Create the account
 You wonder what could be if you join, but decide you really don’t want to link another thing to your email account. “Too much hassle” you state audibly as you discard the idea and move on with your life.
