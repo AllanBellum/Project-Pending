@@ -36,7 +36,7 @@ class Button {
 function preload(){  
   lines = loadStrings('templatedCards.txt');
   myFont = loadFont('Assets/Fonts/Papernotes.ttf');
-  notecardImg = loadImage('Assets/Imgs/Notecard.jpg');
+  notecardImg = loadImage('Assets/Imgs/Notecard.png');
 }
 
 
@@ -96,6 +96,8 @@ function mousePressed() {
 function addCard() {
     push();
     fill(100, 100, 100);
+    strokeWeight(1);
+    stroke(175, 194, 212);
     texture(notecardImg);
     translate(0, -7, 0);
     box(569, 344, 10);
@@ -126,32 +128,33 @@ function addProgressBar() {
 
 
 function displayCardText(){
-  textFont(myFont);
-  textSize(30);
+    textFont(myFont);
+    textAlign(CENTER);
+    //textLeading(10);
+    textSize(37);
     fill(0,0,0);
-  if (cardFace == "front"){
-    text(cardStorage[currentCard][1], -275, -175, 565, 170); // Dilema Text
+    if (cardFace == "front"){
+        text(cardStorage[currentCard][1], -284, -175, 569, 170); // Dilema Text
     
-
-      text(cardStorage[currentCard][2], -275, 0, 275, 150); //Option 1
+        text(cardStorage[currentCard][2], -275, 0, 275, 150); //Option 1
    
 
-    text(cardStorage[currentCard][3], 10, 0, 280, 150); //Option 2
+        text(cardStorage[currentCard][3], 10, 0, 280, 150); //Option 2
       
-      new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; redrawCanvas();});
-    new Button(137, 75, 275, 150, function(){ cardFace = "back2";redrawCanvas();});
-  }
-  if (cardFace == "back1"){
-    text(cardStorage[currentCard][4], -275, -175, 565, 330); // Outcome 1
-    fill(0,0,0);
-    new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
+        new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; redrawCanvas();});
+        new Button(137, 75, 275, 150, function(){ cardFace = "back2";redrawCanvas();});
+    }
+    if (cardFace == "back1"){
+        text(cardStorage[currentCard][4], -275, -175, 565, 330); // Outcome 1
+        fill(0,0,0);
+        new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
 
-  }
-  if (cardFace == "back2"){
-    text(cardStorage[currentCard][5], -275, -175, 565, 330); // Outcome 2
-    fill(0,0,0);
-      new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
-   }
+    }
+    if (cardFace == "back2"){
+        text(cardStorage[currentCard][5], -275, -175, 565, 330); // Outcome 2
+        fill(0,0,0);
+        new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
+    }
 }
 
 
