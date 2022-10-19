@@ -127,6 +127,8 @@ function addProgressBar() {
 }
 
 function getOutcomeVal(lineN){
+    // Cards in text go gpa mHealth money 
+    // For example 0 1 0
     let vals = cardStorage[currentCard][lineN].split(" ");
     gpa+=parseInt(vals[0]);
     mHealth+=parseInt(vals[1]);
