@@ -12,6 +12,9 @@ let buttons = [];
 
 let lines;
 
+let gpa = 0;
+let mHealth = 0;
+let money = 0;
 
 // This class will create a button that detects a mouse click and does a function
 class Button {
@@ -123,6 +126,14 @@ function addProgressBar() {
   }
 }
 
+function getOutcomeVal(lineN){
+    let vals = cardStorage[currentCard][lineN].split(" ");
+    gpa+=parseInt(vals[0]);
+    mHealth+=parseInt(vals[1]);
+    money+=parseInt(vals[2]);
+    //document.write(gpa + " " + mHealth + " " + money);\
+    //console.log(gpa + " " + mHealth + " " + money);
+}
 
 function displayCardText(){
   textFont(myFont);
@@ -142,14 +153,18 @@ function displayCardText(){
   }
   if (cardFace == "back1"){
     text(cardStorage[currentCard][4], -275, -175, 565, 330); // Outcome 1
+    
     fill(0,0,0);
-    new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
+    new Button(0, -7, 569, 344, function(){ cardFace = "front"; getOutcomeVal(6); ++currentCard; redrawCanvas();});
+    
 
   }
   if (cardFace == "back2"){
     text(cardStorage[currentCard][5], -275, -175, 565, 330); // Outcome 2
+    
     fill(0,0,0);
-      new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
+      new Button(0, -7, 569, 344, function(){ cardFace = "front"; getOutcomeVal(7); ++currentCard; redrawCanvas(); });
+      
    }
 }
 
