@@ -1,5 +1,6 @@
 vWidth = 1366;
 vHeight = 768;
+x = 0;
 
 progressBar = [];
 let myFont;
@@ -99,7 +100,7 @@ function addCard() {
     strokeWeight(1);
     stroke(175, 194, 212);
     texture(notecardImg);
-    translate(0, -7, 0);
+    translate(x, -7, 0);
     box(569, 344, 10);
     pop();
 
@@ -212,4 +213,16 @@ function redrawCanvas() {
   addProgressBar();
     buttons = [];
   addCard();
+}
+
+function moveCard(){
+    int i;
+    for(i = 0; i< 700/20; ++i){
+        x+=20;
+        addCard();
+    }
+    for(i = -700/20; i <0; ++i){
+        x+=20
+        addCard();
+    }
 }
