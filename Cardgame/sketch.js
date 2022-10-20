@@ -212,7 +212,7 @@ function redrawCanvas() {
     progressBar = [];
   addProgressBar();
     buttons = [];
-  addCard();
+  moveCard();
 }
 
 function moveCard(){
