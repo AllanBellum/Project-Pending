@@ -216,7 +216,7 @@ function redrawCanvas() {
 }
 
 function moveCard(){
-    int i;
+    let i;
     for(i = 0; i< 700/20; ++i){
         x+=20;
         addCard();
