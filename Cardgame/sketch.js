@@ -38,8 +38,8 @@ class Button {
 
 function preload(){  
   lines = loadStrings('templatedCards.txt');
-  myFont = loadFont('Papernotes.ttf');
-  notecardImg = loadImage('Notecard.png');
+  myFont = loadFont('Assets/Fonts/Papernotes.ttf');
+  notecardImg = loadImage('Assets/Imgs/Notecard.png');
 }
 
 
