@@ -36,8 +36,8 @@ class Button {
 
 function preload(){  
   lines = loadStrings('templatedCards.txt');
-  myFont = loadFont('Assets/Fonts/Papernotes.ttf');
-  notecardImg = loadImage('Assets/Imgs/Notecard.png');
+  myFont = loadFont('Papernotes.ttf');
+  notecardImg = loadImage('Notecard.png');
 }
 
 
@@ -80,7 +80,24 @@ function setup() {
 
 
 function draw(){
-  displayCardText();
+  background(220);
+  redrawCanvas();
+  push();
+    fill(100, 100, 100);
+    strokeWeight(1);
+    stroke(175, 194, 212);
+    texture(notecardImg);
+    translate(x, -7, 0);
+    box(569, 344, 0);
+    pop();
+      if(x === 0){
+        displayCardText();
+        noLoop();
+      }
+      x+=25;
+      if(x > 1000){
+        x = -1000;
+      }
 }
 
 function mousePressed() {
@@ -89,7 +106,7 @@ function mousePressed() {
     for(i = 0; i < buttons.length; i++) {
         buttons[i].clicked(mouseX, mouseY);
     }
-
+    loop();
 }
 
 
@@ -176,7 +193,7 @@ function displayCardText(){
         pop();
       
         new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; redrawCanvas();});
-        new Button(137, 75, 275, 150, function(){ cardFace = "back2";redrawCanvas();});
+        new Button(137, 75, 275, 150, function(){ cardFace = "back2"; redrawCanvas();});
     }
     if (cardFace == "back1"){
         textAlign(CENTER);
@@ -189,9 +206,9 @@ function displayCardText(){
         pop();
         
         new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
-
     }
     if (cardFace == "back2"){
+      moveCard();
         textAlign(CENTER);
         textLeading(37);
         // Calculate text size to fit in area
@@ -201,28 +218,13 @@ function displayCardText(){
         text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
         pop();
         
-        
         new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
     }
 }
 
 
 function redrawCanvas() {
-    background(220);
     progressBar = [];
   addProgressBar();
     buttons = [];
-  moveCard();
-}
-
-function moveCard(){
-    let i;
-    for(i = 0; i< 700/20; ++i){
-        x+=20;
-        addCard();
-    }
-    for(i = -700/20; i <0; ++i){
-        x+=20
-        addCard();
-    }
 }
