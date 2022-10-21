@@ -1,6 +1,7 @@
 vWidth = 1366;
 vHeight = 768;
 x = 0;
+spin = 0;
 
 progressBar = [];
 let myFont;
@@ -8,6 +9,7 @@ cardSize = 8 //number of elements on card
 var cardStorage = new Array();
 let currentCard; //card being read by program
 let cardFace;
+phase = 2;
 
 let buttons = [];
 
@@ -87,14 +89,24 @@ function draw(){
     strokeWeight(1);
     stroke(175, 194, 212);
     texture(notecardImg);
-    translate(x, -7, 0);
+
+    if (spin <3 && cardFace != "front"){
+    rotateY(spin);
+    spin += .1;
+    }
+
+    if(cardFace == "front"){
+      translate(x, -7, 0);
+    }
     box(569, 344, 0);
     pop();
-      if(x === 0){
+      if(x == 0){
         displayCardText();
         noLoop();
+        spin = 0;
       }
       x+=25;
+      
       if(x > 1000){
         x = -1000;
       }
@@ -206,6 +218,7 @@ function displayCardText(){
         pop();
         
         new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
+        phase = 2;
     }
     if (cardFace == "back2"){
       moveCard();
@@ -219,6 +232,7 @@ function displayCardText(){
         pop();
         
         new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
+        phase = 1;
     }
 }
 
