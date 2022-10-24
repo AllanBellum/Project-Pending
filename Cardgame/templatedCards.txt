@@ -4,8 +4,8 @@ Don’t go to Freshman Orientation.
 Go to Freshman Orientation.
 You decide that there are other things you’d like to do today. You relax for most of the day, take a nice walk, watch a show you like, and generally chill out.
 You think that getting to know what the next four years of your life is pretty important. You’d rather be as ready as you can be for them. You find it dull, but you do feel more prepared for the path ahead.
-+mentalHealth
-+gpa
+0 1 0
+1 0 0
 
 0002
 Oh no! You're sick, but you have class today. And it’s the one you’re behind in! Do you risk going to class?
@@ -13,8 +13,8 @@ Stay home and recover.
 You go to class and tough it out.
 You decide that it’s better to try and recover from your illness rather than tough it out. The next day you feel a lot better! You are really able to buckle down and catch up on your classwork! You feel great!
 Doing this was a mistake; you can barely pay attention in class. You can also feel your classmates stare as you hack and cough all throughout the lecture. You didn’t learn anything and you are thoroughly embarrassed.
-+gpa; +mentalHealth
--gpa; -mentalHealth
+1 1 0
+-1 -1 0
 
 0003
 Your friends want to hang out and play some video games with you. But you have a test tomorrow. You feel underprepared, but you have also felt super stressed out lately. Do you hang out with your friends? 
