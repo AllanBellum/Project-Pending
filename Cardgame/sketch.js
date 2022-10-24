@@ -203,7 +203,7 @@ function displayCardText(){
         text(cardStorage[currentCard][4],  -280, -147, 560, 320); // Outcome 1
         pop();
         
-        new Button(0, -7, 569, 344, function(){ nextCard(); cardFace = "front"; getOutcomeVal(6); redrawCanvas();});
+        new Button(0, -7, 569, 344, function(){ getOutcomeVal(6); nextCard(); cardFace = "front";  redrawCanvas();});
 
     }
     if (cardFace == "back2"){
@@ -214,10 +214,11 @@ function displayCardText(){
         textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
         
         text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
+        new Button(0, -7, 569, 344, function(){ getOutcomeVal(7); nextCard(); cardFace = "front"; redrawCanvas();});
         pop();
         
         
-        new Button(0, -7, 569, 344, function(){ nextCard(); cardFace = "front"; getOutcomeVal(7); redrawCanvas();});
+        
     }
 }
 
