@@ -187,7 +187,7 @@ function displayCardText(){
         text(cardStorage[currentCard][4],  -280, -147, 560, 320); // Outcome 1
         pop();
         
-        new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
+        new Button(0, -7, 569, 344, function(){ nextCard(); cardFace = "front"; redrawCanvas();});
 
     }
     if (cardFace == "back2"){
@@ -201,7 +201,7 @@ function displayCardText(){
         pop();
         
         
-        new Button(0, -7, 569, 344, function(){ cardFace = "front"; ++currentCard; redrawCanvas();});
+        new Button(0, -7, 569, 344, function(){ nextCard(); cardFace = "front"; redrawCanvas();});
     }
 }
 
@@ -212,4 +212,34 @@ function redrawCanvas() {
   addProgressBar();
     buttons = [];
   addCard();
+}
+
+function nextCard(){ // function to include code for selecting new card for any cases not specified it will move to the next sequential card
+  let newCard;
+  //example of what condition should look like for branching card, xxxx is cardID
+  /*else if (cardStorage[currentCard][0] == "xxxx") {
+      if (cardFace == "back1")                          //this conditional can be based on any variables including which decision was made on this card or the GPA, Wealth, or Mental Health. Multiple if else statements are also accesable if more than 2 branches is desired, could also include just a cardID assignment to jump cards uncondiationally
+        newCard = "xxxx";
+      else
+        newCard = "xxxx";}
+  */
+  if (cardStorage[currentCard][0] == "0001"){ //branching example
+    if (cardFace == "back1")
+      newCard = "0002";
+    else
+      newCard = "0003";
+  }
+
+  else if (cardStorage[currentCard][0] == "0002"){ //unconditional jump example
+     newCard = "0004";
+  }
+
+
+  else //default case
+    ++currentCard;
+
+  for(i = 0; i < cardStorage.length; ++i ){ //loop identifies which card has the selected ID
+    if (cardStorage[i][0] == newCard)
+      currentCard = i;
+  }
 }
