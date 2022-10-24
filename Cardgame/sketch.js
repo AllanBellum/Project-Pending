@@ -30,7 +30,6 @@ class Button {
     clicked(mouseX, mouseY) {
         if (mouseX >= this.x - (this.width / 2) && mouseX <= this.x + (this.width / 2) && 
             mouseY >= this.y - (this.height / 2) && mouseY <= this.y + (this.height / 2)) {
-            print("Yes");
             this.action();
         }
     }
@@ -39,7 +38,8 @@ class Button {
 
 function preload(){  
   lines = loadStrings('templatedCards.txt');
-  myFont = loadFont('Assets/Helvetica.otf');
+  myFont = loadFont('Assets/Fonts/Papernotes.ttf');
+  notecardImg = loadImage('Assets/Imgs/Notecard.png');
 }
 
 
@@ -99,6 +99,9 @@ function mousePressed() {
 function addCard() {
     push();
     fill(100, 100, 100);
+    strokeWeight(1);
+    stroke(175, 194, 212);
+    texture(notecardImg);
     translate(0, -7, 0);
     box(569, 344, 10);
     pop();
@@ -126,6 +129,7 @@ function addProgressBar() {
   }
 }
 
+
 function getOutcomeVal(lineN){
     // Cards in text go gpa mHealth money 
     // For example 0 1 0
@@ -137,37 +141,84 @@ function getOutcomeVal(lineN){
     //console.log(gpa + " " + mHealth + " " + money);
 }
 
-function displayCardText(){
-  textFont(myFont);
-  textSize(30);
-    fill(0,0,0);
-  if (cardFace == "front"){
-    text(cardStorage[currentCard][1], -275, -175, 565, 170); // Dilema Text
-    
 
-      text(cardStorage[currentCard][2], -275, 0, 275, 150); //Option 1
+function getTextSize(width, height, minSize, txt) {
+    txtSize = 1 * sqrt((width * height) / (txt.length + 50));
+    
+    if(txtSize > minSize) {
+        txtSize = minSize
+    }
+    
+    return txtSize;
+}
+
+
+function displayCardText(){
+    push();
+    textFont(myFont);
+    fill(0,0,0);
+    if (cardFace == "front"){
+        textAlign(CENTER);
+        textLeading(37);
+        // Calculate text size to fit in area
+        
+        textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
+        
+        text(cardStorage[currentCard][1], -280, -147, 560, 170); // Dilema Text
+        pop();
+    
+        push();
+        fill(0,0,0);
+        textFont(myFont);
+        textAlign(CENTER);
+        textLeading(30);
+        // Calculate text size to fit in area
+        textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
+
+        text(cardStorage[currentCard][2], -275, 25, 260, 150); //Option 1
+        pop();
    
 
-    text(cardStorage[currentCard][3], 10, 0, 280, 150); //Option 2
+        push();
+        fill(0,0,0);
+        textFont(myFont);
+        textAlign(CENTER);
+        textLeading(30);
+        // Calculate text size to fit in area
+        textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
+        
+        text(cardStorage[currentCard][3], 10, 25, 280, 150); //Option 2
+        pop();
       
-      new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; redrawCanvas();});
-    new Button(137, 75, 275, 150, function(){ cardFace = "back2";redrawCanvas();});
-  }
-  if (cardFace == "back1"){
-    text(cardStorage[currentCard][4], -275, -175, 565, 330); // Outcome 1
-    
-    fill(0,0,0);
-    new Button(0, -7, 569, 344, function(){ cardFace = "front"; getOutcomeVal(6); ++currentCard; redrawCanvas();});
-    
+        new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; redrawCanvas();});
+        new Button(137, 75, 275, 150, function(){ cardFace = "back2";redrawCanvas();});
+    }
+    if (cardFace == "back1"){
+        textAlign(CENTER);
+        textLeading(37);
+        // Calculate text size to fit in area
+        
+        textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
+        
+        text(cardStorage[currentCard][4],  -280, -147, 560, 320); // Outcome 1
+        pop();
+        
+        new Button(0, -7, 569, 344, function(){ nextCard(); cardFace = "front"; getOutcomeVal(6); redrawCanvas();});
 
-  }
-  if (cardFace == "back2"){
-    text(cardStorage[currentCard][5], -275, -175, 565, 330); // Outcome 2
-    
-    fill(0,0,0);
-      new Button(0, -7, 569, 344, function(){ cardFace = "front"; getOutcomeVal(7); ++currentCard; redrawCanvas(); });
-      
-   }
+    }
+    if (cardFace == "back2"){
+        textAlign(CENTER);
+        textLeading(37);
+        // Calculate text size to fit in area
+        
+        textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
+        
+        text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
+        pop();
+        
+        
+        new Button(0, -7, 569, 344, function(){ nextCard(); cardFace = "front"; getOutcomeVal(7); redrawCanvas();});
+    }
 }
 
 
@@ -177,4 +228,34 @@ function redrawCanvas() {
   addProgressBar();
     buttons = [];
   addCard();
+}
+
+function nextCard(){ // function to include code for selecting new card for any cases not specified it will move to the next sequential card
+  let newCard;
+  //example of what condition should look like for branching card, xxxx is cardID
+  /*else if (cardStorage[currentCard][0] == "xxxx") {
+      if (cardFace == "back1")                          //this conditional can be based on any variables including which decision was made on this card or the GPA, Wealth, or Mental Health. Multiple if else statements are also accesable if more than 2 branches is desired, could also include just a cardID assignment to jump cards uncondiationally
+        newCard = "xxxx";
+      else
+        newCard = "xxxx";}
+  */
+  if (cardStorage[currentCard][0] == "0001"){ //branching example
+    if (cardFace == "back1")
+      newCard = "0002";
+    else
+      newCard = "0003";
+  }
+
+  else if (cardStorage[currentCard][0] == "0002"){ //unconditional jump example
+     newCard = "0004";
+  }
+
+
+  else //default case
+    ++currentCard;
+
+  for(i = 0; i < cardStorage.length; ++i ){ //loop identifies which card has the selected ID
+    if (cardStorage[i][0] == newCard)
+      currentCard = i;
+  }
 }
