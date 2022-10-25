@@ -42,5 +42,24 @@ You wonder what could be if you join, but decide you really don’t want to link
 BIG MISTAKE!!!!!! This is quite possibly the biggest mistake of your life, at least second to that time you broke your arm skateboarding trying to do a 2160°. You waste so much of your time aimlessly scrolling the depths of the platform forgetting to do schoolwork, you end up getting scammed multiple times, and you have noticed a significant worsening in your mood recently. As you get angry at random controversies that no sane person cares about.
 0 0 0
 -.3 -3 -3
+
+
+0100
+Your GPA has fallen below school standards and you have been placed on academic probation. After a meeting with your advisor, you know of 2 options...
+See a tutor and work hard!
+Drop out of College
+After seeing a tutor and working your butt off, your GPA dramatically improves, but you have lost time with friends and it's taking a toll.
+You have given up on school. You feel dropping out was the only option, so you drop out before school can kick you out. This ultimatly gives you more time to work and be with your friends, but you have to question if this was the correct path.
+2 -2 0
+-2 4 4
+
+0200
+Your mental health has been falling lately and you're in a bad place. You wonder if you should see a therapist and get the help you need.
+Get a therapist
+Keep suffering
+Your new therapist is one of the nicest people you've met. They help you through the issues you've been stewing on lately. It really helps; however, it does not help your wallet.
+You keep on suffering. Everything gets worse. You close off from friends. You almost lose your job. Your GPA is tanking.
+.1 3 -3
+-.8 -3 -4
 EOF
 //changing variables is 3 number values representing: gpa mentalHealth money
