@@ -135,7 +135,7 @@ function displayStats(){
     textFont(myFont);
     textSize(30);
     fill(0, 0, 0);
-    text("GPA: " + gpa,-536,310);
+    text("GPA: " + (gpa).toFixed(1),-536,310);
     text("Money: " + money,-100,310);
     text("Mental Health: "+ mHealth,383,310);
     pop();
@@ -147,14 +147,14 @@ function getOutcomeVal(lineN){
   // Cards in text go gpa mHealth money 
   // For example 0 1 0
   let vals = cardStorage[currentCard][lineN].split(" ");
-  if(gpa+parseInt(vals[0])>4.0){
+  if(gpa+parseFloat(vals[0])>4.0){
     gpa=4.0;
   }
-  else if(gpa+parseInt(vals[0])<0.0){
+  else if(gpa+parseFloat(vals[0])<0.0){
     gpa=0.0;
   }
   else{
-    gpa+=parseInt(vals[0]);
+    gpa+=parseFloat(vals[0]);
   }
 
   if(mHealth+parseInt(vals[1])>100){

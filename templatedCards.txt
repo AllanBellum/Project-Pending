@@ -4,7 +4,7 @@ Don’t go to Freshman Orientation.
 Go to Freshman Orientation.
 You decide that there are other things you’d like to do today. You relax for most of the day, take a nice walk, watch a show you like, and generally chill out.
 You think that getting to know what the next four years of your life is pretty important. You’d rather be as ready as you can be for them. You find it dull, but you do feel more prepared for the path ahead.
-1 92 1
+0.2 92 1
 1 0 0
 
 0002
@@ -13,8 +13,8 @@ Stay home and recover.
 You go to class and tough it out.
 You decide that it’s better to try and recover from your illness rather than tough it out. The next day you feel a lot better! You are really able to buckle down and catch up on your classwork! You feel great!
 Doing this was a mistake; you can barely pay attention in class. You can also feel your classmates stare as you hack and cough all throughout the lecture. You didn’t learn anything and you are thoroughly embarrassed.
-3 90 100
--1 -1 0
+-0.3 90 100
+-1.2 -1 0
 
 0003
 Your friends want to hang out and play some video games with you. But you have a test tomorrow. You feel underprepared, but you have also felt super stressed out lately. Do you hang out with your friends? 
@@ -23,7 +23,7 @@ Study for the test
 You decide that you need a break. You go and hang out with your bros. You play a varied assortment of games like Minecraft, Mario Kart 8, Guilty Gear, Halo 3, Power Stone 2, Windjammers, and even give Ratchet and Clank: Up Your Arsenal’s multiplayer mode a try. It was a blast, it was just the break you needed. Come the day of the test you remember a lot more than you expected to, but ultimately do just okay. You're satisfied with the result, but felt you could have done better.
 You really buckle down and go into a HARDCORE study session. The information is filling up your brain giving you a better understanding of the material than before. The day of the test you fly through the questions you know every answer and you ace the test. You’re relieved it’s over, but you feel burnt out.
 1 100 9000
--1 -1 -1
+-1.7 -1 -1
 
 0004
 You think that living on campus is getting expensive, and your parents live close enough to school that you could reasonably commute to class. But you love the experience of dorm life and feel that commuting wouldn’t be as fulfilling. Do you start commuting to class?
@@ -41,5 +41,5 @@ Create the account
 You wonder what could be if you join, but decide you really don’t want to link another thing to your email account. “Too much hassle” you state audibly as you discard the idea and move on with your life.
 BIG MISTAKE!!!!!! This is quite possibly the biggest mistake of your life, at least second to that time you broke your arm skateboarding trying to do a 2160°. You waste so much of your time aimlessly scrolling the depths of the platform forgetting to do schoolwork, you end up getting scammed multiple times, and you have noticed a significant worsening in your mood recently. As you get angry at random controversies that no sane person cares about.
 0 0 0
--100 -50 -10
+-100 -5000 -1000
 EOF
