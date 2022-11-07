@@ -13,7 +13,7 @@ let buttons = [];
 let lines;
 
 let gpa = 2.0;
-let mHealth = 0;
+let mHealth = 100;
 let money = 0;
 
 // This class will create a button that detects a mouse click and does a function
@@ -50,6 +50,7 @@ function setup() {
   background(220);
   addProgressBar();
   addCard();
+  displayStats();
   // GPA text should be at position x=-536 y=310
   // Money text is position x=-100 y=310
   // Mental Health is position x=383 y=310
@@ -132,8 +133,11 @@ function addProgressBar() {
 function displayStats(){
   push();
     textFont(myFont);
+    textSize(30);
     fill(0, 0, 0);
-    text(gpa, -280, -147, 560, 170);
+    text("GPA: " + gpa,-536,310);
+    text("Money: " + money,-100,310);
+    text("Mental Health: "+ mHealth,383,310);
     pop();
     
 
@@ -256,6 +260,7 @@ function redrawCanvas() {
   addProgressBar();
     buttons = [];
   addCard();
+  displayStats();
 }
 
 function nextCard(){ // function to include code for selecting new card for any cases not specified it will move to the next sequential card
