@@ -144,7 +144,7 @@ function displayStats(){
 }
 
 function getOutcomeVal(lineN){
-  // Cards in text go gpa mHealth money 
+  // Cards in text go gpa money mHealth 
   // For example 0 1 0
   let vals = cardStorage[currentCard][lineN].split(" ");
   if(gpa+parseFloat(vals[0])>4.0){
@@ -157,17 +157,19 @@ function getOutcomeVal(lineN){
     gpa+=parseFloat(vals[0]);
   }
 
-  if(mHealth+parseInt(vals[1])>100){
+  money+=parseInt(vals[1]);
+
+  if(mHealth+parseInt(vals[2])>100){
     mHealth=100;
   }
-  else if(mHealth+parseInt(vals[1])<0){
+  else if(mHealth+parseInt(vals[2])<0){
     mHealth=0;
   }
   else{
-    mHealth+=parseInt(vals[1]);
+    mHealth+=parseInt(vals[2]);
   }
 
-  money+=parseInt(vals[2]);
+
   //document.write(gpa + " " + mHealth + " " + money);\
   console.log(gpa + " " + mHealth + " " + money);
 }
@@ -221,8 +223,8 @@ function displayCardText(){
         text(cardStorage[currentCard][3], 10, 25, 280, 150); //Option 2
         pop();
       
-        new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; redrawCanvas();});
-        new Button(137, 75, 275, 150, function(){ cardFace = "back2";redrawCanvas();});
+        new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; getOutcomeVal(6); redrawCanvas(); });
+        new Button(137, 75, 275, 150, function(){ cardFace = "back2"; getOutcomeVal(7); redrawCanvas(); });
     }
     if (cardFace == "back1"){
         textAlign(CENTER);
@@ -234,7 +236,7 @@ function displayCardText(){
         text(cardStorage[currentCard][4],  -280, -147, 560, 320); // Outcome 1
         pop();
         
-        new Button(0, -7, 569, 344, function(){ getOutcomeVal(6); nextCard(); cardFace = "front";  redrawCanvas();});
+        new Button(0, -7, 569, 344, function(){nextCard(); cardFace = "front";  redrawCanvas();});
 
     }
     if (cardFace == "back2"){
@@ -245,7 +247,7 @@ function displayCardText(){
         textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
         
         text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
-        new Button(0, -7, 569, 344, function(){ getOutcomeVal(7); nextCard(); cardFace = "front"; redrawCanvas();});
+        new Button(0, -7, 569, 344, function(){nextCard(); cardFace = "front"; redrawCanvas();});
         pop();
         
         
