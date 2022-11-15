@@ -35,7 +35,7 @@ You’re glad you continue living on campus. While your bank account is as empty
 0 2 -2
 
 0005
-You feel that with all of the things going on and the clubs you’ve been attending that you need a way to keep up with both your friends and club activities. And all of the are on legally distinct social media platform, do you create an account or do you live unconnected from your peers?
+You feel that with all of the things going on and the clubs you’ve been attending that you need a way to keep up with both your friends and club activities. And all of them are on legally distinct social media platform, do you create an account or do you live unconnected from your peers?
 Stay unconnected
 Create the account
 You wonder what could be if you join, but decide you really don’t want to link another thing to your email account. “Too much hassle” you state audibly as you discard the idea and move on with your life.
@@ -43,7 +43,7 @@ BIG MISTAKE!!!!!! This is quite possibly the biggest mistake of your life, at le
 0 0 0
 -.3 -3 -3
 
-0100
+0100 - low gpa
 Your GPA has fallen below school standards and you have been placed on academic probation. After a meeting with your advisor, you know of 2 options...
 See a tutor and work hard!
 Drop out of College
@@ -52,7 +52,16 @@ You have given up on school. You feel dropping out was the only option, so you d
 2 -2 0
 -2 4 4
 
-0200
+0101 - dangerously low gpa - possibility of ending game
+Your gpa has fallen below standards of your school. Your major is very difficult, so you now must consider a major change.
+Change major
+Stick with current major
+Your major change was a blessing. Much less work and much more enjoyable. This decision was very good for you.
+You stick with your major and continue to struggle. Eventually you get kicked out of the school. You lose drive to continue somewhere else and become a janitor.
+1.5, 20, 0
+-1.2, -16, 0
+
+0200 - decline in mental health
 Your mental health has been falling lately and you're in a bad place. You wonder if you should see a therapist and get the help you need.
 Get a therapist
 Keep suffering
@@ -60,6 +69,42 @@ Your new therapist is one of the nicest people you've met. They help you through
 You keep on suffering. Everything gets worse. You close off from friends. You almost lose your job. Your GPA is tanking.
 .1 3 -3
 -.8 -3 -4
+
+0201 - decline in mental health and near halfway progress bar
+You haven't been having a good time lately and haven't been enjoying school. You're considering a major change to something more fun.
+Change major
+Suffer through
+You decided to change your major to one you enjoy more. Luckily, some credits from your previous major transfer. This change does end up costing you money, as it set you back in major progress.
+You've decided to stick your course, as you're already halfway through. You wish you enjoyed your major more.
+-0.4, 15, -500
+0, -10, 0
+
+0202 - severe decline in mental health
+Your mental health has severely declined. You've always wanted an animal, now you're considering getting an emotional support animal.
+Get an animal
+Don't get an animal
+You get a little puppy and get him registered. You couldn't be happier. Only issue is that the puppy is expensive and takes much of your time.
+You decide against the dog. Not much of your life changes, except that you continue down the rabbit hole of depression.
+-0.2, 25, -700
+0, -10, 0
+
+0300 //Based on decline in money
+You've been running dangerously low on cash recently. Do you...
+Find a new job
+Ask you parents for money
+Finding a new job was easier than you expected. Many people are hiring. You now have more spending money; however, work takes much of your time leading to a decline in your gpa and mental health.
+Your parents said yes... for the last time. You're thankful for the help, and you tell them so. You're able to maintain your grades, but you worry about your relationship with them.
+-0.5, -6, 1500
+0, -5, 600
+
+0400 //based on high gpa
+You are one of the smartest people in your class and professors want you to tutor. Do you accept?
+Tutor
+Don't tutor
+Tutoring comes with many benefit! A paid job bringing increased income and a further understanding of the material. You also feel great that you're helping others.
+You decline the tutoring job and don't miss much. You're able to keep up on work, but feel bad you didn't choose to help others.
+0.5, 15, 1000
+0, -5, 0
 
 0006
 There are many horror stories from that social media platform. You're glad you didn't join. Your friends invite you bowling. Do you go?
@@ -88,5 +133,39 @@ No one is impressed by your "costume." It doesn't matter too much. You have frie
 0 3 8
 0 1 0
 
+1000 // past 1000 will be cards that are totally filler. Not story or stat related.
+You have an opportunity for a study abroad in Florence! Do you go?
+Go study abroad
+Stay home
+Florence was a fantastic experience. You still learned a lot and had an amazing, though expensive, time with friends.
+You stayed home, but all of your friends had gone. You are lonely, but at least you didn't go on an expensive trip.
+0.5, 15, -2000
+0, -15, 0
+
+1001
+You've met a special someone and have been spending a lot of time together over a couple months. Being in love is expensive! You're gpa could be hurt...
+Stay together! You value love
+Break up :(
+You stay together. You just couldn't imagine losing this person. They take up much of your time and money, but it's worth it to be happy.
+You have a hard break up and become depressed. This is not good for your school work.
+-0.5, 10, -100
+-0.5, -15, 50
+
+1002
+You're hungry. Do you go to the dining hall or your favorite on-campus establishment?
+Dining hall
+Favorite place
+You reluctantly go to the dining hall and the food today, like every day, is nasty. Why do you try?
+You go and get your favorite meal elsewhere. Delicious. Without a meal-plan covering this one, it does cost you.
+0, -5, 0
+0, 5, -50
+
 EOF
 //changing variables is 3 number values representing: gpa mentalHealth money
+.4 small, 1.0 medium, 1.5 large
+Added 6ish cards. Some notes in the file after the card id. 4 new are stat related. 3 are simple filler cards.
+After id 1000 is filler cards.
+After 0100 are low gpa cards
+After 0200 are low mental health cards
+After 0300 are low money cards
+After 0400 are high gpa cards
