@@ -40,6 +40,11 @@ function preload(){
   lines = loadStrings('templatedCards.txt');
   myFont = loadFont('Assets/Fonts/Papernotes.ttf');
   notecardImg = loadImage('Assets/Imgs/Notecard.png');
+
+  soundFormats('mp3');
+  intro = loadSound('Assets/Music/CDintroSong.mp3');
+  loopN = loadSound('Assets/Music/CDLoopNtrl.mp3');
+  loopG = loadSound('Assets/Music/CDLoopGood.mp3');
 }
 
 
@@ -51,9 +56,15 @@ function setup() {
   addProgressBar();
   addCard();
   displayStats();
+
   // GPA text should be at position x=-536 y=310
   // Money text is position x=-100 y=310
   // Mental Health is position x=383 y=310
+
+//----------------------------------------------------------------------------------------------------
+//Music
+  //loopN.play();
+  //loopN.loop();
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
 //Loads cards into memory
   i = 0; //line
@@ -84,6 +95,7 @@ function setup() {
 
 function draw(){
   displayCardText();
+  enableMusic();
 }
 
 function mousePressed() {
@@ -236,7 +248,7 @@ function displayCardText(){
         text(cardStorage[currentCard][4],  -280, -147, 560, 320); // Outcome 1
         pop();
         
-        new Button(0, -7, 569, 344, function(){nextCard(); cardFace = "front";  redrawCanvas();});
+        new Button(0, -7, 569, 344, function(){nextCard(); cardFace = "front";  redrawCanvas(); swapTrack();}); 
 
     }
     if (cardFace == "back2"){
@@ -294,3 +306,21 @@ function nextCard(){ // function to include code for selecting new card for any 
       currentCard = i;
   }
 }
+
+function enableMusic(){
+  if (!(loopN.isPlaying())){
+    loopN.playMode('sustain');
+    loopN.setLoop(true);
+    loopN.play();}
+    
+  if (!(loopG.isPlaying())){
+    loopG.playMode('sustain');
+    loopG.setLoop(true);
+    loopG.setVolume(0.0);
+    loopG.play();}
+}
+
+function swapTrack(){
+  loopN.setVolume(0.0, 3);
+  loopG.setVolume(1.0, 3);
+} 
