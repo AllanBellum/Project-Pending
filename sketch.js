@@ -151,9 +151,11 @@ function displayStats(){
   push();
     textFont(myFont);
     textSize(30);
-    fill(0, 0, 0);
+    fill(0, 105, 62);
     text("GPA: " + (gpa).toFixed(1),-536,310);
+    fill(56, 69, 60);
     text("Money: " + money,-100,310);
+    fill(209, 188, 1);
     text("Mental Health: "+ mHealth,383,310);
     pop();
     
