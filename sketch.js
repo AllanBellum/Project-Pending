@@ -70,7 +70,7 @@ function setup() {
     cardStorage.push([]);
     for (j = 0; j < cardSize; ++j) {
       cardStorage[k].push(lines[i]);
-      if (lines[j] == "EOF"){
+      if (lines[i] == "EOF"){
         EOF = true;
       }
       ++i //increment of line within for loop
