@@ -43,7 +43,7 @@ You waste so much of your time aimlessly scrolling the depths of the platform fo
 0 0 0
 -.05 0 -2.5
 
-0100 - low gpa
+0100
 Your GPA has fallen below school standards and you have been placed on academic probation. After a meeting with your advisor, you know of 2 options...
 See a tutor and work hard!
 Drop out of College
@@ -52,7 +52,7 @@ You have given up on school. You feel dropping out was the only option, so you d
 .3 0 -2.5
 -2 0 12.5
 
-0101 - dangerously low gpa - possibility of ending game
+0101
 Your gpa has fallen below standards of your school. Your major is very difficult, so you now must consider a major change.
 Change major
 Stick with current major
@@ -61,7 +61,7 @@ You stick with your major and continue to struggle. Eventually you get kicked ou
 1.5 0 12.5
 -1.2 0 -12.5
 
-0200 - decline in mental health
+0200
 Your mental health has been falling lately and you're in a bad place. You wonder if you should see a therapist and get the help you need.
 Get a therapist
 Keep suffering
@@ -70,7 +70,7 @@ You keep on suffering. Everything gets worse. You close off from friends. You al
 .02 -20 5
 -.8 0 -4
 
-0201 - decline in mental health and near halfway progress bar
+0201
 You haven't been having a good time lately and haven't been enjoying school. You're considering a major change to something more fun.
 Change major
 Suffer through
@@ -79,7 +79,7 @@ You've decided to stick your course, as you're already halfway through. You wish
 .02 0 5
 0 0 -5
 
-0202 - severe decline in mental health
+0202
 Your mental health has severely declined. You've always wanted an animal, now you're considering getting an emotional support animal.
 Get an animal
 Don't get an animal
@@ -88,7 +88,7 @@ You decide against the dog. Not much of your life changes, except that you conti
 -0.2 -20, 15
 0 0 -2.5
 
-0300 //Based on decline in money
+0300
 You've been running dangerously low on cash recently. Do you...
 Find a new job
 Ask you parents for money
@@ -97,7 +97,7 @@ Your parents said yes... for the last time. You're thankful for the help, and yo
 -0.2 1500 -3
 0 600 -1
 
-0400 //based on high gpa
+0400
 You are one of the smartest people in your class and professors want you to tutor. Do you accept?
 Tutor
 Don't tutor
@@ -133,7 +133,7 @@ No one is impressed by your "costume." It doesn't matter too much. You have frie
 0 20 5
 0 0 2
 
-1000 // past 1000 will be cards that are totally filler. Not story or stat related.
+1000
 You have an opportunity for a study abroad in Florence! Do you go?
 Go study abroad
 Stay home
@@ -160,6 +160,14 @@ You go and get your favorite meal elsewhere. Delicious. Without a meal-plan cove
 0, -5, 0
 0, 5, -50
 
+9999
+Game over
+Good Game
+Good Game Well Played 
+to be continued... 
+to be continued...
+0, 0, 0
+0, 0, 0
 EOF
 //changing variables is 3 number values representing: gpa mentalHealth money
 .4 small, 1.0 medium, 1.5 large
