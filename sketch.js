@@ -70,7 +70,7 @@ function setup() {
     cardStorage.push([]);
     for (j = 0; j < cardSize; ++j) {
       cardStorage[k].push(lines[i]);
-      if (lines[j] == "EOF"){
+      if (lines[i] == "EOF"){
         EOF = true;
       }
       ++i //increment of line within for loop
@@ -294,17 +294,26 @@ function nextCard(){ // function to include code for selecting new card for any 
       else
         newCard = "xxxx";}
   */
-  if (cardStorage[currentCard][0] == "0001"){ //branching example
-    if (cardFace == "back1")
-      newCard = "0002";
-    else
-      newCard = "0003";
+  if (cardStorage[currentCard][0] == "0005"){ //branching based on stats
+    if (gpa < 1.0){newCard = "0101";}
+    else if( gpa < 2.0){newCard = "0100";} 
+    else if( mHealth < 50){newCard = "0200";}
+    else if( money < 100){newCard = "0300";}
+    else if (gpa > 3.3){newCard = "0400";}
+    else {newCard = "0006"}
+  }
+  else if (cardStorage[currentCard][0] == "0100"){
+    if (cardFace == "back2")
+      newCard = "9999";
   }
 
-  else if (cardStorage[currentCard][0] == "0002"){ //unconditional jump example
-     newCard = "0004";
+  else if (cardStorage[currentCard][0] == "0101" || cardStorage[currentCard][0] == "0100" || cardStorage[currentCard][0] == "0200" || cardStorage[currentCard][0] == "0300" || cardStorage[currentCard][0] == "0400"){ //leaving branch
+     newCard = "0006";
   }
 
+  else if (cardStorage[currentCard][0] == "9999"){
+    newCard = "9999"
+  }
 
   else //default case
     ++currentCard;
@@ -313,6 +322,7 @@ function nextCard(){ // function to include code for selecting new card for any 
     if (cardStorage[i][0] == newCard)
       currentCard = i;
   }
+
 }
 let introDuration = 166.716;
 let fadeTimer = 3;
