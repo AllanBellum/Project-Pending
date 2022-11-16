@@ -55,7 +55,7 @@ function setup() {
 
   background(220);
   addBackground();
-  addProgressBar();
+  //addProgressBar();
   addCard();
   displayStats();
   // GPA text should be at position x=-536 y=310
@@ -277,7 +277,7 @@ function redrawCanvas() {
     background(220);
     addBackground();
     progressBar = [];
-  addProgressBar();
+  //addProgressBar();
     buttons = [];
   addCard();
   displayStats();
