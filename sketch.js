@@ -41,6 +41,11 @@ function preload(){
   myFont = loadFont('Assets/Fonts/Papernotes.ttf');
   notecardImg = loadImage('Assets/Imgs/Notecard.png');
   backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
+    
+  intro = loadSound('Assets/Music/CDintroSong.mp3');
+  loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
+  loopGood = loadSound('Assets/Music/CDLoopGood.mp3');
+  loopBad = loadSound('Assets/Music/CDLoopBad.mp3')
 }
 
 
@@ -86,6 +91,7 @@ function setup() {
 
 function draw(){
   displayCardText();
+  playSound();
 }
 
 function mousePressed() {
@@ -304,5 +310,29 @@ function nextCard(){ // function to include code for selecting new card for any 
   for(i = 0; i < cardStorage.length; ++i ){ //loop identifies which card has the selected ID
     if (cardStorage[i][0] == newCard)
       currentCard = i;
+  }
+}
+let introDuration = 166.716;
+let fadeTimer = 3;
+function playSound(){
+  if (!intro.isPlaying() && !loopNuetral.isPlaying()){ //Music startup function, plays intro then the loop tracks
+    intro.play(0);
+    
+    loopNuetral.playMode('sustain');
+    loopNuetral.play(introDuration);
+
+    loopGood.playMode('sustain'); 
+    loopGood.play(introDuration, 1, 0.0);
+    
+    loopBad.playMode('sustain');
+    loopBad.play(introDuration, 1, 0.0);
+
+    userStartAudio(); //allows music to play after use interacts with the window
+
+  }
+  if (loopNuetral.isPlaying() && !intro.isPlaying()){ //track switching for loops, 
+    if(gpa > 3 && mHealth > 75){loopNuetral.setVolume(0, fadeTimer); loopGood.setVolume(1, fadeTimer); loopBad.setVolume(0, fadeTimer);} //sets track to Good
+    else if(gpa < 2 || mHealth < 25){loopNuetral.setVolume(0, fadeTimer); loopGood.setVolume(0, fadeTimer); loopBad.setVolume(1, fadeTimer);} //sets track to Bad
+    else{loopNuetral.setVolume(1, fadeTimer); loopGood.setVolume(0, fadeTimer); loopBad.setVolume(0,fadeTimer);} //defaults track to nuetral
   }
 }
