@@ -188,7 +188,7 @@ function getOutcomeVal(lineN){
 
 
   //document.write(gpa + " " + mHealth + " " + money);\
-  console.log(gpa + " " + mHealth + " " + money);
+  //console.log(gpa + " " + mHealth + " " + money);
 }
 
 
