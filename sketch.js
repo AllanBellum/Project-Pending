@@ -40,6 +40,7 @@ function preload(){
   lines = loadStrings('templatedCards.txt');
   myFont = loadFont('Assets/Fonts/Papernotes.ttf');
   notecardImg = loadImage('Assets/Imgs/Notecard.png');
+  backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
 }
 
 
@@ -48,6 +49,7 @@ function setup() {
   ortho();//Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
 
   background(220);
+  addBackground();
   addProgressBar();
   addCard();
   displayStats();
@@ -93,6 +95,15 @@ function mousePressed() {
         buttons[i].clicked(mouseX, mouseY);
     }
 
+}
+
+
+function addBackground() {
+    push();
+    noStroke();
+    texture(backgroundImg);
+    plane(vWidth, vHeight);
+    pop();
 }
 
 
@@ -258,6 +269,7 @@ function displayCardText(){
 
 function redrawCanvas() {
     background(220);
+    addBackground();
     progressBar = [];
   addProgressBar();
     buttons = [];
