@@ -12,8 +12,8 @@ let buttons = [];
 
 let lines;
 
-let gpa = 0;
-let mHealth = 0;
+let gpa = 2.0;
+let mHealth = 100;
 let money = 0;
 
 // This class will create a button that detects a mouse click and does a function
@@ -50,6 +50,7 @@ function setup() {
   background(220);
   addProgressBar();
   addCard();
+  displayStats();
   // GPA text should be at position x=-536 y=310
   // Money text is position x=-100 y=310
   // Mental Health is position x=383 y=310
@@ -129,16 +130,48 @@ function addProgressBar() {
   }
 }
 
+function displayStats(){
+  push();
+    textFont(myFont);
+    textSize(30);
+    fill(0, 0, 0);
+    text("GPA: " + (gpa).toFixed(1),-536,310);
+    text("Money: " + money,-100,310);
+    text("Mental Health: "+ mHealth,383,310);
+    pop();
+    
+
+}
 
 function getOutcomeVal(lineN){
-    // Cards in text go gpa mHealth money 
-    // For example 0 1 0
-    let vals = cardStorage[currentCard][lineN].split(" ");
-    gpa+=parseInt(vals[0]);
-    mHealth+=parseInt(vals[1]);
-    money+=parseInt(vals[2]);
-    //document.write(gpa + " " + mHealth + " " + money);\
-    //console.log(gpa + " " + mHealth + " " + money);
+  // Cards in text go gpa money mHealth 
+  // For example 0 1 0
+  let vals = cardStorage[currentCard][lineN].split(" ");
+  if(gpa+parseFloat(vals[0])>4.0){
+    gpa=4.0;
+  }
+  else if(gpa+parseFloat(vals[0])<0.0){
+    gpa=0.0;
+  }
+  else{
+    gpa+=parseFloat(vals[0]);
+  }
+
+  money+=parseInt(vals[1]);
+
+  if(mHealth+parseInt(vals[2])>100){
+    mHealth=100;
+  }
+  else if(mHealth+parseInt(vals[2])<0){
+    mHealth=0;
+  }
+  else{
+    mHealth+=parseInt(vals[2]);
+  }
+
+
+  //document.write(gpa + " " + mHealth + " " + money);\
+  console.log(gpa + " " + mHealth + " " + money);
 }
 
 
@@ -190,8 +223,8 @@ function displayCardText(){
         text(cardStorage[currentCard][3], 10, 25, 280, 150); //Option 2
         pop();
       
-        new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; redrawCanvas();});
-        new Button(137, 75, 275, 150, function(){ cardFace = "back2";redrawCanvas();});
+        new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; getOutcomeVal(6); redrawCanvas(); });
+        new Button(137, 75, 275, 150, function(){ cardFace = "back2"; getOutcomeVal(7); redrawCanvas(); });
     }
     if (cardFace == "back1"){
         textAlign(CENTER);
@@ -203,7 +236,7 @@ function displayCardText(){
         text(cardStorage[currentCard][4],  -280, -147, 560, 320); // Outcome 1
         pop();
         
-        new Button(0, -7, 569, 344, function(){ nextCard(); cardFace = "front"; getOutcomeVal(6); redrawCanvas();});
+        new Button(0, -7, 569, 344, function(){nextCard(); cardFace = "front";  redrawCanvas();});
 
     }
     if (cardFace == "back2"){
@@ -214,10 +247,11 @@ function displayCardText(){
         textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
         
         text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
+        new Button(0, -7, 569, 344, function(){nextCard(); cardFace = "front"; redrawCanvas();});
         pop();
         
         
-        new Button(0, -7, 569, 344, function(){ nextCard(); cardFace = "front"; getOutcomeVal(7); redrawCanvas();});
+        
     }
 }
 
@@ -228,6 +262,7 @@ function redrawCanvas() {
   addProgressBar();
     buttons = [];
   addCard();
+  displayStats();
 }
 
 function nextCard(){ // function to include code for selecting new card for any cases not specified it will move to the next sequential card
