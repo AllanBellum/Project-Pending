@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#welcome-body {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #dfdfce;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fake-logo {
+  width: 40vw;
+}
+
+#start-btn {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-decoration: none;
+  color: #D1BC01;
+
+  padding: 1.25rem;
+  background: linear-gradient(45deg, #00693E, #38453C);
+
+  border-radius: 2rem;
+}
+#start-btn:hover {
+  background: #D1BC01;
+  transition: 0.3s ease-in-out;
+  color: #00693E;
+}

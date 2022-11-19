@@ -1,0 +1,179 @@
+0001
+It’s Freshman Orientation Day! You don’t really want to go, but it might be important. Do you go? 
+Don’t go to Freshman Orientation. 
+Go to Freshman Orientation.
+You decide that there are other things you’d like to do today. You relax for most of the day, take a nice walk, watch a show you like, and generally chill out.
+You think that getting to know what the next four years of your life is pretty important. You’d rather be as ready as you can be for them. You find it dull, but you do feel more prepared for the path ahead.
+0 0 2.5
+.1 0 0
+
+0002
+Oh no! You're sick, but you have class today. And it’s the one you’re behind in! Do you risk going to class?
+Stay home and recover.
+You go to class and tough it out.
+You decide that it’s better to try and recover from your illness rather than tough it out. The next day you feel a lot better! You are really able to buckle down and catch up on your classwork! You feel great!
+Doing this was a mistake; you can barely pay attention in class. You can also feel your classmates stare as you hack and cough all throughout the lecture. You didn’t learn anything and you are thoroughly embarrassed.
+.1 0 5
+-.1 -1 -5
+
+0003
+Your friends want to hang out and play some video games with you. But you have a test tomorrow. You feel underprepared, but you have also felt super stressed out lately. Do you hang out with your friends? 
+Hang out with your friends
+Study for the test
+You decide that you need a break. You go and hang out with your bros. You play a varied assortment of games. It was a blast, and was just the break you needed. Come the day of the test you remember a lot more than you expected to, but ultimately do just okay. You're satisfied with the result, but felt you could have done better.
+You really buckle down and go into a hardcore study session. The information is filling up your brain giving you a better understanding of the material than before. The day of the test you fly through the questions you know every answer and you ace the test. You’re relieved it’s over, but you feel burnt out.
+.1 0 2.5
+.2 -1 -2.5
+
+0004
+You think that living on campus is getting expensive, and your parents live close enough to school that you could reasonably commute to class. But you love the experience of dorm life and feel that commuting wouldn’t be as fulfilling. Do you start commuting to class?
+Start commuting to class
+Continue living on campus
+You are able to save a lot more money and are more able to pay your tuition in upcoming semesters. You miss the communal space of campus life, but hey, what are you going to do?
+You’re glad you continue living on campus. While your bank account is as empty, but that’s okay. Despite its ups and downs, living on campus is still better than living with your parents.
+0 100 -2.5
+0 0 2.5
+
+0005
+You feel that with all of the things going on and the clubs you’ve been attending that you need a way to keep up with both your friends and club activities. And all of them are on legally distinct social media platform, do you create an account or do you live unconnected from your peers?
+Stay unconnected
+Create the account
+You wonder what could be if you join, but decide you really don’t want to link another thing to your email account.
+You waste so much of your time aimlessly scrolling the depths of the platform forgetting to do schoolwork and you have noticed a significant worsening in your mood recently.
+0 0 0
+-.05 0 -2.5
+
+0100
+Your GPA has fallen below school standards and you have been placed on academic probation. After a meeting with your advisor, you know of 2 options...
+See a tutor and work hard!
+Drop out of College
+After seeing a tutor and working your butt off, your GPA dramatically improves, but you have lost time with friends and it's taking a toll.
+You have given up on school. You feel dropping out was the only option, so you drop out before school can kick you out. This ultimatly gives you more time to work and be with your friends, but you have to question if this was the correct path.
+.3 0 -2.5
+-2 0 12.5
+
+0101
+Your gpa has fallen below standards of your school. Your major is very difficult, so you now must consider a major change.
+Change major
+Stick with current major
+Your major change was a blessing. Much less work and much more enjoyable. This decision was very good for you.
+You stick with your major and continue to struggle. Eventually you get kicked out of the school. You lose drive to continue your education.
+1.5 0 12.5
+-1.2 0 -12.5
+
+0200
+Your mental health has been falling lately and you're in a bad place. You wonder if you should see a therapist and get the help you need.
+Get a therapist
+Keep suffering
+Your new therapist is one of the nicest people you've met. They help you through the issues you've been stewing on lately. It really helps; however, it does not help your wallet.
+You keep on suffering. Everything gets worse. You close off from friends. You almost lose your job. Your GPA is tanking.
+.02 -20 5
+-.8 0 -4
+
+0201
+You haven't been having a good time lately and haven't been enjoying school. You're considering a major change to something more fun.
+Change major
+Suffer through
+You decided to change your major to one you enjoy more. Luckily, some credits from your previous major transfer. This change does end up costing you money, as it set you back in major progress.
+You've decided to stick your course, as you're already halfway through. You wish you enjoyed your major more.
+.02 0 5
+0 0 -5
+
+0202
+Your mental health has severely declined. You've always wanted an animal, now you're considering getting an emotional support animal.
+Get an animal
+Don't get an animal
+You get a little puppy and get him registered. You couldn't be happier. Only issue is that the puppy is expensive and takes much of your time.
+You decide against the dog. Not much of your life changes, except that you continue down the rabbit hole of depression.
+-0.2 -20, 15
+0 0 -2.5
+
+0300
+You've been running dangerously low on cash recently. Do you...
+Find a new job
+Ask you parents for money
+Finding a new job was easier than you expected. Many people are hiring. You now have more spending money; however, work takes much of your time leading to a decline in your gpa and mental health.
+Your parents said yes... for the last time. You're thankful for the help, and you tell them so. You're able to maintain your grades, but you worry about your relationship with them.
+-0.2 1500 -3
+0 600 -1
+
+0400
+You are one of the smartest people in your class and professors want you to tutor. Do you accept?
+Tutor
+Don't tutor
+Tutoring comes with many benefit! A paid job bringing increased income and a further understanding of the material. You also feel great that you're helping others.
+You decline the tutoring job and don't miss much. You're able to keep up on work, but feel bad you didn't choose to help others.
+0.2 1000 10
+0 0 -2
+
+0006
+There are many horror stories from that social media platform. You're glad you didn't join. Your friends invite you bowling. Do you go?
+Go bowling!
+Stay home
+Your friends are fun and you manage to win the game! There were some new friends in the group that you met. Your headspace is clear and you are able to focus on school and work even better.
+You decide you better not go. You see the fun your friends had and wish you went. You got nothing done while at home.
+.02 -5 2
+0 0 -1
+
+0007
+Your friends see your decline and stage an intervention to persuade you to delete the app. What do you choose?
+Delete the app
+Keep the app
+You're thankful for your friends. You grow closer to them and have time to focus back on school work.
+You're sucked deeper into the app. This choice cost you your friends. You become depressed. Your performance in school significantly declines more.
+.15 0 2
+-.75 0 -4
+
+0008
+Halloween is tomorrow! You have been invited to a party. How fun! Do you go in costume?
+Show up in costume
+Show up in regular clothes
+Everyone at the party loves your costume! You go on to win best comtume and a cash prize. You meet some new friends and have a great time.
+No one is impressed by your "costume." It doesn't matter too much. You have friends there and have an okay time. You're glad you went.
+0 20 5
+0 0 2
+
+1000
+You have an opportunity for a study abroad in Florence! Do you go?
+Go study abroad
+Stay home
+Florence was a fantastic experience. You still learned a lot and had an amazing, though expensive, time with friends.
+You stayed home, but all of your friends had gone. You are lonely, but at least you didn't go on an expensive trip.
+0.5 -2000 20
+0 0 -10
+
+1001
+You've met a special someone and have been spending a lot of time together over a couple months.
+Stay together! You value love
+Break up :(
+You stay together. You just couldn't imagine losing this person. They take up much of your time and money, but it's worth it to be happy.
+You have a hard break up and become depressed. This is not good for your school work.
+-0.2 -50 15
+-0.2 0 -10
+
+1002
+You're hungry. Do you go to the dining hall or your favorite on-campus establishment?
+Dining hall
+Favorite place
+You reluctantly go to the dining hall and the food today, like every day, is nasty. Why do you try?
+You go and get your favorite meal elsewhere. Delicious. Without a meal-plan covering this one, it does cost you.
+0, -5, 0
+0, 5, -50
+
+9999
+Game over
+Good Game
+Good Game Well Played 
+to be continued... 
+to be continued...
+0, 0, 0
+0, 0, 0
+EOF
+//changing variables is 3 number values representing: gpa mentalHealth money
+.4 small, 1.0 medium, 1.5 large
+Added 6ish cards. Some notes in the file after the card id. 4 new are stat related. 3 are simple filler cards.
+After id 1000 is filler cards.
+After 0100 are low gpa cards
+After 0200 are low mental health cards
+After 0300 are low money cards
+After 0400 are high gpa cards
