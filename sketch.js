@@ -263,6 +263,8 @@ function displayCardText(){
         
         textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
         
+        translate(0, 0, 100);
+        
         text(cardStorage[currentCard][1], textPos-280, -147, 560, 170); // Dilema Text
         pop();
     
@@ -274,7 +276,8 @@ function displayCardText(){
         // Calculate text size to fit in area
         textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
         
-
+        translate(0, 0, 100);
+        
         text(cardStorage[currentCard][2], textPos-275, 25, 260, 150); //Option 1
         pop();
    
@@ -286,6 +289,8 @@ function displayCardText(){
         textLeading(30);
         // Calculate text size to fit in area
         textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
+        
+        translate(0, 0, 100);
         
         // Draw animation
         rotateY(textSpin);
@@ -303,6 +308,8 @@ function displayCardText(){
         
         textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
         
+        translate(0, 0, 100);
+        
         // Draw animation
         rotateY(textSpin);
         
@@ -318,6 +325,8 @@ function displayCardText(){
         // Calculate text size to fit in area
         
         textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
+        
+        translate(0, 0, 100);
         
         // Draw animation
         rotateY(textSpin);
