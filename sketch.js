@@ -319,6 +319,9 @@ function displayCardText(){
         
         textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
         
+        // Draw animation
+        rotateY(textSpin);
+        
         text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
         new Button(0, -7, 569, 344, function(){nextCard(); cardFace = "front"; runningAnimation = true;redrawCanvas();});
         pop();
