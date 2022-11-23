@@ -251,93 +251,121 @@ function getTextSize(width, height, minSize, txt) {
 }
 
 
-function displayCardText(){
-    push();
-    textFont(myFont);
-    fill(0,0,0);
-    if (cardFace == "front"){
-        textAlign(CENTER);
-        textLeading(37);
-    
-        // Calculate text size to fit in area
-        
-        textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
-        
-        translate(0, 0, 100);
-        
-        text(cardStorage[currentCard][1], textPos-280, -147, 560, 170); // Dilema Text
-        pop();
-    
-        push();
-        fill(0,0,0);
-        textFont(myFont);
-        textAlign(CENTER);
-        textLeading(30);
-        // Calculate text size to fit in area
-        textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
-        
-        translate(0, 0, 100);
-        
-        text(cardStorage[currentCard][2], textPos-275, 25, 260, 150); //Option 1
-        pop();
-   
+function displayCardText() {
+	push();
+	textFont(myFont);
+	fill(0, 0, 0);
+	if (cardFace == "front") {
+		textAlign(CENTER);
+		textLeading(37);
 
-        push();
-        fill(0,0,0);
-        textFont(myFont);
-        textAlign(CENTER);
-        textLeading(30);
-        // Calculate text size to fit in area
-        textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
-        
-        translate(0, 0, 100);
-        
-        // Draw animation
-        rotateY(textSpin);
-        
-        text(cardStorage[currentCard][3], textPos+10, 25, 280, 150); //Option 2
-        pop();
-      
-        new Button(-137, 75, 275, 150, function(){ cardFace = "back1"; getOutcomeVal(6); runningAnimation = true; redrawCanvas(); });
-        new Button(137, 75, 275, 150, function(){ cardFace = "back2"; getOutcomeVal(7); runningAnimation = true; redrawCanvas(); });
-    }
-    if (cardFace == "back1"){
-        textAlign(CENTER);
-        textLeading(37);
-        // Calculate text size to fit in area
-        
-        textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
-        
-        translate(0, 0, 100);
-        
-        // Draw animation
-        rotateY(textSpin);
-        
-        text(cardStorage[currentCard][4],  -280, -147, 560, 320); // Outcome 1
-        pop();
-        
-        new Button(0, -7, 569, 344, function(){nextCard(); cardFace = "front";  runningAnimation = true; redrawCanvas();});
+		// Calculate text size to fit in area
 
-    }
-    if (cardFace == "back2"){
-        textAlign(CENTER);
-        textLeading(37);
-        // Calculate text size to fit in area
+		textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
+
+		translate(0, 0, 100);
+
+		text(cardStorage[currentCard][1], textPos - 280, -147, 560, 170); // Dilema Text
+		pop();
+
+		push();
+		fill(0, 0, 0);
+		textFont(myFont);
+		textAlign(CENTER);
+		textLeading(30);
+		// Calculate text size to fit in area
+		textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
+
+		translate(0, 0, 100);
+
+		text(cardStorage[currentCard][2], textPos - 275, 25, 260, 150); //Option 1
+		pop();
+
+
+		push();
+		fill(0, 0, 0);
+		textFont(myFont);
+		textAlign(CENTER);
+		textLeading(30);
+		// Calculate text size to fit in area
+		textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
+
+		translate(0, 0, 100);
+
+		text(cardStorage[currentCard][3], textPos + 10, 25, 280, 150); //Option 2
+		pop();
+
+        if (!runningAnimation) {
+            new Button(-137, 75, 275, 150, function() {
+                cardFace = "back1";
+                getOutcomeVal(6);
+                runningAnimation = true;
+                redrawCanvas();
+            });
+
+
+            new Button(137, 75, 275, 150, function() {
+                cardFace = "back2";
+                getOutcomeVal(7);
+                runningAnimation = true;
+                redrawCanvas();
+            });
+        }
+	}
+	if (cardFace == "back1") {
+        print(textSpin);
+		textAlign(CENTER);
+		textLeading(37);
+		// Calculate text size to fit in area
+
+		textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
+
+		translate(0, 0, 100);
+
+		// Draw animation
+		rotateY(textSpin);
+
+		text(cardStorage[currentCard][4], -280, -147, 560, 320); // Outcome 1
+		pop();
+
+        if (!runningAnimation) {
+            new Button(0, -7, 569, 344, function() {
+                nextCard();
+                cardFace = "front";
+                runningAnimation = true;
+                redrawCanvas();
+            });
+        }
+		
+
+	}
+	if (cardFace == "back2") {
+		textAlign(CENTER);
+		textLeading(37);
+		// Calculate text size to fit in area
+
+		textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
+
+		translate(0, 0, 100);
+
+		// Draw animation
+		rotateY(textSpin);
+
+		text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
         
-        textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
-        
-        translate(0, 0, 100);
-        
-        // Draw animation
-        rotateY(textSpin);
-        
-        text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
-        new Button(0, -7, 569, 344, function(){nextCard(); cardFace = "front"; runningAnimation = true;redrawCanvas();});
-        pop();
-        
-        
-        
-    }
+        if (!runningAnimation) {
+            new Button(0, -7, 569, 344, function() {
+                nextCard();
+                cardFace = "front";
+                runningAnimation = true;
+                redrawCanvas();
+            });
+        }
+		pop();
+
+
+
+	}
 }
 
 
