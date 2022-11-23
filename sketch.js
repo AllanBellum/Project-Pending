@@ -48,6 +48,9 @@ function preload() {
 	lines = loadStrings('templatedCards.txt');
 	myFont = loadFont('Assets/Fonts/Papernotes.ttf');
 	notecardImg = loadImage('Assets/Imgs/Notecard.png');
+	backgroundGoodImg = loadImage('Assets/Imgs/Background-Good.png');
+	backgroundPoorImg = loadImage('Assets/Imgs/Background-Poor.png');
+	backgroundBadImg = loadImage('Assets/Imgs/Background-Bad.png');
 	backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
 
 	intro = loadSound('Assets/Music/CDintroSong.mp3');
@@ -61,7 +64,6 @@ function setup() {
 	createCanvas(vWidth, vHeight, WEBGL);
 	ortho(); //Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
 
-	background(220);
 	addBackground();
 	//addProgressBar();
 	addCard();
@@ -432,16 +434,19 @@ function playSound() {
 			loopNuetral.setVolume(0, fadeTimer);
 			loopGood.setVolume(1, fadeTimer);
 			loopBad.setVolume(0, fadeTimer);
+            backgroundImg = backgroundGoodImg
 		} //sets track to Good
 		else if (gpa < 2 || mHealth < 25) {
 			loopNuetral.setVolume(0, fadeTimer);
 			loopGood.setVolume(0, fadeTimer);
 			loopBad.setVolume(1, fadeTimer);
+            backgroundImg = backgroundBadImg
 		} //sets track to Bad
 		else {
 			loopNuetral.setVolume(1, fadeTimer);
 			loopGood.setVolume(0, fadeTimer);
 			loopBad.setVolume(0, fadeTimer);
+            backgroundImg = backgroundPoorImg
 		} //defaults track to nuetral
 	}
 }
