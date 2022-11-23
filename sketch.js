@@ -313,7 +313,6 @@ function displayCardText() {
         }
 	}
 	if (cardFace == "back1") {
-        print(textSpin);
 		textAlign(CENTER);
 		textLeading(37);
 		// Calculate text size to fit in area
