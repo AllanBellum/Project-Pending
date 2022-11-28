@@ -111,7 +111,9 @@ function draw(){
 function drawAnimation() {
     if(cardFace != "front" && textSpin < 3) {
         spin += .1;
+        //spin += .01;
         textSpin += .1;
+        //textSpin += .01;
     } else if (cardFace == "front") {
         if (xs != -25) {
             xs+=25;
@@ -124,7 +126,7 @@ function drawAnimation() {
         
     }
     
-    if(textSpin >= 3) {
+    if(spin >= 3) {
         spin = 0;
         textSpin = 0;
         runningAnimation = false;
@@ -198,7 +200,7 @@ function addProgressBar() {
 }
 
 function displayStats(){
-  push();
+    push();
     textFont(myFont);
     textSize(30);
     fill(209, 188, 1);
@@ -255,7 +257,21 @@ function displayCardText() {
 	push();
 	textFont(myFont);
 	fill(0, 0, 0);
-	if (cardFace == "front") {
+    let tCardFace = cardFace
+    
+    if (runningAnimation) {
+        if (cardFace == "back1" || cardFace == "back2") {
+            if (spin < 1.5) {
+                tCardFace = "front";
+
+            } /*else {
+                print("2: " + textSpin);
+                //textSpin = 3 - textSpin
+            }*/
+        }
+    }
+    
+	if (tCardFace == "front") {
 		textAlign(CENTER);
 		textLeading(37);
 
@@ -264,6 +280,8 @@ function displayCardText() {
 		textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
 
 		translate(0, 0, 100);
+        // Draw animation
+		rotateY(textSpin);
 
 		text(cardStorage[currentCard][1], textPos - 280, -147, 560, 170); // Dilema Text
 		pop();
@@ -277,6 +295,8 @@ function displayCardText() {
 		textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
 
 		translate(0, 0, 100);
+        // Draw animation
+		rotateY(textSpin);
 
 		text(cardStorage[currentCard][2], textPos - 275, 25, 260, 150); //Option 1
 		pop();
@@ -291,6 +311,8 @@ function displayCardText() {
 		textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
 
 		translate(0, 0, 100);
+        // Draw animation
+		rotateY(textSpin);
 
 		text(cardStorage[currentCard][3], textPos + 10, 25, 280, 150); //Option 2
 		pop();
@@ -312,7 +334,7 @@ function displayCardText() {
             });
         }
 	}
-	if (cardFace == "back1") {
+	if (tCardFace == "back1") {
 		textAlign(CENTER);
 		textLeading(37);
 		// Calculate text size to fit in area
@@ -338,7 +360,7 @@ function displayCardText() {
 		
 
 	}
-	if (cardFace == "back2") {
+	if (tCardFace == "back2") {
 		textAlign(CENTER);
 		textLeading(37);
 		// Calculate text size to fit in area
