@@ -113,7 +113,9 @@ function draw() {
 function drawAnimation() {
 	if (cardFace != "front" && textSpin < 3) {
 		spin += .1;
+		//spin += .01;
 		textSpin += .1;
+		//textSpin += .01;
 	} else if (cardFace == "front") {
 		if (xs != -25) {
 			xs += 25;
@@ -126,7 +128,7 @@ function drawAnimation() {
 
 	}
 
-	if (textSpin >= 3) {
+	if (spin >= 3) {
 		spin = 0;
 		textSpin = 0;
 		runningAnimation = false;
@@ -137,7 +139,6 @@ function drawAnimation() {
 		textPos = -1000;
 	}
 	redrawCanvas();
-
 }
 
 function mousePressed() {
@@ -199,6 +200,7 @@ function addProgressBar() {
 	}
 }
 
+
 function displayStats() {
 	push();
 	textFont(myFont);
@@ -253,7 +255,23 @@ function displayCardText() {
 	push();
 	textFont(myFont);
 	fill(0, 0, 0);
-	if (cardFace == "front") {
+
+	let tCardFace = cardFace
+
+	if (runningAnimation) {
+		if (cardFace == "back1" || cardFace == "back2") {
+			if (spin < 1.5) {
+				tCardFace = "front";
+
+			}
+			/*else {
+			               print("2: " + textSpin);
+			               //textSpin = 3 - textSpin
+			           }*/
+		}
+	}
+
+	if (tCardFace == "front") {
 		textAlign(CENTER);
 		textLeading(37);
 
@@ -262,6 +280,9 @@ function displayCardText() {
 		textSize(getTextSize(840, 170, 37, cardStorage[currentCard][1]));
 
 		translate(0, 0, 100);
+
+		// Draw animation
+		rotateY(textSpin);
 
 		text(cardStorage[currentCard][1], textPos - 280, -147, 560, 170); // Dilema Text
 		pop();
@@ -275,6 +296,9 @@ function displayCardText() {
 		textSize(getTextSize(550, 150, 30, cardStorage[currentCard][2]));
 
 		translate(0, 0, 100);
+
+		// Draw animation
+		rotateY(textSpin);
 
 		text(cardStorage[currentCard][2], textPos - 275, 25, 260, 150); //Option 1
 		pop();
@@ -290,26 +314,30 @@ function displayCardText() {
 
 		translate(0, 0, 100);
 
-		// Draw animation
 		rotateY(textSpin);
 
 		text(cardStorage[currentCard][3], textPos + 10, 25, 280, 150); //Option 2
 		pop();
 
-		new Button(-137, 75, 275, 150, function() {
-			cardFace = "back1";
-			getOutcomeVal(6);
-			runningAnimation = true;
-			redrawCanvas();
-		});
-		new Button(137, 75, 275, 150, function() {
-			cardFace = "back2";
-			getOutcomeVal(7);
-			runningAnimation = true;
-			redrawCanvas();
-		});
+
+		if (!runningAnimation) {
+			new Button(-137, 75, 275, 150, function() {
+				cardFace = "back1";
+				getOutcomeVal(6);
+				runningAnimation = true;
+				redrawCanvas();
+			});
+
+
+			new Button(137, 75, 275, 150, function() {
+				cardFace = "back2";
+				getOutcomeVal(7);
+				runningAnimation = true;
+				redrawCanvas();
+			});
+		}
 	}
-	if (cardFace == "back1") {
+	if (tCardFace == "back1") {
 		textAlign(CENTER);
 		textLeading(37);
 		// Calculate text size to fit in area
@@ -324,15 +352,19 @@ function displayCardText() {
 		text(cardStorage[currentCard][4], -280, -147, 560, 320); // Outcome 1
 		pop();
 
-		new Button(0, -7, 569, 344, function() {
-			nextCard();
-			cardFace = "front";
-			runningAnimation = true;
-			redrawCanvas();
-		});
+
+		if (!runningAnimation) {
+			new Button(0, -7, 569, 344, function() {
+				nextCard();
+				cardFace = "front";
+				runningAnimation = true;
+				redrawCanvas();
+			});
+		}
+
 
 	}
-	if (cardFace == "back2") {
+	if (tCardFace == "back2") {
 		textAlign(CENTER);
 		textLeading(37);
 		// Calculate text size to fit in area
@@ -345,12 +377,15 @@ function displayCardText() {
 		rotateY(textSpin);
 
 		text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
-		new Button(0, -7, 569, 344, function() {
-			nextCard();
-			cardFace = "front";
-			runningAnimation = true;
-			redrawCanvas();
-		});
+
+		if (!runningAnimation) {
+			new Button(0, -7, 569, 344, function() {
+				nextCard();
+				cardFace = "front";
+				runningAnimation = true;
+				redrawCanvas();
+			});
+		}
 		pop();
 
 
@@ -401,6 +436,7 @@ function nextCard() { // function to include code for selecting new card for any
 		newCard = "9999"
 	} else //default case
 
+
 	++currentCard;
 
 	for (i = 0; i < cardStorage.length; ++i) { //loop identifies which card has the selected ID
@@ -434,19 +470,19 @@ function playSound() {
 			loopNuetral.setVolume(0, fadeTimer);
 			loopGood.setVolume(1, fadeTimer);
 			loopBad.setVolume(0, fadeTimer);
-            backgroundImg = backgroundGoodImg
+			backgroundImg = backgroundGoodImg
 		} //sets track to Good
 		else if (gpa < 2 || mHealth < 25) {
 			loopNuetral.setVolume(0, fadeTimer);
 			loopGood.setVolume(0, fadeTimer);
 			loopBad.setVolume(1, fadeTimer);
-            backgroundImg = backgroundBadImg
+			backgroundImg = backgroundBadImg
 		} //sets track to Bad
 		else {
 			loopNuetral.setVolume(1, fadeTimer);
 			loopGood.setVolume(0, fadeTimer);
 			loopBad.setVolume(0, fadeTimer);
-            backgroundImg = backgroundPoorImg
+			backgroundImg = backgroundPoorImg
 		} //defaults track to nuetral
 	}
 }
