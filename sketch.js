@@ -51,8 +51,8 @@ function preload(){
   myFont = loadFont('Assets/Fonts/Papernotes.ttf');
   notecardImg = loadImage('Assets/Imgs/Notecard.png');
   backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
-  playButton = loadImage('Assets/Imgs/playbutton.png');
-  pauseButton = loadImage('Assets/Imgs/pausebutton.png');
+  mutedIcon = loadImage('Assets/Imgs/mutedIcon.png');
+  soundIcon = loadImage('Assets/Imgs/soundIcon.png');
     
   intro = loadSound('Assets/Music/CDintroSong.mp3');
   loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
@@ -99,7 +99,7 @@ function setup() {
   cardFace = "front"; 
     
     mousePressed();
-    image(pauseButton, -683, -385);
+    image(soundIcon, -684, -43);
 }
 
 
@@ -365,8 +365,8 @@ function redrawCanvas() {
   //addProgressBar();
     buttons = [];
 
-    if (mute){image(playButton, -683, -385);} //changeing laptop screen depending on mute status
-    else {image(pauseButton, -683, -385);}
+    if (mute){image(mutedIcon, -684, -43);} //changeing laptop screen depending on mute status
+    else {image(soundIcon, -684, -43);}
      
     addCard();
     displayStats();
@@ -415,7 +415,7 @@ function nextCard(){ // function to include code for selecting new card for any 
 
 }
 
-let introDuration = 166.716;
+let introDuration = 15.151;
 let fadeTimer = 3;
 function playSound(){
   if (mute){loopNuetral.setVolume(0); loopGood.setVolume(0); loopBad.setVolume(0); intro.setVolume(0);}
