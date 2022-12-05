@@ -110,10 +110,14 @@ function draw(){
 
 function drawAnimation() {
     if(cardFace != "front" && textSpin < 3) {
-        spin += .1;
-        //spin += .01;
-        textSpin += .1;
-        //textSpin += .01;
+        if(cardFace == "back1") {
+            spin += .1;
+            textSpin += .1;
+        } else if (cardFace == "back2") {
+            spin -= .1;
+            textSpin -= .1;
+        }
+        
     } else if (cardFace == "front") {
         if (xs != -25) {
             xs+=25;
@@ -126,7 +130,7 @@ function drawAnimation() {
         
     }
     
-    if(spin >= 3) {
+    if(spin >= 3 || spin <= -3) {
         spin = 0;
         textSpin = 0;
         runningAnimation = false;
