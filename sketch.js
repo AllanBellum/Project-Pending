@@ -111,34 +111,38 @@ function draw() {
 
 
 function drawAnimation() {
-	if (cardFace != "front" && textSpin < 3) {
-		spin += .1;
-		//spin += .01;
-		textSpin += .1;
-		//textSpin += .01;
-	} else if (cardFace == "front") {
-		if (xs != -25) {
-			xs += 25;
-			textPos += 25;
-		} else {
-			xs += 25;
-			textPos += 25;
-			runningAnimation = false;
-		}
-
-	}
-
-	if (spin >= 3) {
-		spin = 0;
-		textSpin = 0;
-		runningAnimation = false;
-	}
-
-	if (xs > 1000) {
-		xs = -1000;
-		textPos = -1000;
-	}
-	redrawCanvas();
+    if(cardFace != "front" && textSpin < 3) {
+        if(cardFace == "back1") {
+            spin += .1;
+            textSpin += .1;
+        } else if (cardFace == "back2") {
+            spin -= .1;
+            textSpin -= .1;
+        }
+        
+    } else if (cardFace == "front") {
+        if (xs != -25) {
+            xs+=25;
+            textPos+=25;
+        } else {
+            xs+=25;
+            textPos+=25;
+            runningAnimation = false;
+        }
+        
+    }
+    
+    if(spin >= 3 || spin <= -3) {
+        spin = 0;
+        textSpin = 0;
+        runningAnimation = false;
+    }
+    
+    if(xs > 1000) {
+        xs = -1000;
+        textPos = -1000;
+    }
+    redrawCanvas();
 }
 
 function mousePressed() {
