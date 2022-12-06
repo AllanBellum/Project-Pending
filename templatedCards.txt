@@ -43,6 +43,78 @@ You waste so much of your time aimlessly scrolling the depths of the platform fo
 0 0 0
 -.05 0 -2.5
 
+0006
+There are many horror stories from that social media platform. You're glad you didn't join. Your friends invite you bowling. Do you go?
+Go bowling!
+Stay home
+Your friends are fun and you manage to win the game! There were some new friends in the group that you met. Your headspace is clear and you are able to focus on school and work even better.
+You decide you better not go. You see the fun your friends had and wish you went. You got nothing done while at home.
+.02 -5 2
+0 0 -1
+
+0007
+Your friends see your decline and stage an intervention to persuade you to delete the app. What do you choose?
+Delete the app
+Keep the app
+You're thankful for your friends. You grow closer to them and have time to focus back on school work.
+You're sucked deeper into the app. This choice cost you your friends. You become depressed. Your performance in school significantly declines more.
+.15 0 2
+-.75 0 -4
+
+0008
+Halloween is tomorrow! You have been invited to a party. How fun! Do you go in costume?
+Show up in costume
+Show up in regular clothes
+Everyone at the party loves your costume! You go on to win best comtume and a cash prize. You meet some new friends and have a great time.
+No one is impressed by your "costume." It doesn't matter too much. You have friends there and have an okay time. You're glad you went.
+0 20 5
+0 0 2
+
+0009
+You are going to work one day when you hear a POP sound. Your tire has burst asunder and gone flat. On the side of the road you realize you forgot to get a spare. You can either test your luck trying to get to the closest place that’ll change your tire, or call up your dad for help?
+Drive to find a spare tire
+Call dad
+The flat is making it difficult to drive, every turn is harder than usual, speeding up from a stand still is a nightmare, and you have to wrestle with the wheel to keep the car from careening into oncoming traffic, until WHAM! Another car smashes into you. You’re unhurt, but your car is totaled. This is going to cost you a lot of money.
+You call up your dad and he’s there in 20 minutes. He has a spare, but insists on teaching you how to change a tire by demonstrating how to do it, then undoing for you to do. You already know how to change a tire. It was a trying experience.
+0 -50 0
+0 0 -2.5
+
+0010
+Everything about your job is terrible. Your boss sucks, your coworkers are irritating, and the job is mind numbing beyond all belief. You can’t stay here any longer. The question is whether this place is so unbearable that you quit then find a job, or find a job then quit?
+Quit first
+Find another job first
+That is a load off of your mind, you feel freed from the shackles of the soul sucking misery and can sleep knowing you don’t have to go back tomorrow. Finding another job isn’t easy (especially when you don’t already have one) but you are certain you’ll find one soon enough.
+The remaining time you spend at your job is one of the worst experiences of your working life. It feels like your head is in an ever tightening vice grip from dawn to dusk. But you found a job far easier and quicker than you’d expected. Heck it even pays better than this one. You wave your personal hell goodbye and look toward the future.
+0 -10 6
+0 10 -6
+
+0011
+It’s almost Thanksgiving Break. You kinda want to go to your family’s Thanksgiving, but you also know you’d probably have to deal with that uncle who just has the worst opinions. It never goes well, and it’s such an unappealing prospect you might just stay here and study. 
+Go
+Don't Go
+You were right, everything was fine except for that uncle and getting stuck talking to him. Who the hell thinks that America should invade and conquer the Moon and kill all the “moon demons”. At least your parents let you take a lion’s share of the leftovers feeding you for weeks.
+You kinda regret not going, you wanted to catch up with your cousins and parents. Plus the turkey and stuffing is always good. At least you got some great studying in.
+0 5.5 -4
+2 0 0
+
+0012
+You’re at the store? You need some soap. You see some nice soap. Buy the nice soap?
+Buy the Soap
+Don't buy the Soap
+It’s really nice Soap.
+You really wanted to buy that soap, but sometimes you just can’t buy the nice Soap.
+0 -12 30
+0 0 0
+
+0013
+You’re in a super hardcare study session, but there’s a serious problem. You’re so hungry you could eat a horse. Unfortunately you have no idea where to get one at this time of day, so you have to settle for something else. You’ve been trying to eat healthier recently, but preparing a meal right now would take a while, and you have the money to get something delivered. What to do?
+Get Pizza
+Cook yourself a nice healthy meal
+Pizza is the perfect study food. Not having to make your own food really allows you to get into the fine details of your material. You even have breakfast for tomorrow! Though your stomach is more upset than usual when you lie down to go to sleep.
+Cooking the meal really cuts into your study time, but sticking to your commitment to your physical health feels great. You are only able to get a more general idea of the material, but you understand it a bit better. You go to sleep resolute.
+3 -20 0
+.5 0 4
+
 0100
 Your GPA has fallen below school standards and you have been placed on academic probation. After a meeting with your advisor, you know of 2 options...
 See a tutor and work hard!
@@ -88,6 +160,15 @@ You decide against the dog. Not much of your life changes, except that you conti
 -0.2 -20, 15
 0 0 -2.5
 
+0203
+You feel lethargic, you don’t think you got enough sleep last night. The last thing you want to do is get out of bed. Yet, you still need to get the day started and that is difficult to do in bed. 
+Stay in Bed
+Push through it and get out of bed
+You continue to lie in bed convinced that lying there will give you more energy. But an hour goes by and you still feel tired. The only reason you get out is because you need to pee really bad. Maybe you did get enough sleep, but just woke up weird. Either way you’re slow to get going today. 
+You feel like death for a little bit, but once you’re actually moving you feel a lot better. Your morning routine goes smoothly. And after you’ve finished you feel better than usual. Today’s gonna be a good day.
+0 0 0
+0 0 3
+
 0300
 You've been running dangerously low on cash recently. Do you...
 Find a new job
@@ -106,33 +187,15 @@ You decline the tutoring job and don't miss much. You're able to keep up on work
 0.2 1000 10
 0 0 -2
 
-0006
-There are many horror stories from that social media platform. You're glad you didn't join. Your friends invite you bowling. Do you go?
-Go bowling!
-Stay home
-Your friends are fun and you manage to win the game! There were some new friends in the group that you met. Your headspace is clear and you are able to focus on school and work even better.
-You decide you better not go. You see the fun your friends had and wish you went. You got nothing done while at home.
-.02 -5 2
-0 0 -1
-
-0007
-Your friends see your decline and stage an intervention to persuade you to delete the app. What do you choose?
-Delete the app
-Keep the app
-You're thankful for your friends. You grow closer to them and have time to focus back on school work.
-You're sucked deeper into the app. This choice cost you your friends. You become depressed. Your performance in school significantly declines more.
-.15 0 2
--.75 0 -4
-
-0008
-Halloween is tomorrow! You have been invited to a party. How fun! Do you go in costume?
-Show up in costume
-Show up in regular clothes
-Everyone at the party loves your costume! You go on to win best comtume and a cash prize. You meet some new friends and have a great time.
-No one is impressed by your "costume." It doesn't matter too much. You have friends there and have an okay time. You're glad you went.
-0 20 5
-0 0 2
-
+0401
+You’re exploring the campus one day when out of the corner of your eye you see something strange. You think it to be the Dean of Students in a fight with a deer. It takes you what feels like minutes to process the fact that this is actually happening. What snaps you out of your trance is the Dean shouting “Aid me in my fight against the local fauna or suffer the consequences!’
+Aid the Dean
+Aid the Deer
+ That talk of suffering consequences shakes you to your core. Just sounds like a bad time so you join the fight against the Deer and a few punches and kicks later it goes down. The Dean turns to you “Here, take this a tithe for your assistance, there will be more to come as well” he says handing you a thick stack of $100 Bills. You are in disbelief.
+ No one can tell you what to do. Good thing you can still remember those capoeira lessons you took last summer. With the assistance of the Deer you make short work of the Dean. As he falls to the ground you hear a faint whisper, almost a hiss “consequences”. You shrug it off hoping that this won’t come back to bite you. You give the Deer a high-five and then steal the Dean’s wallet. 
+20 150 0
+50 500 0
+ 
 1000
 You have an opportunity for a study abroad in Florence! Do you go?
 Go study abroad
