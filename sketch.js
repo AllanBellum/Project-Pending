@@ -23,6 +23,8 @@ let gpa = 2.0;
 let mHealth = 100;
 let money = 0;
 
+let mute = false;
+
 
 // This class will create a button that detects a mouse click and does a function
 class Button {
@@ -44,69 +46,82 @@ class Button {
 }
 
 
-function preload() {
-	lines = loadStrings('templatedCards.txt');
-	myFont = loadFont('Assets/Fonts/Papernotes.ttf');
-	notecardImg = loadImage('Assets/Imgs/Notecard.png');
+
+function preload(){  
+  lines = loadStrings('templatedCards.txt');
+  myFont = loadFont('Assets/Fonts/Papernotes.ttf');
+  notecardImg = loadImage('Assets/Imgs/Notecard.png');
 	backgroundGoodImg = loadImage('Assets/Imgs/Background-Good.png');
 	backgroundPoorImg = loadImage('Assets/Imgs/Background-Poor.png');
 	backgroundBadImg = loadImage('Assets/Imgs/Background-Bad.png');
 	backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
-
-	intro = loadSound('Assets/Music/CDintroSong.mp3');
-	loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
-	loopGood = loadSound('Assets/Music/CDLoopGood.mp3');
-	loopBad = loadSound('Assets/Music/CDLoopBad.mp3')
+  mutedIcon = loadImage('Assets/Imgs/mutedIcon.png');
+  soundIcon = loadImage('Assets/Imgs/soundIcon.png');
+    
+  intro = loadSound('Assets/Music/CDintroSong.mp3');
+  loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
+  loopGood = loadSound('Assets/Music/CDLoopGood.mp3');
+  loopBad = loadSound('Assets/Music/CDLoopBad.mp3')
 }
 
 
-function setup() {
-	createCanvas(vWidth, vHeight, WEBGL);
-	ortho(); //Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
+function setup() {  
+  createCanvas(vWidth, vHeight, WEBGL);
+  ortho();//Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
 
-	addBackground();
-	//addProgressBar();
-	addCard();
-	displayStats();
-	// GPA text should be at position x=-536 y=310
-	// Money text is position x=-100 y=310
-	// Mental Health is position x=383 y=310
-	//--------------------------------------------------------------------------------------------------------------------------------------------------------
-	//Loads cards into memory
-	i = 0; //line
-	k = 0; //card
-	EOF = false;
-	while (EOF == false) {
-		cardStorage.push([]);
-		for (j = 0; j < cardSize; ++j) {
-			cardStorage[k].push(lines[i]);
-			if (lines[i] == "EOF") {
-				EOF = true;
-			}
-			++i //increment of line within for loop
-		}
-		++k;
-		if (lines[i] == "EOF") { //this check shouldn't be necesary if the EOF is correctly placed in the text file
-			EOF = true;
-		}
-		++i; //increment of line to clear blankspace between cards
-	}
+  addBackground();
+  //addProgressBar();
+  addCard();
+  displayStats(); 
+  
+  // GPA text should be at position x=-536 y=310
+  // Money text is position x=-100 y=310
+  // Mental Health is position x=383 y=310
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+//Loads cards into memory
+  i = 0; //line
+  k = 0; //card
+  EOF = false;
+  while (EOF == false){
+    cardStorage.push([]);
+    for (j = 0; j < cardSize; ++j) {
+      cardStorage[k].push(lines[i]);
+      if (lines[i] == "EOF"){
+        EOF = true;
+      }
+      ++i //increment of line within for loop
+    }
+    ++k;
+    if (lines[i] == "EOF"){ //this check shouldn't be necesary if the EOF is correctly placed in the text file
+        EOF = true;
+    }
+    ++i; //increment of line to clear blankspace between cards
+  }
 
-	currentCard = 0;
-	cardFace = "front";
-
-	mousePressed();
+  currentCard = 0;
+  cardFace = "front"; 
+    
+    mousePressed();
+    image(soundIcon, -684, -43);
 }
 
 
-function draw() {
-	if (runningAnimation) {
-		drawAnimation();
-	}
+function draw(){
+    if (runningAnimation) {
+        drawAnimation();
+    }
+    
+    displayCardText();
+    
+    playSound();
 
-	displayCardText();
 
-	playSound();
+    new Button(-605, 0, 200, 200, function(){//mute button located on/around laptop
+      if (mute){mute = false;}
+      else {mute = true;}
+      redrawCanvas()
+    });
+  
 }
 
 
@@ -399,13 +414,17 @@ function displayCardText() {
 
 
 function redrawCanvas() {
-	background(220);
-	addBackground();
-	progressBar = [];
-	//addProgressBar();
-	buttons = [];
-	addCard();
-	displayStats();
+    addBackground();
+    progressBar = [];
+  //addProgressBar();
+    buttons = [];
+
+    if (mute){image(mutedIcon, -684, -43);} //changeing laptop screen depending on mute status
+    else {image(soundIcon, -684, -43);}
+     
+    addCard();
+    displayStats();
+ 
 }
 
 function nextCard() { // function to include code for selecting new card for any cases not specified it will move to the next sequential card
@@ -450,26 +469,29 @@ function nextCard() { // function to include code for selecting new card for any
 
 }
 
-let introDuration = 166.716;
+let introDuration = 15.151;
 let fadeTimer = 3;
 
-function playSound() {
-	if (!intro.isPlaying() && !loopNuetral.isPlaying()) { //Music startup function, plays intro then the loop tracks
-		intro.play(0);
+function playSound(){
+  if (mute){loopNuetral.setVolume(0); loopGood.setVolume(0); loopBad.setVolume(0); intro.setVolume(0);}
+  else{
+    if(intro.isPlaying){intro.setVolume(1);}
+    if (!intro.isPlaying() && !loopNuetral.isPlaying()){ //Music startup function, plays intro then the loop tracks
+    intro.play(0);
+    
+    loopNuetral.playMode('sustain');
+    loopNuetral.play(introDuration);
 
-		loopNuetral.playMode('sustain');
-		loopNuetral.play(introDuration);
+    loopGood.playMode('sustain'); 
+    loopGood.play(introDuration, 1, 0.0);
+    
+    loopBad.playMode('sustain');
+    loopBad.play(introDuration, 1, 0.0);
 
-		loopGood.playMode('sustain');
-		loopGood.play(introDuration, 1, 0.0);
+    userStartAudio(); //allows music to play after use interacts with the window
 
-		loopBad.playMode('sustain');
-		loopBad.play(introDuration, 1, 0.0);
-
-		userStartAudio(); //allows music to play after use interacts with the window
-
-	}
-	if (loopNuetral.isPlaying() && !intro.isPlaying()) { //track switching for loops, 
+    }
+   if (loopNuetral.isPlaying() && !intro.isPlaying()) { //track switching for loops, 
 		if (gpa > 3 && mHealth > 75) {
 			loopNuetral.setVolume(0, fadeTimer);
 			loopGood.setVolume(1, fadeTimer);
@@ -488,5 +510,6 @@ function playSound() {
 			loopBad.setVolume(0, fadeTimer);
 			backgroundImg = backgroundPoorImg
 		} //defaults track to nuetral
-	}
+  }
+}
 }
