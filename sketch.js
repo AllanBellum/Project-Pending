@@ -56,7 +56,9 @@ function preload() {
 	intro = loadSound('Assets/Music/CDintroSong.mp3');
 	loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
 	loopGood = loadSound('Assets/Music/CDLoopGood.mp3');
-	loopBad = loadSound('Assets/Music/CDLoopBad.mp3')
+	loopBad = loadSound('Assets/Music/CDLoopBad.mp3');
+	
+	paperSFX = loadSound('Assets/PaperFlipSFX.mp3');
 }
 
 
@@ -101,6 +103,7 @@ function setup() {
 
 function draw() {
 	if (runningAnimation) {
+		paperSFX.play();
 		drawAnimation();
 	}
 
