@@ -414,7 +414,6 @@ function displayCardText() {
 
 
 function redrawCanvas() {
-    background(220);
     addBackground();
     progressBar = [];
   //addProgressBar();
@@ -512,4 +511,5 @@ function playSound(){
 			backgroundImg = backgroundPoorImg
 		} //defaults track to nuetral
   }
+}
 }
