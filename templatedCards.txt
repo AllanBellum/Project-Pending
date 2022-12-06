@@ -115,6 +115,33 @@ Cooking the meal really cuts into your study time, but sticking to your commitme
 3 -20 0
 .5 0 4
 
+0014
+One of your friends invites you to a session of Dungeons and Dragons. You’ve never played it before, but it seems fun. In spite of all of that you got more homework than you’d like to have currently, should you attend the D&D session or get ahead on your homework?
+Do homework
+Play D&D
+Homework sucks. But hey you got your stuff done. Wish you had gone to D&D though.
+The D&D session was top tier stuff. Plus the DM bought pizza so you didn’t have to buy food for dinner. Everyone was cool and you had a massive amount of fun. Worth it.
+2 0 0
+0 12 5
+
+0015
+ You just had a major falling out with a friend. You feel like your world has entered a state of flux. Nothing feels right anymore. All of your worst mistakes and failures come flooding back to you. Nothing feels right anymore and you feel like the worst person to walk the earth. What are you going to do?
+Talk to someone about
+Push it all down and go to the gym
+You call up an old friend and just start to unfurl. You start bawling your eyes out, but when all is said and done you feel better. You feel like you can start moving forward instead of holding yourself back. It still hurts obviously, but the wound feels like it can properly heal.
+Who knew that physical exercise can’t address serious psychological issues? Not you. If anything you just made things worse for yourself. You even crush your toe with a dumbbell. Ow. 
+0 0 8
+0 0 -14
+
+0016
+Rumors are spreading around campus that one of the econ professors got abducted by aliens. They are even claiming that he got abducted on the roof of the student center when he stepped out to take a smoke break. Your friends bandy around the idea of camping out on the roof to try and get a glimpse of some aliens, maybe even get abducted.
+Pfft, Who believes in aliens?
+I’d love to get abducted by aliens
+You decide to stay home and study instead. Aliens, at least aliens intelligent enough to create interstellar travel, are so unlikely to actually exist that camping out on the roof of the student center seems like a waste of time. That is until you see your friends the next day visibly shaken. None of them want to talk about what happened. What happened last night?
+You and your friends sneak onto the student center’s roof after hours and camp out. You tell scary stories and eat s'mores, going to sleep on the roof at around 11PM. That is until you are awoken by a strange glowing light and you start floating in the air, and that is your last memory of that night. You wake up back on the student center roof holding a manilla envelope containing a wad of 20 dollar bills, the answers to your exam next week, and a thank you note with a bug-eyed green alien sticker on it. What the Funk.
+0.4 0 -5
+.8 60 -25
+
 0100
 Your GPA has fallen below school standards and you have been placed on academic probation. After a meeting with your advisor, you know of 2 options...
 See a tutor and work hard!
@@ -168,6 +195,15 @@ You continue to lie in bed convinced that lying there will give you more energy.
 You feel like death for a little bit, but once you’re actually moving you feel a lot better. Your morning routine goes smoothly. And after you’ve finished you feel better than usual. Today’s gonna be a good day.
 0 0 0
 0 0 3
+
+0204
+It’s a cold winter’s night and you can’t sleep. You look outside your window, snow covers the ground and the soft lighting outside lends a somber melancholic beauty to the scene you are witness to. You are far too restless to go back to sleep, but the exhaustion of the day still weighs on you. What should you do?
+Go for a walk
+Lie in bed and look out the window
+Despite being so late and cold there are more people out than you’d expect. Still, it’s peaceful. The air is surprisingly still, the snowfall is light and delicate, and the night is just bright enough to be able to easily see, yet feel dark. It’s otherworldly. Once you got home and went to bed you had a great night’s sleep.
+The night is calm and the snowflakes fall with delicate precision. The silence is comforting instead of eerie.From the warmth of your bed the chill emanating from the window is almost refreshing. Time almost stands still in this picturesque moment. You wake up the next morning not having remembered when you fell asleep. It was a great night’s sleep.
+0 0 4
+0 0 4
 
 0300
 You've been running dangerously low on cash recently. Do you...
