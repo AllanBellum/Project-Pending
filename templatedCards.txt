@@ -142,6 +142,125 @@ You and your friends sneak onto the student center’s roof after hours and camp
 0.4 0 -5
 .8 60 -25
 
+0017
+SPRING BREAK. You know what that means? A week off from classes. But the question is what to do, should you slack off completely and do nothing but chill. Or do you try to finish some of your school work before getting some R&R?
+Slack off completely
+Do some schoolwork
+Spring Break is less restful than you were hoping it was going to be; the specter of upcoming school work due next week looms over your relaxation. Spending time with friends and catching up on some games you got a while ago is pretty great. You feel a lot less stressed once school rolls back around, yet you were hoping for more.
+You are able to finish all of your work except your project about halfway through the break. You are able to get a lot more relaxation than you expected. You're able to catch up on some of your games. Still, you haven’t completely de-stressed once school rolls back around, but it was more than you expected.
+0 0 40
+20 0 20
+
+0018
+You watched an incredibly weird video on YouTube. For some reason the video has filled you with a complex melancholic feeling that you can’t fully place. You’re not really sure what to do with yourself.
+Stare out the window pensively
+Take a nap
+Man…
+You get a headache after waking up.
+0 0 4
+0 0 -4
+
+0019
+Crap. Your headset mic broke. You need to use that for all of the voice calls you totally have all the time. I mean, your laptop also has a mic, but it’s much lower quality.
+Use laptop mic
+Get new headset
+You really don’t mind using your laptop mic nearly as much as you’d thought you would. You don’t need a mic nearly as much as you’d thought. So just using the headset as a set of over ear headphones is good enough.
+You decide to get something a little nicer than your last headset. It’s a little more pricey than you’d hope, but it's pretty solid.
+0 0 0
+0 -99 0
+
+0020
+Your sleep quality has been trash lately. Everyday you wake up you are plagued by day ruining tension headaches and you are done with it. You narrow the reasons down to two possible causes. One: That your pillow is causing your headaches by propping your head up at an odd angle. Or Two: Watching YouTube until you fall asleep is causing it. 
+The pillow is nice, and you have stopped waking up with killer tension headaches. But you still don’t feel great when you wake up. 
+Stop watching YouTube
+The pillow is nice, and you have stopped waking up with killer tension headaches. But you still don’t feel great when you wake up.
+You’ve stopped waking up with tension headaches! Success! And you’ve also started waking up with more energy as a nice bonus. Wahoo
+0 -15 7
+0 0 25
+
+0021
+Whoops, you forgot to do your homework and it’s due tomorrow. You think that you can finish it before tomorrow, but only if  you start right now. But honestly is it worth it? It’s just going to stress you out more than you’d want. Maybe just letting it slide and taking the hit to your grade would be a better approach.
+Do your work
+Just don’t
+You did it. You got it done, you worked hard, and sweated it out and at the end of an all nighter you completed it. You feel like you could sleep for a straight solid day, but you gotta go to class. You turn in your homework and you feel better that you finished it. You fall asleep in class
+You decide that you messed up, but aren’t going to break your back to fix it. It’s oddly liberating. Taking the hit to your GPA doesn’t feel great, but you have already made peace with that fact. You enjoy a relaxing evening and get a good night's sleep.
+.6 0 -5
+-.3 0 10
+
+0022
+You’re working on a research project for one of your exploratory courses and you find a promising article, but it’s behind a paywall. You curse under your breath about the monetization of scientific articles. Putting aside your critiques of making this kind of information less accessible than it should be, you ask yourself.
+Pay the troll toll
+Refuse such behavior
+The article was perfect for your paper. It really brings your paper together. All of your points just flow perfectly into each other and the paper is just woven like an ancient tapestry that threads are still as strong and taught today as they were hundreds of years ago. You got a perfect score. Also you get charged like four more times because you didn’t realize it was a subscription.
+Your paper is fine, sufficient, nothing to write home about. You’re glad you didn’t subscribe to the website that hosted the paper; it was a subscription that you would have forgotten to cancel and get charged like four more times than preferred. Your score was just okay.
+.8 -75 0
+-.2 75 0
+
+0023
+One day you’re running around town with your friends and some drunk guy comes around the corner and bumps into you. The guy is pretty surly and starts yelling at you. You start yelling back at the guy. Then the dude reels back and punches you square in your nose. Immense pain flashes across your face, blood starts to flood from your nose you think it might be broken.
+Go to the hospital
+Blackmail the guy who punched you
+You get rushed to the hospital by your friends. Your nose will be fine, it’s not broken. Also turns out the guy who punched you is a lawyer and if this gets out he might lose his job at his law firm. He pays your medical bills and then some. You don’t really care about trying to get the guy fired so you take the money because money.
+Turns out the guy was a lawyer. This whole event spirals out into a protracted legal battle that lasts for months. Not only do you have to pay legal fees, but you’re fined for blackmail. This whole event wears on your psyche and eats into study time. Maybe trying to blackmail people is a terrible idea. Who woulda guessed?
+0 200 0
+-.4 -200 -30
+
+0024
+You thought that taking a class on Ice Skating for one of your exploratory courses would be a fun time. Turns out you’re straight up awful at it. You might just need to drop the class before the withdrawal deadline. Yet, there is something that just feels off about dropping a class like that.
+Drop the class
+Don’t drop the class
+A weight has been lifted from your shoulders. Not having to worry about Ice Skating you focus on your other classes. Things are nice.
+Crap. Not only did you fail the class, your grades in other classes suffer because of your Ice Skating diversion. Also there is this really big knot in your shoulder that is really irritating. Wonder 
+.6 0 18
+-.9 0 -14
+
+0025
+You have been procrastinating all day. And you finally feel up to actually doing your work that’s due tomorrow. At 11:45 PM. You really don’t want to bother dealing with this tomorrow, but it might be a better idea to just deal with it tomorrow.
+Do it now
+Do it later
+You feel tired, exhausted, but it’s done. And you can finally lay your weary head upon your pillow at 2 AM. You wake up tomorrow in a funk with a massive headache, you have a hard time focusing in class, but you are still able to get something out of the class. You collapse in your bed at the end of a hard day.
+You wake up bright and early the next day. You feel great and finish your work before your first class. You feel like you’re understanding things in class better than normal. You are even able to get a headstart on your next assignment. You sleep well.
+.2 0 -5
+.4 0 0
+
+0026
+You have been watching a lot of martial arts movies lately. They’re astounding displays of physical aptitude that show the resolve of the human spirit. You’re so hype on the movies that you’re thinking of getting into martial arts for real. Though it might be kind of expensive.
+Find a Way
+Don’t bother
+You scout out some details on the martial art you want to learn, a good place to start learning, and getting some gear in order. Eventually you find the perfect place and start going there and it is hard work. You’d thought this would’ve been easier, but it’s still rewarding. You start to feel real growth within a few weeks.
+You don’t have time for something as time intensive as martial arts, you have exams to study for. They might be in a few months, but the principal still stands. You throw yourself into your studies. You still watch martial arts movies, but now you always wonder “What if?”
+0 -40 35
+.5 0 0
+
+0027
+You see that FSU is putting on a production of Spider-Man: Turn off the Dark. You have no idea how they got the rights to this. You’ve always thought of yourself as lead material. There are also openings for crew members, some of the more technical ones are even paid.
+Audition to be Spider-Man™
+Try to be a Crew Member
+You audition and only end up being the under study to Spider-Man™. But that doesn’t matter since the lead broke their entire body in rehearsals so you get to be the lead role. With the reviews coming in, turns out putting on a production of this play was a terrible idea. Critics wonder why FSU would even put on a production of a notorious flop with a soundtrack made by Bono. They also point out how your performance was the only saving grace of the whole thing, killing it in the role. 
+You got brought on to work on some of the technical aspects of the stage play. It pays well, but there are a lot of incidents of people getting injured on set. You are able to deal with it — mostly. Until the lead crashes onto the floor right in front of you, breaking their entire body. Legs weren’t supposed to go that way.
+0 28 0
+0 75 -60
+
+0028
+You sit at your computer screen dead eyed and slack jawed. You need to do your work, but you don’t have any motivation to do so. The mere idea of doing your homework feels like a trip to the dentist. It gets so bad that you start to get a headache. After a good while of staring blankly at a word processor you can’t take it anymore you need to do something.
+Get through your work
+Do something else
+You power through your homework. It was awful, it took far longer than you wanted it to take. It was just an agonizing experience that you never willingly do again. But at the end of it all, you feel as if a weight has been lifted, that for as awful as it was, it is at the very least over.
+You try to get to rest and relax and do something else, but you can’t. You just end up enthralled in other activities that stress you out like losing in online video games, or getting into fights on the internet. Plus you still have the homework looming over you. This just ends up making you feel even worse than you did before.
+.5 0 -8
+-.5 0 -22
+
+0029
+The stress is getting to you. You need to take a break for the day and do something relaxing. There are so many possible activities to do, your friends are all in class so social activities are out the window. And you don’t want to blow a ton of cash on something else. You’ve also been staring at a computer screen for the past couple days so you don’t want to stare at them much more. You have two ideas you could choose from.
+Go for a Hike
+Read a Book
+All those people told you to take a hike were right, this is pretty great. It’s a warm breezy day. Clouds drifted lazily across the sky. The hiking trails themselves were mostly barren aside from one or two other people. Also the trees man, the trees. They were, like, super nice looking. At one point, you sit on a rock and just take it all in. You feel at peace.
+You look at a small stack of books on your desk picking out Book by Mr. & Mrs. Book starring the main character Book. It doesn’t take long for you to get sucked into the narrative of Book fighting against the evil hoards of Book Burners and bringing knowledge to the people of Booklessopolis. Everything about it hits just right, from the prose to the characters to the intricate plot. Hours pass by without you noticing. By the time you put the book down you notice that it’s about the time you go to bed. You flop into bed and fall right to sleep.
+0 0 17
+0 0 17
+
+0030
+
 0100
 Your GPA has fallen below school standards and you have been placed on academic probation. After a meeting with your advisor, you know of 2 options...
 See a tutor and work hard!
@@ -213,6 +332,15 @@ Finding a new job was easier than you expected. Many people are hiring. You now 
 Your parents said yes... for the last time. You're thankful for the help, and you tell them so. You're able to maintain your grades, but you worry about your relationship with them.
 -0.2 1500 -3
 0 600 -1
+
+0301
+You have a whopping 32 cents in your bank account, and who knows how much debt you're in. You need cash. NOW! 
+Sell your blood
+Start doing a bunch of scientific tests
+A tried and true method of getting quick cash that is totally not concerning at all. You’re able to get a nice hunk of change, though feel kinda woozy afterwards.
+You find a flier on campus that is vague on details but offers a whole lot of money. Even after doing the test you’re not sure what they were even testing. And you walk out of there with a lot more money than 32 cents. Though your bones do feel like they got bees in them.
+0 100 0
+0 500 0
 
 0400
 You are one of the smartest people in your class and professors want you to tutor. Do you accept?
