@@ -164,8 +164,8 @@ You go and get your favorite meal elsewhere. Delicious. Without a meal-plan cove
 Game over
 Good Game
 Good Game Well Played 
-to be continued... 
-to be continued...
+Play again! 
+Play again!
 0, 0, 0
 0, 0, 0
 EOF

@@ -456,7 +456,7 @@ function nextCard() { // function to include code for selecting new card for any
 	} else if (cardStorage[currentCard][0] == "0101" || cardStorage[currentCard][0] == "0100" || cardStorage[currentCard][0] == "0200" || cardStorage[currentCard][0] == "0300" || cardStorage[currentCard][0] == "0400") { //leaving branch
 		newCard = "0006";
 	} else if (cardStorage[currentCard][0] == "9999") {
-		newCard = "9999"
+		location.reload();
 	} else //default case
 
 
