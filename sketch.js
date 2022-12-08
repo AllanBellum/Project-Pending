@@ -347,7 +347,7 @@ function displayStats() {
 	textSize(30);
 	fill(209, 188, 1);
 	text("GPA: " + (gpa).toFixed(1), -536, 310);
-	text("Money: " + money, -100, 310);
+	text("Money: $" + money, -100, 310);
 	text("Mental Health: " + mHealth, 383, 310);
 	pop();
 }
