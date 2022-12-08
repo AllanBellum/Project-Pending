@@ -14,6 +14,7 @@ cardSize = 8 //number of elements on card
 var cardStorage = new Array();
 let currentCard; //card being read by program
 let cardFace;
+let flipTo;
 
 let buttons = [];
 
@@ -107,9 +108,8 @@ function setup() {
 
 
 function draw(){
-    if (runningAnimation) {
-        drawAnimation();
-    }
+    
+    drawAnimation();
     
     displayCardText();
     
@@ -126,38 +126,48 @@ function draw(){
 
 
 function drawAnimation() {
-    if(cardFace != "front" && textSpin < 3) {
-        if(cardFace == "back1") {
-            spin += .1;
-            textSpin += .1;
-        } else if (cardFace == "back2") {
-            spin -= .1;
-            textSpin -= .1;
-        }
-        
-    } else if (cardFace == "front") {
-        if (xs != -25) {
-            xs+=25;
-            textPos+=25;
+    print(flipTo);
+    if (runningAnimation) {
+        if (flipTo != "front") {
+            if (Math.abs(spin) < 180) {
+                if (flipTo == "back1") {
+                    spin -= 5;
+                    textSpin -= 5;
+                } else {
+                    spin += 5;
+                    textSpin += 5;
+                }
+                if (Math.abs(spin) == 90) {
+                    cardFace = flipTo;
+                    textSpin = -spin;
+                }
+            } else {
+                spin = 0;
+                textSpin = 0;
+                runningAnimation = false;
+                flipTo = "front";
+            }
+            
         } else {
-            xs+=25;
-            textPos+=25;
-            runningAnimation = false;
+            print(xs)
+            if (xs < 1000 && xs != -25) {
+                xs+=25;
+                textPos+=25;
+            } else if (xs >= 1000) {
+                xs = -1000;
+                textPos = -1000;
+                cardFace = flipTo;
+                nextCard();
+            } else if (xs == -25) {
+                xs+=25;
+                textPos+=25;
+                runningAnimation = false;
+                flipTo = "back";
+            }
         }
-        
+        redrawCanvas();
     }
     
-    if(spin >= 3 || spin <= -3) {
-        spin = 0;
-        textSpin = 0;
-        runningAnimation = false;
-    }
-    
-    if(xs > 1000) {
-        xs = -1000;
-        textPos = -1000;
-    }
-    redrawCanvas();
 }
 
 function mousePressed() {
@@ -277,19 +287,6 @@ function displayCardText() {
 
 	let tCardFace = cardFace
 
-	if (runningAnimation) {
-		if (cardFace == "back1" || cardFace == "back2") {
-			if (spin < 1.5) {
-				tCardFace = "front";
-
-			}
-			/*else {
-			               print("2: " + textSpin);
-			               //textSpin = 3 - textSpin
-			           }*/
-		}
-	}
-
 	if (tCardFace == "front") {
 		textAlign(CENTER);
 		textLeading(37);
@@ -317,6 +314,7 @@ function displayCardText() {
 		translate(0, 0, 100);
 
 		// Draw animation
+        angleMode(DEGREES);
 		rotateY(textSpin);
 
 		text(cardStorage[currentCard][2], textPos - 275, 25, 260, 150); //Option 1
@@ -341,18 +339,16 @@ function displayCardText() {
 
 		if (!runningAnimation) {
 			new Button(-137, 75, 275, 150, function() {
-				cardFace = "back1";
+				flipTo = "back1";
 				getOutcomeVal(6);
 				runningAnimation = true;
-				redrawCanvas();
 			});
 
 
 			new Button(137, 75, 275, 150, function() {
-				cardFace = "back2";
+				flipTo = "back2";
 				getOutcomeVal(7);
 				runningAnimation = true;
-				redrawCanvas();
 			});
 		}
 	}
@@ -368,16 +364,13 @@ function displayCardText() {
 		// Draw animation
 		rotateY(textSpin);
 
-		text(cardStorage[currentCard][4], -280, -147, 560, 320); // Outcome 1
+		text(cardStorage[currentCard][4], textPos - 280, -147, 560, 320); // Outcome 1
 		pop();
 
 
 		if (!runningAnimation) {
 			new Button(0, -7, 569, 344, function() {
-				nextCard();
-				cardFace = "front";
 				runningAnimation = true;
-				redrawCanvas();
 			});
 		}
 
@@ -395,14 +388,11 @@ function displayCardText() {
 		// Draw animation
 		rotateY(textSpin);
 
-		text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
+		text(cardStorage[currentCard][5], textPos - 280, -147, 560, 320); // Outcome 2
 
 		if (!runningAnimation) {
 			new Button(0, -7, 569, 344, function() {
-				nextCard();
-				cardFace = "front";
 				runningAnimation = true;
-				redrawCanvas();
 			});
 		}
 		pop();
