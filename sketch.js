@@ -14,6 +14,7 @@ cardSize = 8 //number of elements on card
 var cardStorage = new Array();
 let currentCard; //card being read by program
 let cardFace;
+let hovering = false;
 
 let buttons = [];
 
@@ -105,8 +106,36 @@ function setup() {
     image(soundIcon, -684, -43);
 }
 
-
+let hoveringOn = "";
 function draw(){
+    //137, 75, 275, 150
+    if (cardFace == "front" && !runningAnimation) {
+        if (!hovering && mouseX >= ((vWidth / 2) + -137) - (275 / 2) && mouseX <= ((vWidth / 2) + -137) + (275 / 2) &&
+			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
+            hovering = true;
+            hoveringOn = "l";
+			push();
+            fill(255, 255, 0, 60);
+            noStroke();
+            translate(-137, 75, 0);
+            box(275, 150, 0);
+            pop();
+		} else if (!hovering && mouseX >= ((vWidth / 2) + 137) - (275 / 2) && mouseX <= ((vWidth / 2) + 137) + (275 / 2) &&
+			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
+            hovering = true;
+            hoveringOn = "r";
+			push();
+            fill(255, 255, 0, 60);
+            noStroke();
+            translate(137, 75, 0);
+            box(275, 150, 0);
+            pop();
+        } else if (hovering && (hoveringOn == "r" || hoveringOn == "l")) {
+            hovering = false;
+            redrawCanvas();
+        }
+    }
+    
     if (runningAnimation) {
         drawAnimation();
     }
@@ -322,7 +351,6 @@ function displayCardText() {
 		text(cardStorage[currentCard][2], textPos - 275, 25, 260, 150); //Option 1
 		pop();
 
-
 		push();
 		fill(0, 0, 0);
 		textFont(myFont);
@@ -411,7 +439,6 @@ function displayCardText() {
 
 	}
 }
-
 
 function redrawCanvas() {
     addBackground();
