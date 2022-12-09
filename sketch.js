@@ -21,8 +21,14 @@ let buttons = [];
 let lines;
 
 let gpa = 2.0;
+let gpaIndicator = "-";
 let mHealth = 100;
+let mHealthIndicator = "-";
 let money = 0;
+let moneyIndicator = "-";
+let indicatorPos = 0;
+let statArrowOpacity = 255;
+let runningStatAnimation = false;
 
 let mute = false;
 
@@ -56,6 +62,8 @@ function preload(){
 	backgroundPoorImg = loadImage('Assets/Imgs/Background-Poor.png');
 	backgroundBadImg = loadImage('Assets/Imgs/Background-Bad.png');
 	backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
+	upArrowImg = loadImage('Assets/Imgs/UpArrow.png');
+	downArrowImg = loadImage('Assets/Imgs/DownArrow.png');
   mutedIcon = loadImage('Assets/Imgs/mutedIcon.png');
   soundIcon = loadImage('Assets/Imgs/soundIcon.png');
     
@@ -140,6 +148,10 @@ function draw(){
         drawAnimation();
     }
     
+    if (gpaIndicator != "-" || mHealthIndicator != "-" || moneyIndicator != "-") {
+        drawStatsAnimation();
+    }
+    
     displayCardText();
     
     playSound();
@@ -188,6 +200,115 @@ function drawAnimation() {
     }
     redrawCanvas();
 }
+
+function drawStatsAnimation() {
+    // Increase and decrease arrow animation
+    if (!runningStatAnimation) {
+        if (gpaIndicator != "-") {
+            push();
+            noStroke();
+            tint(255, 255);
+            
+            if (gpaIndicator == "u") {
+                image(upArrowImg, -585, 280, 40, 40);
+            } else {
+                image(downArrowImg, -585, 280, 40, 40);
+            }
+            
+            pop();
+            runningStatAnimation = true;
+        }
+
+        if (moneyIndicator != "-") {
+            push();
+            noStroke();
+            
+            if (moneyIndicator == "u") {
+                image(upArrowImg, -150, 280, 40, 40);
+            } else {
+                image(downArrowImg, -150, 280, 40, 40);
+            }
+            
+            pop();
+            runningStatAnimation = true;
+
+        }
+
+        if (mHealthIndicator != "-") {
+            push();
+            noStroke();
+            if (mHealthIndicator == "u") {
+                image(upArrowImg, 335, 280, 40, 40);
+            } else {
+                image(downArrowImg, 335, 280, 40, 40);
+            }
+            pop();
+            runningStatAnimation = true;
+        }
+        
+        
+    } else {
+        if (statArrowOpacity <= 0) {
+            runningStatAnimation = false;
+            statArrowOpacity = 255;
+            gpaIndicator = "-";
+            moneyIndicator = "-";
+            mHealthIndicator = "-";
+            indicatorPos = 0;
+        }
+        
+        if (gpaIndicator != "-") {
+            redrawCanvas();
+            push();
+            noStroke();
+            tint(255, statArrowOpacity - 5);
+
+            if (gpaIndicator == "u") {
+                image(upArrowImg, -585, 280 - indicatorPos, 40, 40);
+            } else {
+                image(downArrowImg, -585, 280 + indicatorPos, 40, 40);
+            }
+
+            pop();
+        }
+
+        if (moneyIndicator != "-") {
+            redrawCanvas();
+            push();
+            noStroke();
+            tint(255, statArrowOpacity - 5);
+
+            if (moneyIndicator == "u") {
+                image(upArrowImg, -150, 280 - indicatorPos, 40, 40);
+            } else {
+                image(downArrowImg, -150, 280 + indicatorPos, 40, 40);
+            }
+
+            pop();
+        }
+
+        if (mHealthIndicator != "-") {
+            redrawCanvas();
+            push();
+            noStroke();
+            tint(255, statArrowOpacity - 5);
+
+            if (mHealthIndicator == "u") {
+                image(upArrowImg, 335, 280 - indicatorPos, 40, 40);
+            } else {
+                image(downArrowImg, 335, 280 + indicatorPos, 40, 40);
+            }
+
+            pop();
+        }
+        
+        statArrowOpacity = statArrowOpacity - 5;
+        indicatorPos += .5;
+
+    }
+    
+}
+
 
 function mousePressed() {
 
@@ -255,7 +376,7 @@ function displayStats() {
 	textSize(30);
 	fill(209, 188, 1);
 	text("GPA: " + (gpa).toFixed(1), -536, 310);
-	text("Money: " + money, -100, 310);
+	text("Money: $" + money, -100, 310);
 	text("Mental Health: " + mHealth, 383, 310);
 	pop();
 }
@@ -264,6 +385,7 @@ function getOutcomeVal(lineN) {
 	// Cards in text go gpa money mHealth 
 	// For example 0 1 0
 	let vals = cardStorage[currentCard][lineN].split(" ");
+
 	if (gpa + parseFloat(vals[0]) > 4.0) {
 		gpa = 4.0;
 	} else if (gpa + parseFloat(vals[0]) < 0.0) {
@@ -281,6 +403,25 @@ function getOutcomeVal(lineN) {
 	} else {
 		mHealth += parseInt(vals[2]);
 	}
+    
+    // Arrow animations
+    if(parseFloat(vals[0]) > 0) {
+        gpaIndicator = "u";
+    } else if (parseFloat(vals[0]) < 0) {
+        gpaIndicator = "d";
+    }
+    
+    if(parseFloat(vals[1]) > 0) {
+        moneyIndicator = "u";
+    } else if (parseFloat(vals[1]) < 0) {
+        moneyIndicator = "d";
+    }
+    
+    if(parseFloat(vals[2]) > 0) {
+        mHealthIndicator = "u";
+    } else if (parseFloat(vals[2]) < 0) {
+        mHealthIndicator = "d";
+    }
 
 
 	//document.write(gpa + " " + mHealth + " " + money);\
