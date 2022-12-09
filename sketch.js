@@ -7,8 +7,8 @@ textPos = 0;
 lastBack = 0;
 textSpin = 0;
 runningAnimation = false;
-let grade;
-let semester;
+let grade = "Freshman";
+let semester = "Fall Semester";
 
 progressBar = [];
 let myFont;
@@ -85,6 +85,7 @@ function setup() {
   addCard();
   displayStats(); 
   addCal();
+  addcaltext();
   
   // GPA text should be at position x=-536 y=310
   // Money text is position x=-100 y=310
@@ -120,8 +121,12 @@ function setup() {
 let hoveringOn = "";
 function draw(){    
     drawAnimation();
-    determinetime();
+    
+    addCal();
     addcaltext();
+    
+    determinetime();
+    //addcaltext();
 
     //137, 75, 275, 150
     if (cardFace == "front" && !runningAnimation) {
@@ -171,7 +176,6 @@ function draw(){
 
 
 function drawAnimation() {
-    print(flipTo);
     if (runningAnimation) {
         if (flipTo != "front") {
             if (Math.abs(spin) < 180) {
@@ -194,7 +198,6 @@ function drawAnimation() {
             }
             
         } else {
-            print(xs)
             if (xs < 1000 && xs != -25) {
                 xs+=25;
                 textPos+=25;
@@ -378,13 +381,15 @@ function addcaltext() {
     textSize(32);
     fill(209, 188, 1);
     textAlign(CENTER,LEFT);
-    text(grade + ' - ',-120,-350)
+    translate(0, 0, 50);
+    text(grade + ' - ', -120,-350)
     pop();
   
     push();
     textFont(myFont);
     textSize(32);
     fill(209, 188, 1);
+    translate(0, 0, 50);
     textAlign(RIGHT);
     text(semester,150,-349); 
     pop();
@@ -614,7 +619,6 @@ function displayCardText() {
 
 function redrawCanvas() {
     addBackground();
-    addCal();
     buttons = [];
 
     if (mute){image(mutedIcon, -684, -43);} //changeing laptop screen depending on mute status
@@ -622,6 +626,9 @@ function redrawCanvas() {
      
     addCard();
     displayStats();
+    
+    addCal();
+    addcaltext();
  
 }
 
