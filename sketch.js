@@ -133,12 +133,6 @@ function draw(){
     //addcaltext();
 
 
-function draw() {
-	if (runningAnimation) {
-		paperSFX.play();
-		drawAnimation();
-	}
-
     //137, 75, 275, 150
     if (cardFace == "front" && !runningAnimation) {
         redrawCanvas();
@@ -569,6 +563,7 @@ function displayCardText() {
 				flipTo = "back1";
 				getOutcomeVal(6);
 				runningAnimation = true;
+                paperSFX.play();
 			});
 
 
@@ -576,6 +571,7 @@ function displayCardText() {
 				flipTo = "back2";
 				getOutcomeVal(7);
 				runningAnimation = true;
+                paperSFX.play();
 			});
 		}
 	}
