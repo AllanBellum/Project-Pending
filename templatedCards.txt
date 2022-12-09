@@ -53,13 +53,13 @@ Your paper is fine, sufficient, nothing to write home about. You’re glad you d
 -.2 75 0
 
 0007
-Your friends see your decline and stage an intervention to persuade you to delete the app. What do you choose?
-Delete the app
-Keep the app
-You're thankful for your friends. You grow closer to them and have time to focus back on school work.
-You're sucked deeper into the app. This choice cost you your friends. You become depressed. Your performance in school significantly declines more.
-.15 0 2
--.75 0 -4
+You feel lethargic, you don’t think you got enough sleep last night. The last thing you want to do is get out of bed. Yet, you still need to get the day started and that is difficult to do in bed. 
+Stay in Bed
+Push through it and get out of bed
+You continue to lie in bed convinced that lying there will give you more energy. But an hour goes by and you still feel tired. The only reason you get out is because you need to pee really bad. Maybe you did get enough sleep, but just woke up weird. Either way you’re slow to get going today. 
+You feel like death for a little bit, but once you’re actually moving you feel a lot better. Your morning routine goes smoothly. And after you’ve finished you feel better than usual. Today’s gonna be a good day.
+0 0 0
+0 0 3
 
 0008
 Halloween is tomorrow! You have been invited to a party. How fun! Do you go in costume?
@@ -80,13 +80,13 @@ Crap. Not only did you fail the class, your grades in other classes suffer becau
 -.9 0 -14
 
 0010
-Everything about your job is terrible. Your boss sucks, your coworkers are irritating, and the job is mind numbing beyond all belief. You can’t stay here any longer. The question is whether this place is so unbearable that you quit then find a job, or find a job then quit?
-Quit first
-Find another job first
-That is a load off of your mind, you feel freed from the shackles of the soul sucking misery and can sleep knowing you don’t have to go back tomorrow. Finding another job isn’t easy (especially when you don’t already have one) but you are certain you’ll find one soon enough.
-The remaining time you spend at your job is one of the worst experiences of your working life. It feels like your head is in an ever tightening vice grip from dawn to dusk. But you found a job far easier and quicker than you’d expected. Heck it even pays better than this one. You wave your personal hell goodbye and look toward the future.
-0 -10 6
-0 10 -6
+Rumors are spreading around campus that one of the econ professors got abducted by aliens. They are even claiming that he got abducted on the roof of the student center when he stepped out to take a smoke break. Your friends bandy around the idea of camping out on the roof to try and get a glimpse of some aliens, maybe even get abducted.
+Pfft, Who believes in aliens?
+I’d love to get abducted by aliens
+You decide to stay home and study instead. Aliens, at least aliens intelligent enough to create interstellar travel, are so unlikely to actually exist that camping out on the roof of the student center seems like a waste of time. That is until you see your friends the next day visibly shaken. None of them want to talk about what happened. What happened last night?
+You and your friends sneak onto the student center’s roof after hours and camp out. You tell scary stories and eat s'mores, going to sleep on the roof at around 11PM. That is until you are awoken by a strange glowing light and you start floating in the air, and that is your last memory of that night. You wake up back on the student center roof holding a manilla envelope containing a wad of 20 dollar bills, the answers to your exam next week, and a thank you note with a bug-eyed green alien sticker on it. What the Funk.
+0.4 0 -5
+.8 60 -25
 
 0011
 It’s almost Thanksgiving Break. You kinda want to go to your family’s Thanksgiving, but you also know you’d probably have to deal with that uncle who just has the worst opinions. It never goes well, and it’s such an unappealing prospect you might just stay here and study. 
@@ -134,13 +134,13 @@ Who knew that physical exercise can’t address serious psychological issues? No
 0 0 -14
 
 0016
-Rumors are spreading around campus that one of the econ professors got abducted by aliens. They are even claiming that he got abducted on the roof of the student center when he stepped out to take a smoke break. Your friends bandy around the idea of camping out on the roof to try and get a glimpse of some aliens, maybe even get abducted.
-Pfft, Who believes in aliens?
-I’d love to get abducted by aliens
-You decide to stay home and study instead. Aliens, at least aliens intelligent enough to create interstellar travel, are so unlikely to actually exist that camping out on the roof of the student center seems like a waste of time. That is until you see your friends the next day visibly shaken. None of them want to talk about what happened. What happened last night?
-You and your friends sneak onto the student center’s roof after hours and camp out. You tell scary stories and eat s'mores, going to sleep on the roof at around 11PM. That is until you are awoken by a strange glowing light and you start floating in the air, and that is your last memory of that night. You wake up back on the student center roof holding a manilla envelope containing a wad of 20 dollar bills, the answers to your exam next week, and a thank you note with a bug-eyed green alien sticker on it. What the Funk.
-0.4 0 -5
-.8 60 -25
+Everything about your job is terrible. Your boss sucks, your coworkers are irritating, and the job is mind numbing beyond all belief. You can’t stay here any longer. The question is whether this place is so unbearable that you quit then find a job, or find a job then quit?
+Quit first
+Find another job first
+That is a load off of your mind, you feel freed from the shackles of the soul sucking misery and can sleep knowing you don’t have to go back tomorrow. Finding another job isn’t easy (especially when you don’t already have one) but you are certain you’ll find one soon enough.
+The remaining time you spend at your job is one of the worst experiences of your working life. It feels like your head is in an ever tightening vice grip from dawn to dusk. But you found a job far easier and quicker than you’d expected. Heck it even pays better than this one. You wave your personal hell goodbye and look toward the future.
+0 -30 16
+0 30 -16
 
 0017
 SPRING BREAK. You know what that means? A week off from classes. But the question is what to do, should you slack off completely and do nothing but chill. Or do you try to finish some of your school work before getting some R&R?
@@ -179,13 +179,13 @@ You’ve stopped waking up with tension headaches! Success! And you’ve also st
 0 0 25
 
 0021
-Whoops, you forgot to do your homework and it’s due tomorrow. You think that you can finish it before tomorrow, but only if  you start right now. But honestly is it worth it? It’s just going to stress you out more than you’d want. Maybe just letting it slide and taking the hit to your grade would be a better approach.
-Do your work
-Just don’t
-You did it. You got it done, you worked hard, and sweated it out and at the end of an all nighter you completed it. You feel like you could sleep for a straight solid day, but you gotta go to class. You turn in your homework and you feel better that you finished it. You fall asleep in class
-You decide that you messed up, but aren’t going to break your back to fix it. It’s oddly liberating. Taking the hit to your GPA doesn’t feel great, but you have already made peace with that fact. You enjoy a relaxing evening and get a good night's sleep.
-.6 0 -5
--.3 0 10
+The stress is getting to you. You need to take a break for the day and do something relaxing. There are so many possible activities to do, your friends are all in class so social activities are out the window. And you don’t want to blow a ton of cash on something else. You’ve also been staring at a computer screen for the past couple days so you don’t want to stare at them much more. You have two ideas you could choose from.
+Go for a Hike
+Read a Book
+All those people told you to take a hike were right, this is pretty great. It’s a warm breezy day. Clouds drifted lazily across the sky. The hiking trails themselves were mostly barren aside from one or two other people. Also the trees man, the trees. They were, like, super nice looking. At one point, you sit on a rock and just take it all in. You feel at peace.
+You look at a small stack of books on your desk picking out Book by Mr. & Mrs. Book starring the main character Book. It doesn’t take long for you to get sucked into the narrative of Book fighting against the evil hoards of Book Burners and bringing knowledge to the people of Booklessopolis. Everything about it hits just right, from the prose to the characters to the intricate plot. Hours pass by without you noticing. By the time you put the book down you notice that it’s about the time you go to bed. You flop into bed and fall right to sleep.
+0 0 17
+0 0 17
 
 0022
 There are many horror stories from that social media platform. You're glad you didn't join. Your friends invite you bowling. Do you go?
@@ -242,33 +242,15 @@ You got brought on to work on some of the technical aspects of the stage play. I
 0 75 -60
 
 0028
-You sit at your computer screen dead eyed and slack jawed. You need to do your work, but you don’t have any motivation to do so. The mere idea of doing your homework feels like a trip to the dentist. It gets so bad that you start to get a headache. After a good while of staring blankly at a word processor you can’t take it anymore you need to do something.
-Get through your work
-Do something else
-You power through your homework. It was awful, it took far longer than you wanted it to take. It was just an agonizing experience that you never willingly do again. But at the end of it all, you feel as if a weight has been lifted, that for as awful as it was, it is at the very least over.
-You try to get to rest and relax and do something else, but you can’t. You just end up enthralled in other activities that stress you out like losing in online video games, or getting into fights on the internet. Plus you still have the homework looming over you. This just ends up making you feel even worse than you did before.
-.5 0 -8
--.5 0 -22
+Whoops, you forgot to do your homework and it’s due tomorrow. You think that you can finish it before tomorrow, but only if  you start right now. But honestly is it worth it? It’s just going to stress you out more than you’d want. Maybe just letting it slide and taking the hit to your grade would be a better approach.
+Do your work
+Just don’t
+You did it. You got it done, you worked hard, and sweated it out and at the end of an all nighter you completed it. You feel like you could sleep for a straight solid day, but you gotta go to class. You turn in your homework and you feel better that you finished it. You fall asleep in class
+You decide that you messed up, but aren’t going to break your back to fix it. It’s oddly liberating. Taking the hit to your GPA doesn’t feel great, but you have already made peace with that fact. You enjoy a relaxing evening and get a good night's sleep.
+.6 0 -5
+-.3 0 10
 
 0029
-The stress is getting to you. You need to take a break for the day and do something relaxing. There are so many possible activities to do, your friends are all in class so social activities are out the window. And you don’t want to blow a ton of cash on something else. You’ve also been staring at a computer screen for the past couple days so you don’t want to stare at them much more. You have two ideas you could choose from.
-Go for a Hike
-Read a Book
-All those people told you to take a hike were right, this is pretty great. It’s a warm breezy day. Clouds drifted lazily across the sky. The hiking trails themselves were mostly barren aside from one or two other people. Also the trees man, the trees. They were, like, super nice looking. At one point, you sit on a rock and just take it all in. You feel at peace.
-You look at a small stack of books on your desk picking out Book by Mr. & Mrs. Book starring the main character Book. It doesn’t take long for you to get sucked into the narrative of Book fighting against the evil hoards of Book Burners and bringing knowledge to the people of Booklessopolis. Everything about it hits just right, from the prose to the characters to the intricate plot. Hours pass by without you noticing. By the time you put the book down you notice that it’s about the time you go to bed. You flop into bed and fall right to sleep.
-0 0 17
-0 0 17
-
-0030
-You feel lethargic, you don’t think you got enough sleep last night. The last thing you want to do is get out of bed. Yet, you still need to get the day started and that is difficult to do in bed. 
-Stay in Bed
-Push through it and get out of bed
-You continue to lie in bed convinced that lying there will give you more energy. But an hour goes by and you still feel tired. The only reason you get out is because you need to pee really bad. Maybe you did get enough sleep, but just woke up weird. Either way you’re slow to get going today. 
-You feel like death for a little bit, but once you’re actually moving you feel a lot better. Your morning routine goes smoothly. And after you’ve finished you feel better than usual. Today’s gonna be a good day.
-0 0 0
-0 0 3
-
-0031
 One day you’re running around town with your friends and some drunk guy comes around the corner and bumps into you. The guy is pretty surly and starts yelling at you. You start yelling back at the guy. Then the dude reels back and punches you square in your nose. Immense pain flashes across your face, blood starts to flood from your nose you think it might be broken.
 Go to the hospital
 Blackmail the guy who punched you
@@ -276,6 +258,7 @@ You get rushed to the hospital by your friends. Your nose will be fine, it’s n
 Turns out the guy was a lawyer. This whole event spirals out into a protracted legal battle that lasts for months. Not only do you have to pay legal fees, but you’re fined for blackmail. This whole event wears on your psyche and eats into study time. Maybe trying to blackmail people is a terrible idea. Who woulda guessed?
 0 200 0
 -.4 -200 -30
+
 
 0100
 Your GPA has fallen below school standards and you have been placed on academic probation. After a meeting with your advisor, you know of 2 options...
@@ -322,6 +305,15 @@ You decide against the dog. Not much of your life changes, except that you conti
 -0.2 -20, 15
 0 0 -2.5
 
+0202
+You sit at your computer screen dead eyed and slack jawed. You need to do your work, but you don’t have any motivation to do so. The mere idea of doing your homework feels like a trip to the dentist. It gets so bad that you start to get a headache. After a good while of staring blankly at a word processor you can’t take it anymore you need to do something.
+Get through your work
+Do something else
+You power through your homework. It was awful, it took far longer than you wanted it to take. It was just an agonizing experience that you never willingly do again. But at the end of it all, you feel as if a weight has been lifted, that for as awful as it was, it is at the very least over.
+You try to get to rest and relax and do something else, but you can’t. You just end up enthralled in other activities that stress you out like losing in online video games, or getting into fights on the internet. Plus you still have the homework looming over you. This just ends up making you feel even worse than you did before.
+.5 0 -8
+-.5 0 -22
+
 0300
 You've been running dangerously low on cash recently. Do you...
 Find a new job
@@ -363,8 +355,8 @@ You decline the tutoring job and don't miss much. You're able to keep up on work
 You’re exploring the campus one day when out of the corner of your eye you see something strange. You think it to be the Dean of Students in a fight with a deer. It takes you what feels like minutes to process the fact that this is actually happening. What snaps you out of your trance is the Dean shouting “Aid me in my fight against the local fauna or suffer the consequences!’
 Aid the Dean
 Aid the Deer
- That talk of suffering consequences shakes you to your core. Just sounds like a bad time so you join the fight against the Deer and a few punches and kicks later it goes down. The Dean turns to you “Here, take this a tithe for your assistance, there will be more to come as well” he says handing you a thick stack of $100 Bills. You are in disbelief.
- No one can tell you what to do. Good thing you can still remember those capoeira lessons you took last summer. With the assistance of the Deer you make short work of the Dean. As he falls to the ground you hear a faint whisper, almost a hiss “consequences”. You shrug it off hoping that this won’t come back to bite you. You give the Deer a high-five and then steal the Dean’s wallet. 
+That talk of suffering consequences shakes you to your core. Just sounds like a bad time so you join the fight against the Deer and a few punches and kicks later it goes down. The Dean turns to you “Here, take this a tithe for your assistance, there will be more to come as well” he says handing you a thick stack of $100 Bills. You are in disbelief.
+No one can tell you what to do. Good thing you can still remember those capoeira lessons you took last summer. With the assistance of the Deer you make short work of the Dean. As he falls to the ground you hear a faint whisper, almost a hiss “consequences”. You shrug it off hoping that this won’t come back to bite you. You give the Deer a high-five and then steal the Dean’s wallet. 
 20 150 0
 50 500 0
 
@@ -592,6 +584,15 @@ The granola bar has been smashed into regular granola in your back pocket. You p
 You paid good money for this Granola Bar. And you’re not the kind of person to waste 42 cents. You take a fighting stance. The Deer rushes you, horns first. You dodge the antlers. The Deer comes back around and charges again. Leaping over it, you land on its back. Smashing the back of its neck, it crumples to the ground defeated. Sweet free deer meat!
 0 -1 15
 0 150 0
+
+1025
+Your friends see your decline and stage an intervention to persuade you to delete the app. What do you choose?
+Delete the app
+Keep the app
+You're thankful for your friends. You grow closer to them and have time to focus back on school work.
+You're sucked deeper into the app. This choice cost you your friends. You become depressed. Your performance in school significantly declines more.
+.15 0 2
+-.75 0 -4
 
 9999
 Game over
