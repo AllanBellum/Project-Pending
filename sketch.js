@@ -768,7 +768,7 @@ function nextCard() { // function to include code for selecting new card for any
 	}
 	else if (cardStorage[currentCard][0] == "9999" || cardStorage[currentCard][0] == "9998" || cardStorage[currentCard][0] == "1003" || cardStorage[currentCard][0] == "1004") {
 		reload();
-	}else if(currentCard == 32){
+	}else if(currentCard == 31){
 		newCard = "9998"
 	}else {
         
