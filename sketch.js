@@ -1,6 +1,6 @@
 vWidth = 1366;
 vHeight = 768;
-passed = 1;
+passed = -1;// -1 to allow for tutorial cards
 xs = 0;
 spin = 0;
 textPos = 0;
@@ -67,6 +67,8 @@ function preload(){
 	backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
 	upArrowImg = loadImage('Assets/Imgs/UpArrow.png');
 	downArrowImg = loadImage('Assets/Imgs/DownArrow.png');
+    statHighlight = loadImage('Assets/Imgs/bottom highlight.png');
+    laptopHighlight = loadImage('Assets/Imgs/computerHighlight.png');
   mutedIcon = loadImage('Assets/Imgs/mutedIcon.png');
   soundIcon = loadImage('Assets/Imgs/soundIcon.png');
     
@@ -410,7 +412,7 @@ function displayStats() {
 
 function determinetime(){
   
-  if (passed >= 1 && passed < 5){
+  if ( passed < 5){
     grade = 'Freshman'
     semester = 'Fall Semester'
   } else if ( passed >= 5 && passed <= 8){
@@ -629,6 +631,8 @@ function redrawCanvas() {
     
     addCal();
     addcaltext();
+
+    highlighting();
  
 }
 
@@ -731,7 +735,7 @@ function reload() {
     textSpin = 0;
     runningAnimation = false;
 
-    passed = 1;
+    passed = -1;//-1 to allow for tutorial cards
     grade = "Freshman";
     semester = "Fall Semester";
 
@@ -753,4 +757,14 @@ function reload() {
 
     // Keep mute status
     //let mute = false;
+}
+
+
+function highlighting(){
+    if (cardStorage[currentCard][0] == "XXX2"){
+        if (cardFace == "front")
+            image(statHighlight, -575, 275, 1200);
+        else 
+            image(laptopHighlight, -684, -43);
+    }
 }

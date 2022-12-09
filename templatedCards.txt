@@ -1,3 +1,21 @@
+XXX1
+Tutorial 1. Here you will see the situation your character is facing. Below are two possible choices you can make to resolve the situation. Click on the choice you wish to select.
+This is option 1.
+This is option 2.
+You selected option 1. This is where you will see the results of your choices. Click anywhere on the card to go the next card.
+You selected option 2. This is where you will see the results of your choices. Click anywhere on the card to go the next card.
+0 0 0
+0 0 0
+
+XXX2
+Tutorial 2.  At the bottom of the screen are three numbers representing your GPA, Money, and Mental Health.  Those numbers will go up or down depending on your choices, be careful if GPA or Mental Health get to low you will fail out of school and lose the game.  Going into negatives of money won't cause you to lose immediately but will effect other aspects of the game so try and keep them all high.
+Continue
+ 
+If you are doing particularly well or poorly the background and music will change to reflect that. If you no longer wish to hear the music it can be toggled on or off at any time by clicking on the Laptop to the left.
+If you are doing particularly well or poorly the background and music will change to reflect that. If you no longer wish to hear the music it can be toggled on or off at any time by clicking on the Laptop to the left.
+0 0 0
+0 0 0
+
 0001
 It’s Freshman Orientation Day! You don’t really want to go, but it might be important. Do you go? 
 Don’t go to Freshman Orientation. 
