@@ -10,6 +10,7 @@ runningAnimation = false;
 
 progressBar = [];
 let myFont;
+let latoFont;
 cardSize = 8 //number of elements on card
 var cardStorage = new Array();
 let currentCard; //card being read by program
@@ -25,6 +26,7 @@ let money = 0;
 
 let mute = false;
 
+let gameStarted = false;
 
 // This class will create a button that detects a mouse click and does a function
 class Button {
@@ -57,6 +59,7 @@ function preload(){
 	backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
   mutedIcon = loadImage('Assets/Imgs/mutedIcon.png');
   soundIcon = loadImage('Assets/Imgs/soundIcon.png');
+  welcomeBackground = loadImage('Assets/Imgs/FSUBackground.png');
     
   intro = loadSound('Assets/Music/CDintroSong.mp3');
   loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
@@ -69,58 +72,64 @@ function setup() {
   createCanvas(vWidth, vHeight, WEBGL);
   ortho();//Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
 
-  addBackground();
-  //addProgressBar();
-  addCard();
-  displayStats(); 
-  
-  // GPA text should be at position x=-536 y=310
-  // Money text is position x=-100 y=310
-  // Mental Health is position x=383 y=310
-//--------------------------------------------------------------------------------------------------------------------------------------------------------
-//Loads cards into memory
-  i = 0; //line
-  k = 0; //card
-  EOF = false;
-  while (EOF == false){
-    cardStorage.push([]);
-    for (j = 0; j < cardSize; ++j) {
-      cardStorage[k].push(lines[i]);
-      if (lines[i] == "EOF"){
-        EOF = true;
-      }
-      ++i //increment of line within for loop
-    }
-    ++k;
-    if (lines[i] == "EOF"){ //this check shouldn't be necesary if the EOF is correctly placed in the text file
-        EOF = true;
-    }
-    ++i; //increment of line to clear blankspace between cards
-  }
+}
 
-  currentCard = 0;
-  cardFace = "front"; 
-    
-    mousePressed();
-    image(soundIcon, -684, -43);
+function setupGame() {
+	addBackground();
+	//addProgressBar();
+	addCard();
+	displayStats(); 
+	
+	// GPA text should be at position x=-536 y=310
+	// Money text is position x=-100 y=310
+	// Mental Health is position x=383 y=310
+  //--------------------------------------------------------------------------------------------------------------------------------------------------------
+  //Loads cards into memory
+	i = 0; //line
+	k = 0; //card
+	EOF = false;
+	while (EOF == false){
+	  cardStorage.push([]);
+	  for (j = 0; j < cardSize; ++j) {
+		cardStorage[k].push(lines[i]);
+		if (lines[i] == "EOF"){
+		  EOF = true;
+		}
+		++i //increment of line within for loop
+	  }
+	  ++k;
+	  if (lines[i] == "EOF"){ //this check shouldn't be necesary if the EOF is correctly placed in the text file
+		  EOF = true;
+	  }
+	  ++i; //increment of line to clear blankspace between cards
+	}
+  
+	currentCard = 0;
+	cardFace = "front"; 
+	  
+	  mousePressed();
+	  image(soundIcon, -684, -43);
 }
 
 
 function draw(){
-    if (runningAnimation) {
-        drawAnimation();
-    }
-    
-    displayCardText();
-    
-    playSound();
-
-
-    new Button(-605, 0, 200, 200, function(){//mute button located on/around laptop
-      if (mute){mute = false;}
-      else {mute = true;}
-      redrawCanvas()
-    });
+	if (gameStarted) {
+		if (runningAnimation) {
+			drawAnimation();
+		}
+		
+		displayCardText();
+		
+		playSound();
+	
+	
+		new Button(-605, 0, 200, 200, function(){//mute button located on/around laptop
+		  if (mute){mute = false;}
+		  else {mute = true;}
+		  redrawCanvas()
+		});
+	}
+	else welcome();
   
 }
 
@@ -414,6 +423,7 @@ function displayCardText() {
 
 
 function redrawCanvas() {
+	startBtn.hide();
     addBackground();
     progressBar = [];
   //addProgressBar();
@@ -512,4 +522,38 @@ function playSound(){
 		} //defaults track to nuetral
   }
 }
+}
+
+
+function addWelcomeBG() {
+	push();
+	noStroke();
+	texture(welcomeBackground);
+	translate(0, 0, -200);
+	plane(vWidth, vHeight);
+	pop();
+}
+let welcomeStarted = false;
+let startBtn;
+function welcome() {
+	background('#dfdfce');
+	addWelcomeBG();
+	if (!welcomeStarted) {
+		/* It is important that this happens only once, otherwise
+		multiple buttons will be created and be diffucult to hide
+		once the game starts*/
+		startBtn = createButton("Begin Your Studies");
+		startBtn.size(300, AUTO);
+		startBtn.position(vWidth / 2 - 150, 650);
+		startBtn.style('background-color', '#00693E');
+		startBtn.style('font-size:1.5rem');
+		startBtn.style('color', '#D1BC01');
+		startBtn.mousePressed(() => {
+			// startBtn.style('display:none');
+			startBtn.hide();
+			gameStarted = true;
+			setupGame();
+		})
+	}
+	welcomeStarted = true;
 }
