@@ -535,16 +535,22 @@ function nextCard() { // function to include code for selecting new card for any
 	}
 	else if (cardStorage[currentCard][0] == "9999") {
 		newCard = "9999"
-	}else //default case
+	}else {
+        
+    } //default case
 
+    if (newCard == undefined) {
+        	++currentCard;
+    } else {
+        for (i = 0; i < cardStorage.length; ++i) { //loop identifies which card has the selected ID
+            if (cardStorage[i][0] == newCard) {
+                currentCard = i;
+                break;
+            }
+	   }
 
-	++currentCard;
-
-	for (i = 0; i < cardStorage.length; ++i) { //loop identifies which card has the selected ID
-		if (cardStorage[i][0] == newCard)
-			currentCard = i;
-	}
-
+    }
+    
 }
 
 let introDuration = 166.716;

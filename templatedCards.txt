@@ -44,7 +44,7 @@ You waste so much of your time aimlessly scrolling the depths of the platform fo
 -.05 0 -2.5
 
 0006
-You’re working on a research project for one of your exploratory courses and you find a promising article, but it’s behind a paywall. You curse under your breath about the monetization of scientific articles. Putting aside your critiques of making this kind of information less accessible than it should be, you ask yourself.
+You’re working on a research project for one of your exploratory courses and you find a promising article, but it’s behind a paywall. Putting aside your critiques of making this kind of information less accessible than it should be, you ask yourself.
 Pay the troll toll
 Refuse such behavior
 The article was perfect for your paper. It really brings your paper together. All of your points just flow perfectly into each other and the paper is just woven like an ancient tapestry that threads are still as strong and taught today as they were hundreds of years ago. You got a perfect score. Also you get charged like four more times because you didn’t realize it was a subscription.
@@ -259,7 +259,6 @@ Turns out the guy was a lawyer. This whole event spirals out into a protracted l
 0 200 0
 -.4 -200 -30
 
-
 0100
 Your GPA has fallen below school standards and you have been placed on academic probation. After a meeting with your advisor, you know of 2 options...
 See a tutor and work hard!
@@ -337,8 +336,7 @@ Ever since you participated in that scientific testing you’ve felt like you’
 Go to the hospital 
 Don’t go to the hospital
 Well you sure do. Turns out that study was not above board and pumped a bunch of deadly stuff into you. If you had gone to the hospital one day too late they wouldn’t have been able to do anything. Good thing you actually went to the hospital and didn’t die. Though, it was kind of expensive.
-You sure don’t. But you should’ve. Since it turns out you were literally dying, not metaphorically. You pass away in your bed never knowing why you died, though it probably had something to do with scientific tests you were subjected to. Probably only a coincidence though.
-You die. Try again.
+You sure don’t. But you should’ve. Since it turns out you were literally dying, not metaphorically. You pass away in your bed never knowing why you died, though it probably had something to do with scientific tests you were subjected to. Probably only a coincidence though. You die. Try again.
 0 -150 0
 0 0 0
 
