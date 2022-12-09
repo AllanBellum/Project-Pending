@@ -65,6 +65,9 @@ function preload(){
 	backgroundPoorImg = loadImage('Assets/Imgs/Background-Poor.png');
 	backgroundBadImg = loadImage('Assets/Imgs/Background-Bad.png');
 	backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
+
+	paperSFX = loadSound('Assets/PaperFlipSFX.mp3');
+
 	upArrowImg = loadImage('Assets/Imgs/UpArrow.png');
 	downArrowImg = loadImage('Assets/Imgs/DownArrow.png');
   mutedIcon = loadImage('Assets/Imgs/mutedIcon.png');
@@ -74,6 +77,7 @@ function preload(){
   loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
   loopGood = loadSound('Assets/Music/CDLoopGood.mp3');
   loopBad = loadSound('Assets/Music/CDLoopBad.mp3')
+
 }
 
 
@@ -128,6 +132,7 @@ function draw(){
     determinetime();
     //addcaltext();
 
+
     //137, 75, 275, 150
     if (cardFace == "front" && !runningAnimation) {
         redrawCanvas();
@@ -164,6 +169,7 @@ function draw(){
     displayCardText();
     
     playSound();
+
 
 
     new Button(-605, 0, 200, 200, function(){//mute button located on/around laptop
@@ -557,6 +563,7 @@ function displayCardText() {
 				flipTo = "back1";
 				getOutcomeVal(6);
 				runningAnimation = true;
+                paperSFX.play();
 			});
 
 
@@ -564,6 +571,7 @@ function displayCardText() {
 				flipTo = "back2";
 				getOutcomeVal(7);
 				runningAnimation = true;
+                paperSFX.play();
 			});
 		}
 	}
@@ -716,6 +724,7 @@ function playSound(){
 			loopBad.setVolume(0, fadeTimer);
 			backgroundImg = backgroundPoorImg
 		} //defaults track to nuetral
+
   }
 }
 }
