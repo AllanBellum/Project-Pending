@@ -15,6 +15,7 @@ var cardStorage = new Array();
 let currentCard; //card being read by program
 let cardFace;
 let flipTo;
+let hovering = false;
 
 let buttons = [];
 
@@ -106,10 +107,38 @@ function setup() {
     image(soundIcon, -684, -43);
 }
 
-
-function draw(){
-    
+let hoveringOn = "";
+function draw(){    
     drawAnimation();
+
+    //137, 75, 275, 150
+    if (cardFace == "front" && !runningAnimation) {
+        if (!hovering && mouseX >= ((vWidth / 2) + -137) - (275 / 2) && mouseX <= ((vWidth / 2) + -137) + (275 / 2) &&
+			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
+            hovering = true;
+            hoveringOn = "l";
+			push();
+            fill(255, 255, 0, 60);
+            noStroke();
+            translate(-137, 75, 0);
+            box(275, 150, 0);
+            pop();
+		} else if (!hovering && mouseX >= ((vWidth / 2) + 137) - (275 / 2) && mouseX <= ((vWidth / 2) + 137) + (275 / 2) &&
+			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
+            hovering = true;
+            hoveringOn = "r";
+			push();
+            fill(255, 255, 0, 60);
+            noStroke();
+            translate(137, 75, 0);
+            box(275, 150, 0);
+            pop();
+        } else if (hovering && (hoveringOn == "r" || hoveringOn == "l")) {
+            hovering = false;
+            redrawCanvas();
+        }
+    }
+    
     
     displayCardText();
     
@@ -320,7 +349,6 @@ function displayCardText() {
 		text(cardStorage[currentCard][2], textPos - 275, 25, 260, 150); //Option 1
 		pop();
 
-
 		push();
 		fill(0, 0, 0);
 		textFont(myFont);
@@ -402,7 +430,6 @@ function displayCardText() {
 	}
 }
 
-
 function redrawCanvas() {
     addBackground();
     progressBar = [];
@@ -446,7 +473,7 @@ function nextCard() { // function to include code for selecting new card for any
 	} else if (cardStorage[currentCard][0] == "0101" || cardStorage[currentCard][0] == "0100" || cardStorage[currentCard][0] == "0200" || cardStorage[currentCard][0] == "0300" || cardStorage[currentCard][0] == "0400") { //leaving branch
 		newCard = "0006";
 	} else if (cardStorage[currentCard][0] == "9999") {
-		newCard = "9999"
+		reload();
 	} else //default case
 
 
@@ -502,4 +529,36 @@ function playSound(){
 		} //defaults track to nuetral
   }
 }
+}
+
+function reload() {
+    vWidth = 1366;
+    vHeight = 768;
+
+    xs = 0;
+    spin = 0;
+    textPos = 0;
+    lastBack = 0;
+    textSpin = 0;
+    runningAnimation = false;
+
+    progressBar = [];
+    currentCard = 0;
+    cardFace = "front"; 
+
+
+    gpa = 2.0;
+    mHealth = 100;
+    money = 0;
+    
+    intro.stop();
+    loopNuetral.stop();
+    loopGood.stop();
+    loopBad.stop();
+    
+    redrawCanvas();
+    playSound();
+
+    // Keep mute status
+    //let mute = false;
 }
