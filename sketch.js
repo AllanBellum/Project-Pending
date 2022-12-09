@@ -167,7 +167,6 @@ function draw(){
 
 
 function drawAnimation() {
-    print(flipTo);
     if (runningAnimation) {
         if (flipTo != "front") {
             if (Math.abs(spin) < 180) {
@@ -190,7 +189,6 @@ function drawAnimation() {
             }
             
         } else {
-            print(xs)
             if (xs < 1000 && xs != -25) {
                 xs+=25;
                 textPos+=25;
