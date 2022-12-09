@@ -766,9 +766,9 @@ function nextCard() { // function to include code for selecting new card for any
 	}else if(cardStorage[currentCard][0] == "1007"){
 		newCard = "0020";
 	}
-	else if (cardStorage[currentCard][0] == "9999" || cardStorage[currentCard][0] == "9998" || cardStorage[currentCard][0] == "1003" || cardStorage[currentCard][0] == "1004") {
+	else if (cardStorage[currentCard][0] == "9999" || cardStorage[currentCard][0] == "9998") {
 		reload();
-	}else if(currentCard == 31){
+	}else if(cardStorage[currentCard][0] == "9998"){
 		newCard = "9998"
 	}else {
         
