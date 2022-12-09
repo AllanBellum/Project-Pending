@@ -113,7 +113,8 @@ function draw(){
 
     //137, 75, 275, 150
     if (cardFace == "front" && !runningAnimation) {
-        if (!hovering && mouseX >= ((vWidth / 2) + -137) - (275 / 2) && mouseX <= ((vWidth / 2) + -137) + (275 / 2) &&
+        redrawCanvas();
+        if (mouseX >= ((vWidth / 2) + -137) - (275 / 2) && mouseX <= ((vWidth / 2) + -137) + (275 / 2) &&
 			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
             hovering = true;
             hoveringOn = "l";
@@ -123,7 +124,7 @@ function draw(){
             translate(-137, 75, 0);
             box(275, 150, 0);
             pop();
-		} else if (!hovering && mouseX >= ((vWidth / 2) + 137) - (275 / 2) && mouseX <= ((vWidth / 2) + 137) + (275 / 2) &&
+		} else if (mouseX >= ((vWidth / 2) + 137) - (275 / 2) && mouseX <= ((vWidth / 2) + 137) + (275 / 2) &&
 			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
             hovering = true;
             hoveringOn = "r";
@@ -135,7 +136,6 @@ function draw(){
             pop();
         } else if (hovering && (hoveringOn == "r" || hoveringOn == "l")) {
             hovering = false;
-            redrawCanvas();
         }
     }
     
