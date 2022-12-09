@@ -610,6 +610,13 @@ You're sucked deeper into the app. This choice cost you your friends. You become
 .15 0 2
 -.75 0 -4
 
+9998
+You did it! You graduated college. You grit your teeth, pulled up your socks, and cried in the shower a couple times, but you made it through. With a degree in Fakeology from FSU you are guaranteed success.
+Life is Good
+Do a Freeze-Frame Ending
+Good Job. Want to play again?
+You forgot this wasn't an 80's movie, and you fall flat on your face. Still, life is good. Play again?
+
 9999
 Game over
 Good Game
