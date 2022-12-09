@@ -1,12 +1,14 @@
 vWidth = 1366;
 vHeight = 768;
-
+passed = 1;
 xs = 0;
 spin = 0;
 textPos = 0;
 lastBack = 0;
 textSpin = 0;
 runningAnimation = false;
+let grade;
+let semester;
 
 progressBar = [];
 let myFont;
@@ -80,9 +82,9 @@ function setup() {
   ortho();//Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
 
   addBackground();
-  //addProgressBar();
   addCard();
   displayStats(); 
+  addCal();
   
   // GPA text should be at position x=-536 y=310
   // Money text is position x=-100 y=310
@@ -118,6 +120,8 @@ function setup() {
 let hoveringOn = "";
 function draw(){    
     drawAnimation();
+    determinetime();
+    addcaltext();
 
     //137, 75, 275, 150
     if (cardFace == "front" && !runningAnimation) {
@@ -358,25 +362,32 @@ function addCard() {
 	pop();
 }
 
+// This is the Calendar box
+function addCal() {
+    push();
+    translate (-5,-357);
+    fill(0, 105, 62);
+    box(400,48) 
+    pop();
+ 
+}
 
-// This is the progress bar
-function addProgressBar() {
-	// Bar dimensions
-	let w = 1000;
-	let h = 39;
-	let y = -338;
-
-	//Sections
-	let cardsPerYr = 16;
-	let total = 16 * 4;
-
-	for (let i = 0; i < total; i++) {
-		push();
-		fill(100, 100, 100);
-		translate(-(w / 2) + ((w / total) * i), y, 0);
-		append(progressBar, box(w / total, h, 10));
-		pop();
-	}
+function addcaltext() {
+    push();
+    textFont(myFont);
+    textSize(32);
+    fill(209, 188, 1);
+    textAlign(CENTER,LEFT);
+    text(grade + ' - ',-120,-350)
+    pop();
+  
+    push();
+    textFont(myFont);
+    textSize(32);
+    fill(209, 188, 1);
+    textAlign(RIGHT);
+    text(semester,150,-349); 
+    pop();
 }
 
 
@@ -389,6 +400,36 @@ function displayStats() {
 	text("Money: $" + money, -100, 310);
 	text("Mental Health: " + mHealth, 383, 310);
 	pop();
+}
+
+
+function determinetime(){
+  
+  if (passed >= 1 && passed < 5){
+    grade = 'Freshman'
+    semester = 'Fall Semester'
+  } else if ( passed >= 5 && passed <= 8){
+    grade = 'Freshman'
+    semester = 'Winter Semester'
+  } else if ( passed >= 9 && passed <= 12){
+    grade = 'Sophmore'
+    semester = 'Fall Semester'
+  } else if ( passed >= 13 && passed <= 16){
+    grade = 'Sophmore'
+    semester = 'Winter Semester'
+  } else if ( passed >= 17 && passed <= 20){
+    grade = 'Junior'
+    semester = 'Fall Semester'
+  } else if ( passed >= 21 && passed <= 24){
+    grade = 'Junior'
+    semester = 'Winter Semester'
+  } else if ( passed >= 25 && passed <= 28){
+    grade = 'Senior'
+    semester = 'Fall Semester'
+  } else if ( passed >= 29 && passed <= 33){
+    grade = 'Senior'
+    semester = 'Winter Semester'
+  } 
 }
 
 function getOutcomeVal(lineN) {
@@ -573,8 +614,7 @@ function displayCardText() {
 
 function redrawCanvas() {
     addBackground();
-    progressBar = [];
-  //addProgressBar();
+    addCal();
     buttons = [];
 
     if (mute){image(mutedIcon, -684, -43);} //changeing laptop screen depending on mute status
@@ -587,6 +627,7 @@ function redrawCanvas() {
 
 function nextCard() { // function to include code for selecting new card for any cases not specified it will move to the next sequential card
 	let newCard;
+	passed++;
 	//example of what condition should look like for branching card, xxxx is cardID
 	/*else if (cardStorage[currentCard][0] == "xxxx") {
 	    if (cardFace == "back1")                          //this conditional can be based on any variables including which decision was made on this card or the GPA, Wealth, or Mental Health. Multiple if else statements are also accesable if more than 2 branches is desired, could also include just a cardID assignment to jump cards uncondiationally
