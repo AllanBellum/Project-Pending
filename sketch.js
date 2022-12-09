@@ -380,7 +380,7 @@ function addcaltext() {
     textFont(myFont);
     textSize(32);
     fill(209, 188, 1);
-    textAlign(CENTER,LEFT);
+    textAlign(CENTER);
     translate(0, 0, 50);
     text(grade + ' - ', -120,-350)
     pop();
@@ -731,7 +731,10 @@ function reload() {
     textSpin = 0;
     runningAnimation = false;
 
-    progressBar = [];
+    passed = 1;
+    grade = "Freshman";
+    semester = "Fall Semester";
+
     currentCard = 0;
     cardFace = "front"; 
 
