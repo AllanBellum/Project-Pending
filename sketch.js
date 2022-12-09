@@ -664,7 +664,7 @@ function nextCard() { // function to include code for selecting new card for any
 		} else {
 			newCard = "0007"
 		}
-	} else if (cardStorage[currentCard][0] == "0100"/* && flipTo == "back2"*/) {
+	} else if (cardStorage[currentCard][0] == "0100" && flipTo == "back2") {
 		newCard = "9999";
 	} else if (cardStorage[currentCard][0] == "0101" || cardStorage[currentCard][0] == "0100" || cardStorage[currentCard][0] == "0200" || cardStorage[currentCard][0] == "0300" || cardStorage[currentCard][0] == "0400") { //leaving branch
 		newCard = "0007";
