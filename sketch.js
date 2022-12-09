@@ -770,13 +770,11 @@ function nextCard() { // function to include code for selecting new card for any
 	}else if(cardStorage[currentCard][0] == "1007"){
 		newCard = "0020";
 	}
-	else if (cardStorage[currentCard][0] == "9999" || cardStorage[currentCard][0] == "9998") {
+	else if (cardStorage[currentCard][0] == "9999") {
 		reload();
-	}else if(cardStorage[currentCard][0] == "9998"){
-		newCard = "9998"
 	}else {
         
-  } //default case
+    } //default case
 
     if (newCard == undefined) {
         	++currentCard;
