@@ -415,25 +415,25 @@ function determinetime(){
     semester = 'Fall Semester'
   } else if ( passed >= 5 && passed <= 8){
     grade = 'Freshman'
-    semester = 'Winter Semester'
+    semester = 'Spring Semester'
   } else if ( passed >= 9 && passed <= 12){
     grade = 'Sophmore'
     semester = 'Fall Semester'
   } else if ( passed >= 13 && passed <= 16){
     grade = 'Sophmore'
-    semester = 'Winter Semester'
+    semester = 'Spring Semester'
   } else if ( passed >= 17 && passed <= 20){
     grade = 'Junior'
     semester = 'Fall Semester'
   } else if ( passed >= 21 && passed <= 24){
     grade = 'Junior'
-    semester = 'Winter Semester'
+    semester = 'Spring Semester'
   } else if ( passed >= 25 && passed <= 28){
     grade = 'Senior'
     semester = 'Fall Semester'
   } else if ( passed >= 29 && passed <= 33){
     grade = 'Senior'
-    semester = 'Winter Semester'
+    semester = 'Spring Semester'
   } 
 }
 
