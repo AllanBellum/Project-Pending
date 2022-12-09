@@ -456,7 +456,7 @@ function nextCard() { // function to include code for selecting new card for any
 	} else if (cardStorage[currentCard][0] == "0101" || cardStorage[currentCard][0] == "0100" || cardStorage[currentCard][0] == "0200" || cardStorage[currentCard][0] == "0300" || cardStorage[currentCard][0] == "0400") { //leaving branch
 		newCard = "0006";
 	} else if (cardStorage[currentCard][0] == "9999") {
-		newCard = "9999"
+		reload();
 	} else //default case
 
 
@@ -512,4 +512,36 @@ function playSound(){
 		} //defaults track to nuetral
   }
 }
+}
+
+function reload() {
+    vWidth = 1366;
+    vHeight = 768;
+
+    xs = 0;
+    spin = 0;
+    textPos = 0;
+    lastBack = 0;
+    textSpin = 0;
+    runningAnimation = false;
+
+    progressBar = [];
+    currentCard = 0;
+    cardFace = "front"; 
+
+
+    gpa = 2.0;
+    mHealth = 100;
+    money = 0;
+    
+    intro.stop();
+    loopNuetral.stop();
+    loopGood.stop();
+    loopBad.stop();
+    
+    redrawCanvas();
+    playSound();
+
+    // Keep mute status
+    //let mute = false;
 }
