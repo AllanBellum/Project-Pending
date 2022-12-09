@@ -3,7 +3,7 @@ It’s Freshman Orientation Day! You don’t really want to go, but it might be 
 Don’t go to Freshman Orientation. 
 Go to Freshman Orientation.
 You decide that there are other things you’d like to do today. You relax for most of the day, take a nice walk, watch a show you like, and generally chill out.
-You think that getting to know what the next four years of your life is pretty important. You’d rather be as ready as you can be for them. You find it dull, but you do feel more prepared for the path ahead.
+You think that getting to know the next four years of your life is pretty important. You’d rather be as ready as you can be for them. You find it dull, but you do feel more prepared for the path ahead.
 0 0 2.5
 .1 0 0
 
@@ -17,47 +17,47 @@ Doing this was a mistake; you can barely pay attention in class. You can also fe
 -.1 -1 -5
 
 0003
-Your friends want to hang out and play some video games with you. But you have a test tomorrow. You feel underprepared, but you have also felt super stressed out lately. Do you hang out with your friends? 
+Your friends want to hang out and play some video games with you but you have a test tomorrow. You feel underprepared, but you have also felt super stressed out lately. Do you hang out with your friends? 
 Hang out with your friends
 Study for the test
-You decide that you need a break. You go and hang out with your bros. You play a varied assortment of games. It was a blast, and was just the break you needed. Come the day of the test you remember a lot more than you expected to, but ultimately do just okay. You're satisfied with the result, but felt you could have done better.
+You decide that you need a break. You go and hang out with your bros. You play a varied assortment of games. It was a blast and was just the break you needed. Come the day of the test you remember a lot more than you expected to, but ultimately do 'just okay'. You're satisfied with the result, but felt you could have done better.
 You really buckle down and go into a hardcore study session. The information is filling up your brain giving you a better understanding of the material than before. The day of the test you fly through the questions you know every answer and you ace the test. You’re relieved it’s over, but you feel burnt out.
 .1 0 2.5
 .2 -1 -2.5
 
 0004
-You think that living on campus is getting expensive, and your parents live close enough to school that you could reasonably commute to class. But you love the experience of dorm life and feel that commuting wouldn’t be as fulfilling. Do you start commuting to class?
+You think that living on campus is getting expensive and your parents live close enough to school that you could reasonably commute to class. But, you love the experience of dorm life and feel that commuting wouldn’t be as fulfilling. Do you start commuting to class?
 Start commuting to class
 Continue living on campus
-You are able to save a lot more money and are more able to pay your tuition in upcoming semesters. You miss the communal space of campus life, but hey, what are you going to do?
-You’re glad you continue living on campus. While your bank account is as empty, but that’s okay. Despite its ups and downs, living on campus is still better than living with your parents.
+You can save a lot more money and are more able to pay your tuition in upcoming semesters. You miss the communal space of campus life, but hey, what are you going to do?
+You’re glad you continue living on campus. Your bank account is as empty, but that’s okay. Despite its ups and downs, living on campus is still better than living with your parents.
 0 100 -2.5
 0 0 2.5
 
 0005
-You feel that with all of the things going on and the clubs you’ve been attending that you need a way to keep up with both your friends and club activities. And all of them are on legally distinct social media platform, do you create an account or do you live unconnected from your peers?
+You feel that with all of the things going on and the clubs you’ve been attending that you need a way to keep up with both your friends and club activities. All of them are on legally distinct social media platforms, do you create an account or do you live unconnected from your peers?
 Stay unconnected
 Create the account
 You wonder what could be if you join, but decide you really don’t want to link another thing to your email account.
-You waste so much of your time aimlessly scrolling the depths of the platform forgetting to do schoolwork and you have noticed a significant worsening in your mood recently.
+You waste so much of your time aimlessly scrolling the depths of the platform and forgetting to do schoolwork. You have noticed a significant worsening in your mood recently.
 0 0 0
 -.05 0 -2.5
 
 0006
 You’re working on a research project for one of your courses and you find a promising article, but it’s behind a paywall. Putting aside your critiques of making this kind of information less accessible than it should be, you ask yourself.
-Pay the troll toll
+Pay the troll
 Refuse such behavior
-The article was perfect for your paper. It really brings your paper together. All of your points just flow perfectly into each other and the paper is just woven like an ancient tapestry that threads are still as strong and taught today as they were hundreds of years ago. You got a perfect score. Also you get charged like four more times because you didn’t realize it was a subscription.
-Your paper is fine, sufficient, nothing to write home about. You’re glad you didn’t subscribe to the website that hosted the paper; it was a subscription that you would have forgotten to cancel and get charged like four more times than preferred. Your score was just okay.
+The article was perfect for your paper. It really brings your paper together. All of your points just flow perfectly into each other and the paper is just woven like an ancient tapestry that threads are still as strong and taught today as they were hundreds of years ago. You got a perfect score. Also, you get charged like four more times because you didn’t realize it was a subscription.
+Your paper is fine, sufficient, and nothing to write home about. You’re glad you didn’t subscribe to the website that hosted the paper; it was a subscription that you would have forgotten to cancel and get charged, like, four more times than preferred. Your score was just okay.
 .8 -75 0
 -.2 75 0
 
 0007
-You feel lethargic, you don’t think you got enough sleep last night. The last thing you want to do is get out of bed. Yet, you still need to get the day started and that is difficult to do in bed. 
+You feel lethargic. You don’t think you got enough sleep last night. The last thing you want to do is get out of bed. Yet, you still need to get the day started and that is difficult to do in bed. 
 Stay in Bed
 Push through it and get out of bed
-You continue to lie in bed convinced that lying there will give you more energy. But an hour goes by and you still feel tired. The only reason you get out is because you need to pee really bad. Maybe you did get enough sleep, but just woke up weird. Either way you’re slow to get going today. 
-You feel like death for a little bit, but once you’re actually moving you feel a lot better. Your morning routine goes smoothly. And after you’ve finished you feel better than usual. Today’s gonna be a good day.
+You continue to lie in bed, convinced that lying there will give you more energy. But, an hour goes by and you still feel tired. The only reason you get out is because you need to pee really badly. Maybe you did get enough sleep but just woke up weirdly. Either way, you’re slow to get going today. 
+You feel like death for a little bit, but once you’re actually moving you feel a lot better. Your morning routine goes smoothly. And, after you’ve finished, you feel better than usual. Today’s gonna be a good day.
 0 0 0
 0 0 3
 
@@ -65,35 +65,35 @@ You feel like death for a little bit, but once you’re actually moving you feel
 Halloween is tomorrow! You have been invited to a party. How fun! Do you go in costume?
 Show up in costume
 Show up in regular clothes
-Everyone at the party loves your costume! You go on to win best comtume and a cash prize. You meet some new friends and have a great time.
+Everyone at the party loves your costume! You go on to win 'Best Comtume' and a cash prize. You meet some new friends and have a great time.
 No one is impressed by your "costume." It doesn't matter too much. You have friends there and have an okay time. You're glad you went.
 0 20 5
 0 0 2
 
 0009
-You thought that taking a class on Ice Skating for one of your exploratory courses would be a fun time. Turns out you’re straight up awful at it. You might just need to drop the class before the withdrawal deadline. Yet, there is something that just feels off about dropping a class like that.
+You thought that taking a class on Ice Skating for one of your exploratory courses would be a fun time. Turns out, you’re straight-up awful at it. You might just need to drop the class before the withdrawal deadline. Yet, there is something that just feels off about dropping a class like that.
 Drop the class
 Don’t drop the class
-A weight has been lifted from your shoulders. Not having to worry about Ice Skating you focus on your other classes. Things are nice.
-Crap. Not only did you fail the class, your grades in other classes suffer because of your Ice Skating diversion. Also there is this really big knot in your shoulder that is really irritating. Wonder 
+A weight has been lifted from your shoulders. Not having to worry about Ice Skating, you focus on your other classes. Things are nice.
+Crap. Not only did you fail the class, but your grades in other classes also suffer because of your Ice Skating diversion. Also, there is this really big knot in your shoulder that is really irritating. Wonderful.
 .6 0 18
 -.9 0 -14
 
 0010
-Rumors are spreading that a professors got abducted by aliens. They are even claiming that he got abducted on the roof of the student center when he was taking a smoke break. Your friends bandy around the idea of camping out on the roof to try and get a glimpse of some aliens.
-Pfft, Who believes in aliens?
+Rumors are spreading that a professor got abducted by aliens. They are even claiming that he got abducted on the roof of the student center when he was taking a smoke break. Your friends bandy around the idea of camping out on the roof to try and get a glimpse of some aliens.
+Pfft, who believes in aliens?
 I’d love to get abducted by aliens
 You decide to stay home and study instead. Aliens, at least aliens intelligent enough to create interstellar travel, are so unlikely to actually exist that camping out on the roof of the student center seems like a waste of time. That is until you see your friends the next day visibly shaken. None of them want to talk about what happened. What happened last night?
-You and your friends sneak onto the student center’s roof after hours and camp out. You tell scary stories and eat s'mores, going to sleep on the roof at around 11PM. That is until you are awoken by a strange glowing light and you start floating in the air, and that is your last memory of that night. You wake up back on the student center roof holding a manilla envelope containing a wad of 20 dollar bills, the answers to your exam next week, and a thank you note with a bug-eyed green alien sticker on it. What the Funk.
+You and your friends sneak onto the student center’s roof after hours and camp out. You tell scary stories and eat s'mores, going to sleep on the roof at around 11PM. That is until you are awoken by a strange glowing light and you start floating in the air -- that is your last memory of that night. You wake up back on the student center roof holding a manilla envelope containing a wad of 20 dollar bills, the answers to your exam next week, and a 'thank you' note with a bug-eyed green alien sticker on it. What the Funk.
 0.4 0 -5
 .8 60 -25
 
 0011
-It’s almost Thanksgiving Break. You kinda want to go to your family’s Thanksgiving, but you also know you’d probably have to deal with that uncle who just has the worst opinions. It never goes well, and it’s such an unappealing prospect you might just stay here and study. 
+It’s almost Thanksgiving Break. You kinda want to go to your family’s Thanksgiving, but you also know you’d probably have to deal with that uncle who just has the worst opinions. It never goes well, and it’s such an unappealing prospect that you might just stay here and study. 
 Go
 Don't Go
-You were right, everything was fine except for that uncle and getting stuck talking to him. Who the hell thinks that America should invade and conquer the Moon and kill all the “moon demons”. At least your parents let you take a lion’s share of the leftovers feeding you for weeks.
-You kinda regret not going, you wanted to catch up with your cousins and parents. Plus the turkey and stuffing is always good. At least you got some great studying in.
+You were right, everything was fine except for that uncle and getting stuck talking to him. Who the heck thinks that America should invade and conquer the moon and kill all the “moon demons”? At least your parents let you take a lion’s share of the leftovers, feeding you for weeks.
+You kinda regret not going -- you wanted to catch up with your cousins and parents. Plus, the turkey and stuffing are always good. At least you got some great studying in.
 0 5.5 -4
 2 0 0
 
@@ -107,7 +107,7 @@ You really wanted to buy that soap, but sometimes you just can’t buy the nice 
 0 0 0
 
 0013
-You’re in a hardcare study session, but you’re so hungry you could eat a horse. Unfortunately you have to settle for something else. You’ve been trying to eat healthier recently, but preparing a meal right now would take a while, and you have the money to get something delivered.
+You’re in a hardcore study session, but you’re so hungry you could eat a horse. Unfortunately, you have to settle for something else. You’ve been trying to eat healthier recently, but preping a meal right now would take a while and you have the money to get something delivered.
 Get Pizza
 Cook yourself a nice healthy meal
 Pizza is the perfect study food. Not having to make your own food really allows you to get into the fine details of your material. You even have breakfast for tomorrow! Though your stomach is more upset than usual when you lie down to go to sleep.
@@ -116,43 +116,43 @@ Cooking the meal really cuts into your study time, but sticking to your commitme
 .5 0 4
 
 0014
-One of your friends invites you to a session of Dungeons and Dragons. You’ve never played it before, but it seems fun. In spite of all of that you got more homework than you’d like to have currently, should you attend the D&D session or get ahead on your homework?
+One of your friends invites you to a session of Dungeons and Dragons. You’ve never played it before, but it seems fun. Despite all of that, you got more homework than you’d like to have currently. Should you attend the D&D session or get ahead on your homework?
 Do homework
 Play D&D
-Homework sucks. But hey you got your stuff done. Wish you had gone to D&D though.
-The D&D session was top tier stuff. Plus the DM bought pizza so you didn’t have to buy food for dinner. Everyone was cool and you had a massive amount of fun. Worth it.
+Homework sucks. But hey, you got your stuff done. Wish you had gone to D&D though.
+The D&D session was top-tier stuff. Plus the Dungeon Master bought pizza so you didn’t have to buy food for dinner. Everyone was cool and you had a massive amount of fun. Worth it.
 2 0 0
 0 12 5
 
 0015
-Your sleep quality has been trash lately. Everyday you wake up you are plagued by day ruining tension headaches and you are done with it. You narrow the reasons down to two possible causes: Your pillow is causing your headaches or you're staying up late watching YouTube.
+Your sleep quality has been trash lately. Every day you wake up you are plagued by day-ruining tension headaches and you are done with it. You narrow the reasons down to two possible causes: Your pillow is causing your headaches or you're staying up too late watching YouTube.
 Get a new pillow
 Stop watching YouTube
-The pillow is nice, and you have stopped waking up with killer tension headaches. But you still don’t feel great when you wake up.
-You’ve stopped waking up with tension headaches! Success! And you’ve also started waking up with more energy as a nice bonus. Wahoo
+The pillow is nice and you have stopped waking up with killer tension headaches. But, you still don’t feel great when you wake up.
+You’ve stopped waking up with tension headaches! Success! And, you’ve also started waking up with more energy as a nice bonus. Wahoo!
 0 -15 7
 0 0 25
 
 0016
-Everything about your job is terrible. Your boss sucks, your coworkers are irritating, and the job is mind numbing beyond all belief. You can’t stay here any longer. The question is whether this place is so unbearable that you quit then find a job, or find a job then quit?
+Everything about your job is terrible. Your boss sucks, your coworkers are irritating, and the job is mind-numbing beyond all belief. You can’t stay here any longer. The question is whether this place is so unbearable that you quit then find a job, or find a job then quit?
 Quit first
 Find another job first
-That is a load off of your mind, you feel freed from the shackles of the soul sucking misery and can sleep knowing you don’t have to go back tomorrow. Finding another job isn’t easy (especially when you don’t already have one) but you are certain you’ll find one soon enough.
-The remaining time you spend at your job is one of the worst experiences of your working life. It feels like your head is in an ever tightening vice grip from dawn to dusk. But you found a job far easier and quicker than you’d expected. Heck it even pays better than this one. You wave your personal hell goodbye and look toward the future.
+That is a load off of your mind. You feel freed from the shackles of the soul-sucking misery and can sleep knowing you don’t have to go back tomorrow. Finding another job isn’t easy (especially when you don’t already have one) but you are certain you’ll find one soon enough.
+The remaining time you spend at your job is one of the worst experiences of your working life. It feels like your head is in an ever-tightening vice grip from dawn to dusk. But, you found a job far easier and quicker than you’d expected. Heck, it even pays better than this one. You wave your personal hell goodbye and look toward the future.
 0 -30 16
 0 30 -16
 
 0017
-SPRING BREAK. You know what that means? A week off from classes. But the question is what to do, should you slack off completely and do nothing but chill. Or do you try to finish some of your school work before getting some R&R?
+SPRING BREAK. You know what that means? A week off from classes. But the question is what to do -- should you slack off completely and do nothing but chill, or do you try to finish some of your school work before getting some R&R?
 Slack off completely
 Do some schoolwork
 Spring Break is less restful than you were hoping it was going to be; the specter of upcoming school work due next week looms over your relaxation. Spending time with friends and catching up on some games you got a while ago is pretty great. You feel a lot less stressed once school rolls back around, yet you were hoping for more.
-You are able to finish all of your work except your project about halfway through the break. You are able to get a lot more relaxation than you expected. You're able to catch up on some of your games. Still, you haven’t completely de-stressed once school rolls back around, but it was more than you expected.
+You are able to finish all of your work except your project about halfway through the break. You got a lot more relaxation than you expected and were able to catch up on some of your games. Still, you haven’t completely de-stressed once school rolls back around, but it was more than you expected.
 0 0 40
 20 0 20
 
 0018
-You watched an incredibly weird video on YouTube. For some reason the video has filled you with a complex melancholic feeling that you can’t fully place. You’re not really sure what to do with yourself.
+You watched an incredibly weird video on YouTube. For some reason, the video has filled you with a complex melancholic feeling that you can’t fully place. You’re not really sure what to do with yourself.
 Stare out the window pensively
 Take a nap
 Man...
@@ -161,29 +161,29 @@ You get a headache after waking up.
 0 0 -4
 
 0019
-You have been watching a lot of martial arts movies lately. They’re astounding displays of physical aptitude that show the resolve of the human spirit. You’re so hype on the movies that you’re thinking of getting into martial arts for real. Though it might be kind of expensive.
+You have been watching a lot of martial arts movies lately. They’re astounding displays of physical aptitude that show the resolve of the human spirit. You’re so hyped on the movies that you’re thinking about getting into martial arts for real. Though, it might be kind of expensive.
 Find a Way
 Don’t bother
-You scout out some details on the martial art you want to learn, a good place to start learning, and getting some gear in order. Eventually you find the perfect place and start going there and it is hard work. You’d thought this would’ve been easier, but it’s still rewarding. You start to feel real growth within a few weeks.
+You scout out some details on the martial art you want to learn, a good place to start learning, and getting some gear in order. Eventually, you find the perfect place and start going there and it is hard work. You’d thought this would’ve been easier, but it’s still rewarding. You start to feel real growth within a few weeks.
 You don’t have time for something as time intensive as martial arts, you have exams to study for. They might be in a few months, but the principal still stands. You throw yourself into your studies. You still watch martial arts movies, but now you always wonder “What if?”
 0 -40 35
 .5 0 0
 
 0020
-You just had a major falling out with a friend. All of your worst mistakes and failures come flooding back to you. Nothing feels right anymore and you feel like the worst person to walk the earth. What are you going to do?
-Talk to someone about
+You just had a major falling-out with a friend. All of your worst mistakes and failures come flooding back to you. Nothing feels right anymore and you feel like the worst person to walk the earth. What are you going to do?
+Talk to someone about it
 Push it all down and go to the gym
-You call up an old friend and just start to unfurl. You start bawling your eyes out, but when all is said and done you feel better. You feel like you can start moving forward instead of holding yourself back. It still hurts obviously, but the wound feels like it can properly heal.
+You call up an old friend and just start to unfurl. You start bawling your eyes out, but when all is said and done you feel better. You feel like you can start moving forward instead of holding yourself back. It still hurts, obviously, but the wound feels like it can properly heal.
 Who knew that physical exercise can’t address serious psychological issues? Not you. If anything you just made things worse for yourself. You even crush your toe with a dumbbell. Ow. 
 0 0 8
 0 0 -14
 
 0021
-The stress is getting to you but there are so many things to do. Your friends are in class so social activities aren't an option. And you don’t want to blow a ton of cash on something. You’ve also been staring at a computer screen for a while. You have two ideas you could choose from.
+The stress is getting to you but there are so many things to do. Your friends are in class so social activities aren't an option. And you don’t want to blow a ton of cash on something. You’ve also been staring at a computer screen for a while. You have two ideas you could choose from:
 Go for a Hike
 Read a Book
-All those people told you to take a hike were right, this is pretty great. It’s a warm breezy day. Clouds drifted lazily across the sky. The hiking trails themselves were mostly barren aside from one or two other people. Also the trees man, the trees. They were, like, super nice looking. At one point, you sit on a rock and just take it all in. You feel at peace.
-You look at a small stack of books on your desk picking out Book by Mr. & Mrs. Book starring the main character Book. It doesn’t take long for you to get sucked into the narrative of Book fighting against the evil hoards of Book Burners and bringing knowledge to the people of Booklessopolis. Everything about it hits just right, from the prose to the characters to the intricate plot. Hours pass by without you noticing. By the time you put the book down you notice that it’s about the time you go to bed. You flop into bed and fall right to sleep.
+All those people who told you to take a hike were right -- this is pretty great. It’s a warm breezy day. Clouds drifted lazily across the sky. The hiking trails themselves were mostly barren aside from one or two other people. Also the trees man, the trees. They were, like, super nice looking. At one point, you sit on a rock and just take it all in. You feel at peace.
+You look at a small stack of books on your desk picking out Book by Mr. & Mrs. Book, starring the main character Book. It doesn’t take long for you to get sucked into the narrative of Book fighting against the evil hoards of Book Burners and bringing knowledge to the people of Booklessopolis. Everything about it hits just right, from the prose to the characters to the intricate plot. Hours pass by without you noticing. By the time you put the book down, you notice that it’s about the time you go to bed. You flop into bed and fall right to sleep.
 0 0 17
 0 0 17
 
@@ -197,28 +197,28 @@ You decide you better not go. You see the fun your friends had and wish you went
 0 0 -1
 
 0023
-It’s a cold winter night and you can’t sleep. You look outside your window, snow covers the ground and the soft lighting outside lends a beauty to the scene you are witness to. You are far too restless to go back to sleep, but the exhaustion of the day still weighs on you.
+It’s a cold winter night and you can’t sleep. You look outside your window.  Snow covers the ground and the soft lighting outside lends beauty to the scene you are witness to. You are far too restless to go back to sleep, but the exhaustion of the day still weighs on you.
 Go for a walk
 Lie in bed and look out the window
 Despite being so late and cold there are more people out than you’d expect. Still, it’s peaceful. The air is surprisingly still, the snowfall is light and delicate, and the night is just bright enough to be able to easily see, yet feel dark. It’s otherworldly. Once you got home and went to bed you had a great night’s sleep.
-The night is calm and the snowflakes fall with delicate precision. The silence is comforting instead of eerie.From the warmth of your bed the chill emanating from the window is almost refreshing. Time almost stands still in this picturesque moment. You wake up the next morning not having remembered when you fell asleep. It was a great night’s sleep.
+The night is calm and the snowflakes fall with delicate precision. The silence is comforting instead of eerie. From the warmth of your bed, the chill emanating from the window is almost refreshing. Time almost stands still in this picturesque moment. You wake up the next morning not having remembered when you fell asleep. It was a great night’s sleep.
 0 0 4
 0 0 4
 
 0024
-You are going to work one day when you hear a POP sound. Your tire has burst asunder and gone flat. On the side of the road you realize you forgot to get a spare. You can either test your luck trying to get to the closest place that’ll change your tire, or call up your dad for help?
+You are going to work one day when you hear a POP sound. Your tire has burst asunder and gone flat. On the side of the road, you realize you forgot to get a spare. You can either test your luck trying to get to the closest place that’ll change your tire, or call up your dad for help.
 Drive to find a spare tire
 Call dad
-The flat is making it difficult to drive, every turn is harder than usual, speeding up from a stand still is a nightmare, and you have to wrestle with the wheel to keep the car from careening into oncoming traffic, until WHAM! Another car smashes into you. You’re unhurt, but your car is totaled. This is going to cost you a lot of money.
-You call up your dad and he’s there in 20 minutes. He has a spare, but insists on teaching you how to change a tire by demonstrating how to do it, then undoing for you to do. You already know how to change a tire. It was a trying experience.
+The flat is making it difficult to drive. Every turn is harder than usual, speeding up from a standstill is a nightmare, and you have to wrestle with the wheel to keep the car from careening into oncoming traffic, until WHAM! Another car smashes into you. You’re unhurt, but your car is totaled. This is going to cost you a lot of money.
+You call up your dad and he’s there in 20 minutes. He has a spare but insists on teaching you how to change a tire by demonstrating how to do it, then undoing it for you to do. You already know how to change a tire. It was a trying experience.
 0 -50 0
 0 0 -2.5
 
 0025
-You have been procrastinating all day. And you finally feel up to actually doing your work that’s due tomorrow. At 11:45 PM. You really don’t want to bother dealing with this tomorrow, but it might be a better idea to just deal with it tomorrow.
+You have been procrastinating all day. You finally feel up to actually doing your work that’s due tomorrow. At 11:45 PM. You really don’t want to bother dealing with this tomorrow, but it might be a better idea to just deal with it tomorrow.
 Do it now
 Do it later
-You feel tired, exhausted, but it’s done. And you can finally lay your weary head upon your pillow at 2 AM. You wake up tomorrow in a funk with a massive headache, you have a hard time focusing in class, but you are still able to get something out of the class. You collapse in your bed at the end of a hard day.
+You feel tired and exhausted, but it’s done. And, you can finally lay your weary head upon your pillow at 2 AM. You wake up tomorrow in a funk with a massive headache, you have a hard time focusing in class, but you are still able to get something out of the class. You collapse in your bed at the end of a hard day.
 You wake up bright and early the next day. You feel great and finish your work before your first class. You feel like you’re understanding things in class better than normal. You are even able to get a headstart on your next assignment. You sleep well.
 .2 0 -5
 .4 0 0
@@ -227,34 +227,34 @@ You wake up bright and early the next day. You feel great and finish your work b
 Crap. Your headset mic broke. You need to use that for all of the voice calls you totally have all the time. I mean, your laptop also has a mic, but it’s much lower quality.
 Use laptop mic
 Get new headset
-You really don’t mind using your laptop mic nearly as much as you’d thought you would. You don’t need a mic nearly as much as you’d thought. So just using the headset as a set of over ear headphones is good enough.
+You really don’t mind using your laptop mic nearly as much as you’d thought you would. You also don’t need a mic nearly as much as you’d thought. So, just using the headset as a set of over-ear headphones is good enough.
 You decide to get something a little nicer than your last headset. It’s a little more pricey than you’d hope, but it's pretty solid.
 0 0 0
 0 -99 0
 
 0027
-You see that FSU is putting on a production of Spider-Man: Turn off the Dark. You have no idea how they got the rights to this. You’ve always thought of yourself as lead material. There are also openings for crew members, some of the more technical ones are even paid.
+You see that FSU is putting on a production of Spider-Man: Turn Off The Dark. You have no idea how they got the rights to this. You’ve always thought of yourself as lead material. There are also openings for crew members, some of the more technical ones are even paid.
 Audition to be Spider-Man
 Try to be a Crew Member
-You audition and only end up being the under study to Spider-Man. But that doesn’t matter since the lead broke their entire body in rehearsals so you get to be the lead role. With the reviews coming in, turns out putting on a production of this play was a terrible idea. Critics wonder why FSU would even put on a production of a notorious flop with a soundtrack made by Bono. They also point out how your performance was the only saving grace of the whole thing, killing it in the role. 
-You got brought on to work on some of the technical aspects of the stage play. It pays well, but there are a lot of incidents of people getting injured on set. You are able to deal with it - mostly. Until the lead crashes onto the floor right in front of you, breaking their entire body. Legs weren’t supposed to go that way.
+You audition and only end up being the understudy to Spider-Man. But, that doesn’t matter since the lead broke their entire body in rehearsals so you get to be the lead role. With the reviews coming in, turns out that putting on a production of this play was a terrible idea. Critics wonder why FSU would even put on a production of a notorious flop with a soundtrack made by Bono. They also point out how your performance was the only saving grace of the whole thing, killing it in the role. 
+You got brought on to work on some of the technical aspects of the stage play. It pays well, but there are a lot of incidents of people getting injured on set. You are able to deal with it, mostly, until the lead crashes onto the floor right in front of you, breaking their entire body. Legs weren’t supposed to go that way.
 0 28 0
 0 75 -60
 
 0028
-Whoops, you forgot to do your homework and it’s due tomorrow. You think that you can finish it, but only if you start right now. But honestly is it worth it? It’s just going to stress you out. Maybe just letting it slide and taking the hit to your grade would be a better approach.
+Whoops, you forgot to do your homework and it’s due tomorrow. You think that you can finish it, but only if you start right now. But, honestly, is it worth it? It’s just going to stress you out. Maybe just letting it slide and taking the hit to your grade would be a better approach.
 Do your work
 Just don’t
-You did it. You got it done, you worked hard, and sweated it out and at the end of an all nighter you completed it. You feel like you could sleep for a straight solid day, but you gotta go to class. You turn in your homework and you feel better that you finished it. You fall asleep in class
+You did it. You got it done, you worked hard, sweated it out, and at the end of an all-nighter, you completed it. You feel like you could sleep for a solid day straight, but you gotta go to class. You turn in your homework and you feel better that you finished it. You fall asleep in class.
 You decide that you messed up, but aren’t going to break your back to fix it. It’s oddly liberating. Taking the hit to your GPA doesn’t feel great, but you have already made peace with that fact. You enjoy a relaxing evening and get a good night's sleep.
 .6 0 -5
 -.3 0 10
 
 0029
-You’re exploring town with your friends and some drunk guy bumps into you. The guy yelling at you and you start yelling back. Then the dude reels back and punches you square in your nose. Blood starts to flood from your nose you think it might be broken.
+You’re exploring town with your friends and some drunk guy bumps into you. The guy yells at you and you start yelling back. Then, the dude reels back and punches you square in your nose. Blood starts to flood from your nose you think it might be broken.
 Go to the hospital
 Blackmail the guy who punched you
-You get rushed to the hospital by your friends. Your nose will be fine, it’s not broken. Also turns out the guy who punched you is a lawyer and if this gets out he might lose his job at his law firm. He pays your medical bills and then some. You don’t really care about trying to get the guy fired so you take the money because money.
+You get rushed to the hospital by your friends. Your nose will be fine, it’s not broken. Also turns out the guy who punched you is a lawyer and if this gets out he might lose his job at his law firm. He pays your medical bills and then some. You don’t really care about trying to get the guy fired, so you take the money, because, money.
 Turns out the guy was a lawyer. This whole event spirals out into a protracted legal battle that lasts for months. Not only do you have to pay legal fees, but you’re fined for blackmail. This whole event wears on your psyche and eats into study time. Maybe trying to blackmail people is a terrible idea. Who woulda guessed?
 0 200 0
 -.4 -200 -30
@@ -264,16 +264,16 @@ Your GPA has fallen below school standards and you have been placed on academic 
 See a tutor and work hard!
 Drop out of College
 After seeing a tutor and working your butt off, your GPA dramatically improves, but you have lost time with friends and it's taking a toll.
-You have given up on school. You feel dropping out was the only option, so you drop out before school can kick you out. This ultimatly gives you more time to work and be with your friends, but you have to question if this was the correct path.
+You have given up on school. You feel dropping out was the only option, so you drop out before school can kick you out. This ultimately gives you more time to work and be with your friends, but you have to question if this was the correct path.
 .3 0 -2.5
 -2 0 12.5
 
 0101
-Your gpa has fallen below standards of your school. Your major is very difficult, so you now must consider a major change.
-Change major
-Stick with current major
+Your GPA has fallen below the standards of your school. Your major is very difficult, so you now must consider a major change.
+Change majors
+Stick with your current major
 Your major change was a blessing. Much less work and much more enjoyable. This decision was very good for you.
-You stick with your major and continue to struggle. Eventually you get kicked out of the school. You lose drive to continue your education.
+You stick with your major and continue to struggle. Eventually, you get kicked out of the school. You lose the drive to continue your education.
 1.5 0 12.5
 -1.2 0 -12.5
 
@@ -281,22 +281,22 @@ You stick with your major and continue to struggle. Eventually you get kicked ou
 Your mental health has been falling lately and you're in a bad place. You wonder if you should see a therapist and get the help you need.
 Get a therapist
 Keep suffering
-Your new therapist is one of the nicest people you've met. They help you through the issues you've been stewing on lately. It really helps; however, it does not help your wallet.
+Your new therapist is one of the nicest people you've met. They help you through the issues you've been stewing on lately. It really helps, however, it does not help your wallet.
 You keep on suffering. Everything gets worse. You close off from friends. You almost lose your job. Your GPA is tanking.
 .02 -20 5
 -.8 0 -4
 
 0201
 You haven't been having a good time lately and haven't been enjoying school. You're considering a major change to something more fun.
-Change major
+Change majors
 Suffer through
 You decided to change your major to one you enjoy more. Luckily, some credits from your previous major transfer. This change does end up costing you money, as it set you back in major progress.
-You've decided to stick your course, as you're already halfway through. You wish you enjoyed your major more.
+You've decided to stick to your major as you're already halfway through. You wish you enjoyed your major more.
 .02 0 5
 0 0 -5
 
 0202
-Your mental health has severely declined. You've always wanted an animal, now you're considering getting an emotional support animal.
+Your mental health has severely declined. You've always wanted an animal, so now you're considering getting an emotional support animal.
 Get an animal
 Don't get an animal
 You get a little puppy and get him registered. You couldn't be happier. Only issue is that the puppy is expensive and takes much of your time.
@@ -305,38 +305,38 @@ You decide against the dog. Not much of your life changes, except that you conti
 0 0 -2.5
 
 0202
-You sit at your computer screen dead-eyed and slack-jawed. You need to do your work, but you don’t have any motivation. You start to get a headache. After a good while of staring blankly you can’t take it anymore you need to do something.
+You sit at your computer screen dead-eyed and slack-jawed. You need to do your work, but you don’t have any motivation. You start to get a headache. After a good while of staring blankly you can’t take it anymore you need to do something else.
 Get through your work
 Do something else
-You power through your homework. It was awful, it took far longer than you wanted it to take. It was just an agonizing experience that you never willingly do again. But at the end of it all, you feel as if a weight has been lifted, that for as awful as it was, it is at the very least over.
-You try to get to rest and relax and do something else, but you can’t. You just end up enthralled in other activities that stress you out like losing in online video games, or getting into fights on the internet. Plus you still have the homework looming over you. This just ends up making you feel even worse than you did before.
+You power through your homework. It was awful, it took far longer than you wanted it to take. It was just an agonizing experience that you never willingly do again. But, at the end of it all, you feel as if a weight has been lifted. For as awful as it was, it is at the very least over.
+You try to rest, relax, and do something else, but you can’t. You just end up enthralled in other activities that stress you out like losing in online video games or getting into fights on the internet. Plus, you still have the homework looming over you. This just ends up making you feel even worse than you did before.
 .5 0 -8
 -.5 0 -22
 
 0300
 You've been running dangerously low on cash recently. Do you...
 Find a new job
-Ask you parents for money
-Finding a new job was easier than you expected. Many people are hiring. You now have more spending money; however, work takes much of your time leading to a decline in your gpa and mental health.
+Ask your parents for money
+Finding a new job was easier than you expected. Many people are hiring. You now have more spending money; however, work takes much of your time leading to a decline in your GPA and mental health.
 Your parents said yes... for the last time. You're thankful for the help, and you tell them so. You're able to maintain your grades, but you worry about your relationship with them.
 -0.2 1500 -3
 0 600 -1
 
 0301
 You have a whopping 32 cents in your bank account, and who knows how much debt you're in. You need cash. NOW! 
-Sell your blood
+Sell your plasma
 Start doing a bunch of scientific tests
-A tried and true method of getting quick cash that is totally not concerning at all. You’re able to get a nice hunk of change, though feel kinda woozy afterwards.
-You find a flier on campus that is vague on details but offers a whole lot of money. Even after doing the test you’re not sure what they were even testing. And you walk out of there with a lot more money than 32 cents. Though your bones do feel like they got bees in them.
+A tried and true method of getting quick cash that is totally not concerning at all. You’re able to get a nice hunk of change, though feel kinda woozy afterward.
+You find a flier on campus that is vague on details but offers a whole lot of money. Even after doing the test, you’re not sure what they were even testing. And you walk out of there with a lot more money than 32 cents. Though, your bones do feel like they got bees in them.
 0 100 0
 0 500 0
 
 0302
-Ever since you participated in that scientific testing you’ve felt like you’ve been - metaphorically - dying . Your bones feel like pudding, you’re always cold, and your skin feels like paper. You could go to the hospital, but who’s got the time and money?
+Ever since you participated in that scientific testing you’ve felt like you’ve been - metaphorically - dying. Your bones feel like pudding, you’re always cold, and your skin feels like paper. You could go to the hospital, but who’s got the time and money?
 Go to the hospital 
 Don’t go to the hospital
-Well you sure do. Turns out that study was not above board and pumped a bunch of deadly stuff into you. If you had gone to the hospital one day too late they wouldn’t have been able to do anything. Good thing you actually went to the hospital and didn’t die. Though, it was kind of expensive.
-You sure don’t. But you should’ve. Since it turns out you were literally dying, not metaphorically. You pass away in your bed never knowing why you died, though it probably had something to do with scientific tests you were subjected to. Probably only a coincidence though. You die. Try again.
+Well, you sure do. Turns out that study was not board-approved and pumped a bunch of deadly stuff into you. If you had gone to the hospital one day too late they wouldn’t have been able to do anything. Good thing you actually went to the hospital and didn’t die. Though, it was kind of expensive.
+You sure don’t, but you should’ve, since it turns out you were literally dying, not metaphorically. You pass away in your bed never knowing why you died, though, it probably had something to do with those scientific tests you were subjected to. Probably only a coincidence though. You die. Try again.
 0 -150 0
 0 0 0
 
@@ -344,7 +344,7 @@ You sure don’t. But you should’ve. Since it turns out you were literally dyi
 You are one of the smartest people in your class and professors want you to tutor. Do you accept?
 Tutor
 Don't tutor
-Tutoring comes with many benefit! A paid job bringing increased income and a further understanding of the material. You also feel great that you're helping others.
+Tutoring comes with many benefits! A paid job brings increased income and a further understanding of the material. You also feel great that you're helping others.
 You decline the tutoring job and don't miss much. You're able to keep up on work, but feel bad you didn't choose to help others.
 0.2 1000 10
 0 0 -2
@@ -353,13 +353,13 @@ You decline the tutoring job and don't miss much. You're able to keep up on work
 You’re exploring the campus when out of the corner of your eye you see something strange. You see the Dean in a fight with a deer! What snaps you out of your trance is the Dean shouting “Aid me in my fight against the local fauna or suffer the consequences!’
 Aid the Dean
 Aid the Deer
-That talk of suffering consequences shakes you to your core. Just sounds like a bad time so you join the fight against the Deer and a few punches and kicks later it goes down. The Dean turns to you “Here, take this a tithe for your assistance, there will be more to come as well” he says handing you a thick stack of $100 Bills. You are in disbelief.
-No one can tell you what to do. Good thing you can still remember those capoeira lessons you took last summer. With the assistance of the Deer you make short work of the Dean. As he falls to the ground you hear a faint whisper, almost a hiss “consequences”. You shrug it off hoping that this won’t come back to bite you. You give the Deer a high-five and then steal the Dean’s wallet. 
+That talk of suffering consequences shakes you to your core. Just sounds like a bad time, so you join the fight against the Deer. A few punches and kicks later it goes down. The Dean turns to you “Here, take this a tithe for your assistance. There will be more to come as well” he says handing you a thick stack of $100 Bills. You are in disbelief.
+No one can tell you what to do! Good thing you can still remember those capoeira lessons you took last summer. With the assistance of the Deer, you make short work of the Dean. As he falls to the ground you hear a faint whisper, almost a hiss: “consequences”. You shrug it off hoping that this won’t come back to bite you. You give the Deer a high-five and then steal the Dean’s wallet. 
 20 150 0
 50 500 0
 
 1000
-You have an opportunity for a study abroad in Florence! Do you go?
+You have an opportunity to study abroad in Florence! Do you go?
 Go study abroad
 Stay home
 Florence was a fantastic experience. You still learned a lot and had an amazing, though expensive, time with friends.
@@ -368,11 +368,11 @@ You stayed home, but all of your friends had gone. You are lonely, but at least 
 0 0 -10
 
 1001
-You've met a special someone and have been spending a lot of time together over a couple months.
+You've met a special someone and have been spending a lot of time together over a couple of months.
 Stay together! You value love
 Break up :(
 You stay together. You just couldn't imagine losing this person. They take up much of your time and money, but it's worth it to be happy.
-You have a hard break up and become depressed. This is not good for your school work.
+You have a hard break up and become depressed. This is not good for your schoolwork.
 -0.2 -50 15
 -0.2 0 -10
 
@@ -381,34 +381,34 @@ You're hungry. Do you go to the dining hall or your favorite on-campus establish
 Dining hall
 Favorite place
 You reluctantly go to the dining hall and the food today, like every day, is nasty. Why do you try?
-You go and get your favorite meal elsewhere. Delicious. Without a meal-plan covering this one, it does cost you.
+You go and get your favorite meal elsewhere. Delicious. Without a meal plan covering this one, it does cost you.
 0, -5, 0
 0, 5, -50
 
 1003
-You receive an email from an unfamiliar address: “Roof of the Student Center, tomorrow, Noon”. When you go you see the Dean back turned to you. You both assume your fighting stance. “If you win this I won’t be able to show my face around here anymore. You can have the school.”
+You receive an email from an unfamiliar address: “Roof of the Student Center, tomorrow, Noon”. When you go you see the Dean, back turned to you. You both assume your fighting stance. “If you win this I won’t be able to show my face around here anymore. You can have the school.”
 I don’t need anything. I just want to take you down
 If that’s how it is, I’ll gladly take you up on your offer
-The fight between you and the Dean is breathtaking, but your cause is just; You cannot falter here and now. You weave past the Dean’s blows before landing your finishing move. “You’ve bested me, you at least deserve your diploma” the Dean said pulling your diploma from their suit jacket. You gracefully accept it. Then a TV crew comes running out onto the roof. They start to interview you on how you were able to defeat the Dean of Students at Fake State University, one of the most powerful people in the world. You give an amazing interview and become an instant celebrity. You write a bestselling memoir, start in multiple movies, and even get a Netflix Comedy Special. What’s next for this rising star? 
+The fight between you and the Dean is breathtaking, but your cause is just; You cannot falter here and now. You weave past the Dean’s blows before landing your finishing move. “You’ve bested me, you at least deserve your diploma,” the Dean said pulling your diploma from their suit jacket. You gracefully accept it. Then a TV crew comes running out onto the roof. They start to interview you on how you were able to defeat the Dean of Fake State University, one of the most powerful people in the world. You give an amazing interview and become an instant celebrity. You write a bestselling memoir, start in multiple movies, and even get a Netflix Comedy Special. What’s next for this rising star? 
 The fight between you and the Dean is breathtaking, but they are no match for your overwhelming skill and power. And as the Dean lay on the ground bloody, bleeding, and... uh... bleedy... yeah. They pull a deed for ownership of the school out of their suit jacket. You rip it from their hands, spit in their face, and start doing a little victory dance. This is the first step towards your ultimate goal - WORLD DOMINATION!!! That thing that you’ve always wanted since you were a very little kid. Complete subjugation of the human race is at your fingertips now that you're the Dean of Students of Fake State University, one of the highest seats of power in the whole world. Things look grim for the world, but bright for you!
 100000 1000000 1000000
 100000 1000000 1000000
 
 1004
-You receive an email from an unfamiliar address: “Roof of the Student Center, tomorrow, Noon”. When you go you see the Dean back turned to you. You both assume your fighting stance. “If you win this I won’t be able to show my face around here anymore. You can have the school.”
+You receive an email from an unfamiliar address: “Roof of the Student Center, tomorrow, Noon”. When you go you see the Dean, back turned to you. You both assume your fighting stance. “If you win this I won’t be able to show my face around here anymore. You can have the school.”
 I don’t need anything. I just want to take you down
 If that’s how it is, I’ll gladly take you up on your offer
-The fight between you and the Dean is breathtaking, but your cause is just; You cannot falter here and now. You weave past the Dean’s blows before landing your finishing move. “You’ve bested me, you at least deserve your diploma” the Dean said pulling your diploma from their suit jacket. You gracefully accept it. Then a TV crew comes running out onto the roof. They start to interview you on how you were able to defeat the Dean of Students at Fake State University, one of the most powerful people in the world. You give an amazing interview and become an instant celebrity. You write a bestselling memoir, start in multiple movies, and even get a Netflix Comedy Special. What’s next for this rising star? 
+The fight between you and the Dean is breathtaking, but your cause is just; You cannot falter here and now. You weave past the Dean’s blows before landing your finishing move. “You’ve bested me, you at least deserve your diploma,” the Dean said pulling your diploma from their suit jacket. You gracefully accept it. Then a TV crew comes running out onto the roof. They start to interview you on how you were able to defeat the Dean of Fake State University, one of the most powerful people in the world. You give an amazing interview and become an instant celebrity. You write a bestselling memoir, start in multiple movies, and even get a Netflix Comedy Special. What’s next for this rising star? 
 The fight between you and the Dean is breathtaking, but you’re no match for their overwhelming speed, power, and technique. You get crushed like a soda can in 27 seconds flat. The Dean pulls your college diploma from their suit jacket and tears it up while laughing maniacally. Maybe challenging the Dean of Students at Fake State University(one of the most powerful people in the world) was a bad idea. To top this terrible situation off you spontaneously combust. Worst. Day. Ever.
 100000 1000000 1000000
 -100000 -1000000 -1000000
 
 1005
-You have had a hard time since you got abducted by aliens. At least, you think you got abducted by aliens. The uncertainty is what’s really getting to you. On your way to class you notice a flier posted on a bulletin board. It advertises a free alien abductee support group for Fake State University.
+You have had a hard time since you got abducted by aliens. At least, you think you got abducted by aliens. The uncertainty is what’s really getting to you. On your way to class, you notice a flier posted on a bulletin board. It advertises a free alien abductee support group at FSU.
 Go to the group
 Who has the time for support groups?
-Turns out alien abductions have been a pretty endemic problem for the students of Fake State University. A lot of the group members’ stories are similar to your’s. Most of them also have an unshakeable feeling of uncertainty that has followed them since their incidents. You feel better knowing that you won’t have to deal with this issue alone.
-You knew a guy in 5th grade who’s in Alcoholics Anonymous now, and he stole your DS at lunch one time. So everyone who goes to any type of support group must be as terrible as that guy. And aliens are a much less serious problem compared to alcoholism. So like a true American you shove all of your emotions deep down inside your soul to never be addressed. 
+Turns out alien abductions have been a pretty endemic problem for the students of Fake State University. A lot of the group members’ stories are similar to yours. Most of them also have an unshakeable feeling of uncertainty that has followed them since their incidents. You feel better knowing that you won’t have to deal with this issue alone.
+You knew a guy in 5th grade who’s in Alcoholics Anonymous now, and he stole your DS at lunch one time. So, everyone who goes to any type of support group must be as terrible as that guy. And, aliens are a much less serious problem compared to alcoholism. So like a true American, you shove all of your emotions deep down inside your soul to never be addressed. 
 0 0 20
 0 0 -50
 
@@ -416,62 +416,62 @@ You knew a guy in 5th grade who’s in Alcoholics Anonymous now, and he stole yo
 You still feel like your sleep sucks worse than a vacuum cleaner. You revisit the idea of stopping YouTube before bed. You have no idea what will replace it. And how will you be alone with your thoughts? No one can just “be alone” with their thoughts. It’s like trying to lick your elbow, impossible.
 Stop
 Don’t stop
-Within a week of stopping you start to feel more rested after waking up. It’s still hard, but a lot more doable than you expected. Still you kinda miss the steady stream of online stuff to watch as you drift off, but hey necessary evils and all that.
-You refuse to stop, nothing will ever make you stop. And if they think they can, they are sorely mistaken. The only way to stop you, they’d have to pry your phone from your COLD DEAD HANDS!
+Within a week of stopping you start to feel more rested after waking up. It’s still hard, but a lot more doable than you expected. Still, you kinda miss the steady stream of online stuff to watch as you drift off, but hey necessary evils and all that.
+You refuse to stop. Nothing will ever make you stop. And if they think they can, they are sorely mistaken. The only way to stop you is to pry your phone from your COLD DEAD HANDS!
 0 0 15
 0 0 0
 
 1007
-You are doing your thing sparring with another martial artist, then some guy with frosted tips comes out of nowhere and starts heckling you for practicing “martial farts”. He challenges you to try to beat him in an upcoming tournament.
+You are doing your thing, sparring with another martial artist, then some guy with frosted tips comes out of nowhere and starts heckling you for practicing “martial farts”. He challenges you to try to beat him in an upcoming tournament.
 Start training
 Move on with your day
-Nobody calls you a marital fartist! You start grinding hard at your marital arts goals and continue to get stronger. You push away all of the weaker martial artists you know and focus on your own skill. By the time that the tournament rolls around you crush everyone in the tournament, including him. You get a nice big cash prize, with an addition of turtle wax - nice. Stepping out of the ring you wonder “Was it worth doing all this over a guy with frosted tips?” The victory is like the middle of a donut, empty.
-You don’t feel particularly razzed by a guy with the attitude of an 80’s movie bully and looks like a nu metal fanboy from the 90s. You go back to sparring with your friend. You really start to feel like you're a part of a community and your growth is quite impressive. You meet a lot of new people, and some of them are pretty cool too. Also turns out that guy got kicked out of the gym for constantly insulting people and challenging them to martial arts tournaments that he seemed to be funding.
+Nobody calls you a marital fartist! You start grinding hard at your marital arts goals and continue to get stronger. You push away all of the weaker martial artists you know and focus on your own skill. By the time the tournament rolls around you crush everyone, including him. You get a nice big cash prize, with an addition of turtle wax - nice. Stepping out of the ring you wonder “Was it worth doing all this over a guy with frosted tips?” The victory is like the middle of a donut, empty.
+You don’t feel particularly razzed by a guy with the attitude of an 80’s movie bully who looks like a nu-metal fanboy from the 90s. You go back to sparring with your friend. You really start to feel like you're a part of a community and your growth is quite impressive. You meet a lot of new people and some of them are pretty cool too. Also, turns out that guy got kicked out of the gym for constantly insulting people and challenging them to martial arts tournaments that he seemed to be funding.
 0 150 -28
 0 0 35
 
 1008
-After acing the role of Spider-Man you want more. The experience of the stage was exhilarating. The lights, the audience, the recognition. It was intoxicating. There won’t be another FSU production for a while. Plus finding an off campus production will be a labor intensive process. 
+After acing the role of Spider-Man, you want more. The experience on the stage was exhilarating. The lights, the audience, the recognition -- it was intoxicating. There won’t be another FSU production for a while. Plus, finding an off-campus production will be a labor-intensive process. 
 Wait for another FSU production
 Find a local production
-There is no need to rush, patience is a virtue as they say. You have school work to do, and you’ll save a lot on gas. Best to focus on your grades rather than your ego.
-You need to satiate your craving for the stage. You scout out a local production near FSU. You audition and score the leading role - naturally. It eats into your time, and gas ain’t free, but none of that matters. You feel like this is what you were meant to do. What you were meant to be. Nothing can stop you now.
+There is no need to rush, patience is a virtue, as they say. You have schoolwork to do and you’ll save a lot on gas. Best to focus on your grades rather than your ego.
+You need to satiate your craving for the stage. You scout out a local production near FSU. You audition and score the leading role, naturally. It eats into your time and gas ain’t free, but none of that matters. You feel like this is what you were meant to do. What you were meant to be. Nothing can stop you now.
 .5 12 0
 -.2 -12 16
 
 1009
-FSU was putting on an original play written by a student. The anticipation. Your hair is standing on end. You go to the auditions. You - expectedly - knock the auditions out of the park. Eventually you find that you got... What!? You got a stinking side role. You can't let this stand.
+FSU was putting on an original play written by a student. The anticipation. Your hair is standing on end. You go to the auditions. You (expectedly) knock the auditions out of the park. Eventually, you find that you got... What!? You got a stinking side role. You can't let this stand.
 Raise a complaint
 Don't complain
-This must have been a mistake, how could they have not recognized that you were lead material. You should be the lead. You deserve to be the lead. So you go and complain, things get heated then next thing you know you're kicked off the production for “assaulting the casting director” , “verbally abusing the lead role’s actor” and “arson”. Well it’s their fault that you weren’t cast in the lead role.
-You were still a central character and to top that off you get a solo. You make peace with not being the main character. You put your all into it. And once opening day rolls around you have forgotten any feeling of being slighted and put on the performance of your life. This show was a lot better than your others. Everyone on stage was incredibly talented. The feeling of being one part of a greater whole was pleasant. Also your solo song being a highlight in the reviews of the shows weren’t bad either.
+This must have been a mistake, how could they have not recognized that you were lead material? You should be the lead. You deserve to be the lead. So, you go and complain, things get heated, then next thing you know you're kicked off the production for “assaulting the casting director”, “verbally abusing the lead role’s actor,” and “arson”. Well, it’s their fault that you weren’t cast in the lead role.
+You were still a central character and to top that off, you get a solo. You make peace with not being the main character. You put your all into it. And once opening day rolls around you have forgotten any feeling of being slighted and put on the performance of your life. This show was a lot better than your others. Everyone on stage was incredibly talented. The feeling of being one part of a greater whole was pleasant. Also, your solo song being a highlight in the reviews of the shows wasn’t bad either.
 0 0 -35
 0 0 35
 
 1010
-You notice that the next FSU production is upon you, but you’re not really sure if you want to even audition again. You’re not really in the mood for this, you have a job and you gotta study. Is it even worth it to try this time?
+You notice that the next FSU production is upon you, but you’re not really sure if you want to even audition again. You’re not really in the mood for this -- you have a job and you gotta study. Is it even worth it to try this time?
 Audition
 Don’t Adition
-You never know if you don’t try. You audition, and you get a nice minor role. Honestly you don’t want to be in the spotlight right now. The show goes off without a hitch, everyone including you is on fire. It’s a good production, and a good time.
-You move on with your life. You don’t have the time to even try to audition. You need to focus on your job and school right now. With the added focus you have you do even better, ace some tests and even get a raise at work.
+You never know if you don’t try. You audition and you get a nice minor role. Honestly, you don’t want to be in the spotlight right now. The show goes off without a hitch and everyone including you is on fire. It’s a good production and a good time.
+You move on with your life. You don’t have the time to even try to audition. You need to focus on your job and school right now. With the added focus you have you do even better, ace some tests, and even get a raise at work.
 0 0 20
 .6 21 0
 
 1011
-The next day you wake up and find yourself staring at your empty word processor again - the same homework left unfinished. A blank page has never made you as anxious as this one is. You can’t handle it, you need to do something.
+The next day you wake up and find yourself staring at your empty word processor again -- the same homework left unfinished. A blank page has never made you as anxious as this one is. You can’t handle it, you need to do something.
 Get a move on
-Continue Procrastinating
-As much as it sucks to get started and as much as it sucks to get moving you’re able to get through the damn thing before lunch. You feel miserable and exhausted afterwards, but you're relieved that you don’t have to bother with it anymore. As painful as it was, at least it’s over.
-The anxiety is just too great to start. Even the thought of doing your work brought anxiety. You just can’t handle it. You just recede into watching terrible YouTube videos you don’t even like just to distract yourself from the work you have to do. Even the depths of the YouTube comment section isn’t safe from your procrastination, because getting mad at random people’s terrible opinions helps to get your mind off of what you need to do.
+Continue procrastinating
+As much as it sucks to get started and as much as it sucks to get moving, you’re able to get through the damn thing before lunch. You feel miserable and exhausted afterward, but you're relieved that you don’t have to bother with it anymore. As painful as it was, at least it’s over.
+The anxiety is just too great to start. Even the thought of doing your work brought anxiety. You just can’t handle it. You just recede into watching terrible YouTube videos that you don’t even like, just to distract yourself from the work you have to do. Even the depths of the YouTube comment section aren’t safe from your procrastination, because getting mad at random people’s terrible opinions helps to get your mind off of what you need to do.
 .5 0 -7
 -.5 0 -14
 
 1012
-Day 3 of needing this homework done. It needs to get done, it is due tomorrow. You can’t keep putting it off. If you do things are just going to get worse. 
+Day 3 of needing this homework done. It needs to get done, it is due tomorrow. You can’t keep putting it off. If you do, things are just going to get worse. 
 Just get it done
 No, this is too much
-At this point the homework wasn’t as bad as you built it up to be. It wasn’t that bad. It wasn’t the best time you ever had, but it was manageable. At the end of it you feel stupid for not getting it done earlier, but hey at least it’s done now. And anyway, it was time for lunch.
-You just can’t do it. You sit there staring at this empty page in a word processor hoping it would miraculously finish itself. That never happened, why would it? You can’t get up and do anything, but you also can’t get started on your work. The hours pass by as you stare helplessly at a blank screen. You wish this could be over.
+At this point, the homework wasn’t as bad as you built it up to be. It wasn’t that bad. It wasn’t the best time you ever had, but it was manageable. At the end of it, you feel stupid for not getting it done earlier, but hey at least it’s done now. And anyway, it was time for lunch.
+You just can’t do it. You sit there staring at this empty page in a word processor hoping it would miraculously finish itself. That never happened -- why would it? You can’t get up and do anything, but you also can’t get started on your work. The hours pass by as you stare helplessly at a blank screen. You wish this could be over.
 .5 0 0
 -.5 0 -32
 
@@ -480,7 +480,7 @@ Last day. You wake up at noon. You have 12 hours to finish. You stare at your co
 JUST FINISH YOUR HOMEWORK
 Give up...
 You do your work. It is done. You can go to bed now. It’s finally over.
-You give up. You get out of bed and just get on with your day. You make yourself breakfast, take a shower, and go to class. You just aren’t going to do your homework. The worst part really wasn’t the fact that it didn’t get done. It’s all the time you spent fretting over not doing it. But now that you have decided not to do it, you feel a smidge better.
+You give up. You get out of bed and just get on with your day. You make yourself breakfast, take a shower, and go to class. You just aren’t going to do your homework. The worst part really wasn’t the fact that it didn’t get done -- it’s all the time you spent fretting over not doing it. But now that you have decided not to do it, you feel a smidge better.
 .5 0 0
 -.5 0 3
 
@@ -488,34 +488,34 @@ You give up. You get out of bed and just get on with your day. You make yourself
 You are going on a hike and decide to try out a new hiking trail. The first thing you notice about this trail is how overgrown it was and every few steps you had to detangle your feet from vines. You want to get back to your car, then you hear a rustle coming from the bushes.
 Run back to your car
 Check the rustle
-You don’t want to deal with whatever bush based creature made that rustle. You rush back to your car as fast as you can. Once you slam your car door you calm down a little. Now that you're out of it you can chuckle a little at your reaction. This is going to be a mildly interesting story to tell you, so that’s something at least.
-You approach the bush, creeping towards the source of the rustle. For every inch you move towards the bush, your heart beats faster. It just keeps beating and beating. Your heart might just explode, then you tear the bush away. It was just a raccoon. Then you notice a mass, a DEAD BODY! Then you look closer and realize it wasn’t a dead body, but a fully dressed crash test dummy. You check it out and it turns out it has a wallet filled with cash with no identification. You not only take this cash, but the dummy as well. You’re not one to pass up a free crash test dummy.
+You don’t want to deal with whatever bush-based creature made that rustle. You rush back to your car as fast as you can. Once you slam your car door you calm down a little. Now that you're out of it you can chuckle a little at your reaction. This is going to be a mildly interesting story to tell, so that’s something at least.
+You approach the bush, creeping toward the source of the rustle. For every inch you move towards the bush, your heart beats faster. It just keeps beating and beating. Your heart might just explode, then you tear the bush away. It was just a raccoon. Then you notice a mass, a DEAD BODY! Then you look closer and realize it wasn’t a dead body, but a fully dressed crash test dummy. You check it out and it turns out that it has a wallet filled with cash with no identification. You not only take this cash but the dummy as well. You’re not one to pass up a free crash test dummy.
 0 0 7
 0 80 0
 
 1015
-It has been a few days since you last went for a hike, but you feel up to it today. You go on one  of your usual trails today instead of a new one. Safer that way. It is a normal hike, everything is pretty normal. That is until a bear comes out of nowhere and blocks your path. You freeze. 
+It has been a few days since you last went for a hike, but you feel up to it today. You go on one of your usual trails today instead of a new one. Safer that way. It is a normal hike, everything is pretty normal. That is until a bear comes out of nowhere and blocks your path. You freeze. 
 Play Dead
 Get ready to fight
-You fall to the dirt, both of your hands and one of your feet cranked behind you. The other foot kicked out in front of you. The bear comes over to sniff and investigate your mysterious “corpse”. It is rather uninterested and leaves a few seconds later. You get back up on your feet and book it back to your car. You rush back home.
+You fall to the dirt, both of your hands and one of your feet cranked behind you, the other foot kicked out in front of you. The bear comes over to sniff and investigate your mysterious “corpse”. It is rather uninterested and leaves a few seconds later. You get back up on your feet and book it back to your car. You rush back home.
 You square up. There is no way this bear is going to get you without a fight. The bear comes right up to your face, looks you dead in the eye, and huffs in your face. You do not flinch, your resolve is made of pure steel. A few seconds pass, then the bear leaves. You relax and continue on your way. You feel like the coolest person to have ever walked the earth.
 0 0 0
 0 0 18
 
 1016
-You lay awake at night wondering why the hell there a crash test dummy in the forest. You need to investigate. You get up and drive over to the hiking trail to retrace your steps. Nothing was there, just a dark, empty hiking trail. Then an unnatural light bursts forth from the bush.
+You lay awake at night wondering why the heck there was a crash test dummy in the forest. You need to investigate. You get up and drive over to the hiking trail to retrace your steps. Nothing was there, just a dark, empty hiking trail. Then an unnatural light bursts forth from the bush.
 Investigate the light now
 Investigate after the light leaves
-You creep closer to the bush and push the branches aside. You are met with one of the most horrifying sights you have seen and will ever see. A real human being floating in the overpowering beam of light. Their body was transforming into something else... it was a... crash test dummy. You fell backwards flat on your ass. You tried to create as much distance between you and that as possible. You couldn’t believe what you just saw. How was it possible, who could do that, was it aliens, why the hell would they even want to do that? You didn’t get sleep that night. And the next day. And the next day...
+You creep closer to the bush and push the branches aside. You are met with one of the most horrifying sights you have seen and will ever see. A real human being floating in the overpowering beam of light. Their body was transforming into something else... it was a... crash test dummy. You fell backward flat on your butt. You tried to create as much distance between you and it as possible. You couldn’t believe what you just saw. How was it possible, who could do that? Was it aliens? Why the heck would they even want to do that? You didn’t get sleep that night. And the next day. And the next day...
 The light subsides in a few minutes. You peer past the shrubbery and see yet another fully dressed crash test dummy. It also has a wallet full of cash with no identification. You pilfer the cash because why not. You leave the dummy, something off about it. You leave with more questions than answers. Maybe one day you’ll find the truth, but that seems unlikely.
 0 0 -45
 0 24 -9
 
 1017
-You have been eagerly awaiting the announcement for Book 2 from Mr. & Mrs. Book. So many questions left unanswered. Book 2 had just been announced, and pre-orders were up. Due to how popular Book was you might not be able to get the book release day if you don’t pre-order.
+You have been eagerly awaiting the announcement for Book 2 from Mr. & Mrs. Book. So many questions left unanswered. Book 2 had just been announced and pre-orders were up. Due to how popular Book was you might not be able to get the book on release day unless you pre-order.
 Pre-order it
 Wait for the release date
-You can’t risk it, this is the book series. It was the biggest book since Larry Ceramics. It would be sold out in less than an hour once it hit store shelves, both physical and digital. You need to know what happens. 
+You can’t risk it, this is the Book series. It was the biggest book since Larry Ceramics. It would be sold out in less than an hour once it hit store shelves, both physical and digital. You need to know what happens. 
 You need to be practical, you can save the money for the book, and get it later. Despite the deep burning need to know what happens in Book 2, you just can’t bring yourself to fork over the cash for a pre-order. Your wallet is more important.
 0 -6 13
 0 6 0
@@ -524,53 +524,53 @@ You need to be practical, you can save the money for the book, and get it later.
 The day of Book 2’s release you scout your mailbox and swipe up the package before anyone else can get to it. You want to start reading it ASAP but you also need to finish your homework. You haven’t been this excited since the final Larry Ceramics book.
 Read now
 Read later
-Your homework is due in like three days, you don’t need to worry about it.  So you wander into the dense forest that is Book 2. The tales of Book and his compatriots, Novel, Novella (Novel’s twin sister), and Short Story. The cliffhanger gets resolved beautifully, so many of the last books questions get answered, but so many aren’t and even more are raised. The thrill of each page turn is heart stopping. The death of Compendium Jones brought a tear to your eye. You finish the book the next day and then do your homework the day after that.
-You finish your work before two o’clock. The anticipation for the book only grew as you tore down the basic homework you were tasked with. By the time you finished the work you had become more animal than human. You rushed on all fours to your copy of Book 2. Cracking it open, it’s almost as if heavenly light pours forth from the pages. You get into the groove and lose yourself in the story.
+Your homework is due in like three days, you don’t need to worry about it.  So you wander into the dense forest that is Book 2. The tales of Book and his compatriots, Novel, Novella (Novel’s twin sister), and Short Story. The cliffhanger gets resolved beautifully, so many of the last book's questions get answered, but so many aren’t, and even more are raised. The thrill of each page turn is heart-stopping. The death of Compendium Jones brought a tear to your eye. You finish the book the next day and then do your homework the day after that.
+You finish your work before two o’clock. The anticipation for the book only grew as you tore down the basic homework you were tasked with. By the time you finished the work, you had become more animal than human. You rushed on all fours to your copy of Book 2. Cracking it open, it’s almost as if heavenly light pours forth from the pages. You get into the groove and lose yourself in the story.
 0 0 16
 .5 0 8
 
 1019
-You're up early and hightail it towards the closest book store. The second the doors open everyone rushes in like savages. A full on fight has broken out. And you come face-to-face to a man holding in his grubby hands ten copies of Book 2. You can’t let him get away with this.
+You're up early and hightail it toward the closest bookstore. The second the doors open everyone rushes in like savages. A full-on fight has broken out. And you come face-to-face with a man with 10 copies of Book 2 in his grubby hands. You can’t let him get away with this.
 Fight Him
 Trick Him
-You square up against this monster. Scalpers are the scum of the earth. You open with a punch to the face. He crumples to the ground; books go flying. You snatch one from the air and land with nary a sound. The scalper regains his footing and rushes you. In his haste he left himself open to a brutal attack. Your fist flies towards his most vital area. Contact. You have punched him in the balls. He is immobilized, you go to checkout, triumphant. 
-You let the scalper pass, but before he can get past you. His wallet ends up in your hands in a  miraculous coincidence that no one could have predicted. You follow him up to the checkout and see him make an absolute buffon of himself. You take glee in his “misfortune”. After taking the money from his wallet and snapping his credit & debit cards in two you return it to his back pocket. You take a copy of Book 2 from the stack that he couldn’t buy, and purchase it with his money. You get what you deserve.
+You square up against this monster. Scalpers are the scum of the earth. You open with a punch to the face. He crumples to the ground; books go flying. You snatch one from the air and land without a sound. The scalper regains his footing and rushes you. In his haste, he left himself open to a brutal attack. Your fist flies towards his most vital area. Contact. He is immobilized, you go to checkout, triumphant. 
+You let the scalper pass, but before he can get past you. His wallet ends up in your hands in a miraculous coincidence that no one could have predicted. You follow him up to the checkout and see him make an absolute buffon of himself. You take glee in his “misfortune”. After taking the money from his wallet and snapping his credit & debit cards in two, you return it to his back pocket. You take a copy of Book 2 from the stack that he couldn’t buy and purchase it with his money. You get what you deserve.
 0 -5 15
 0 30 15
 
 1020
-After seeing someone break every bone in their body right in front of you you can't sleep at night. Every time you close your eyes you see that broken heap of a person. And every quiet moment is interrupted by their crunching bones. You can't live this much longer.
+After seeing someone break every bone in their body right in front of you, you can't sleep at night. Every time you close your eyes you see that broken heap of a person. And every quiet moment is interrupted by their crunching bones. You can't live like this much longer.
 Go to Therapy
 Curl up into a ball and cry
-Over the course of months you start to be able to live with the memory of the accident.  It wasn’t easy,l (or cheap), but it was worth it.  You can finally sleep soundly at night without any shambling mass of broken bones and it's accompanying noises
-It takes a good long while for you to finish crying,but you feel a little better afterwards. Now you understand that this is merely a short term solution to a long term problem. Yet for a moment you feel better.
+Over the course of months, you start to be able to live with the memory of the accident.  It wasn’t easy (or cheap), but it was worth it.  You can finally sleep soundly at night without any shambling mass of broken bones and it's accompanying noises
+It takes a good long while for you to finish crying, but you feel a little better afterward. Now you understand that this is merely a short-term solution to a long-term problem. Yet for a moment you feel better.
 0 -75 100
 0 0 5
 
 1021
-You notice that your grades have been noticeably worse than they should be. It’s almost as if someone has been tampering with them. And you remember that it started around the time you aided a Deer in fighting the Dean of Students. But those events can’t be correlated, right?
+You notice that your grades have been noticeably worse than they should be. It’s almost as if someone has been tampering with them. And, you remember that it started around the time you aided a Deer in fighting the Dean. But those events can’t be correlated, right?
 Chalk it up to coincidence.
 Declare vengeance on the Dean
-You know the idea that the Dean of Students is actively and maliciously tampering with your grades is such an absurd idea that you barely give it a second thought. Instead you devote yourself to improving your grades the ol’ fashion way. Studying!
-You think that this is too eerie to be a coincidence. The Dean must be actively and maliciously tampering with your grades. This is a great offense to your character and hard work. Well the Dean won’t get off lightly. You swear undying vengeance on the Dean.
+You know the idea that the Dean is actively and maliciously tampering with your grades is such an absurd idea that you barely give it a second thought. Instead, you devote yourself to improving your grades the ol’ fashion way: studying!
+You think that this is too eerie to be a coincidence. The Dean must be actively and maliciously tampering with your grades. This is a great offense to your character and hard work. Well, the Dean won’t get off lightly. You swear undying vengeance on the Dean.
 .2 0 10
 0 0 0
 
 1022
-You cross paths with the Dean once more. The both of you glare at one another. The hate was so intense the concrete cracked under your feet, the flowers nearby withered and died, some guy on a skateboard beefed an ollie and ate some dirt. That last one might be unrelated. 
+You cross paths with the Dean once more. The both of you glare at one another. The hate was so intense the concrete cracked under your feet, the flowers nearby withered and died, and some guy on a skateboard beefed an ollie and ate some dirt. That last one might be unrelated. 
 Threaten the Dean
 Rush at the Dean
-Now is not the time to engage in hand-to-hand combat. You slide your thumb across your throat in a threatening manner while making a faux cutting sound. The Dean scoffs, you know you got to him. You need to prepare for when this conflict hits its fever pitch. You give yourself a nice pat on the back for that one.
+Now is not the time to engage in hand-to-hand combat. You slide your thumb across your throat in a threatening manner while making a faux-cutting sound. The Dean scoffs -- you know you got to him. You need to prepare for when this conflict hits its fever pitch. You give yourself a nice pat on the back for that one.
 You try to bum rush the Dean but they slam you into the ground in a mere instant. You cough up some blood. The Dean adjusts their suit jacket triumphantly and condescendingly. You're not going down that easily, but this for sure bruised your apple of an ego. You need to train for next time. 
 0 0 15
 0 0 -15
 
 1023
-You need to prepare for any possible physical confrontation. So you decide to take some more Capoeira classes, but they are very expensive. I mean who has that kind of money? Probably the Dean actually. Regardless, you can still train independently.
+You need to prepare for any possible physical confrontation. So, you decide to take some more Capoeira classes, but they are very expensive. I mean who has that kind of money? Probably the Dean, actually. Regardless, you can still train independently.
 Take the classes
 Train independently
-Combat skill is too important to miss out on. If you don’t train your skills you won’t be able to get a hit in, even if they are strong hits. So you slam down some cash to improve your Capoeira capabilities. It’s initially harder than you remember, but you get into the groove of it sooner rather than later. You’re certain that the Dean won’t be able to stand your new techniques. 
-Since you aren’t taking those classes, you probably don’t need to go to the Gym specifically. So instead you save your money, go to a forest, and train your body instead of your fighting skills. You punch trees until they splinter and break under the assault of your fists. You feel like you gain a greater level of physical connection to your body. Every movement you picture in your head you can replicate with ease. You have the strength to take on the Dean.
+Combat skill is too important to miss out on. If you don’t train your skills you won’t be able to get a hit in, even if they are strong hits. So, you slam down some cash to improve your Capoeira capabilities. It’s initially harder than you remember, but you get into the groove of it sooner rather than later. You’re certain that the Dean won’t be able to stand your new techniques. 
+Since you aren’t taking those classes, you probably don’t need to go to the Gym specifically. So instead you save your money, go to a forest and train your body instead of your fighting skills. You punch trees until they splinter and break under the assault of your fists. You feel like you gain a greater level of physical connection to your body. Every movement you picture in your head you can replicate with ease. You have the strength to take on the Dean.
 0 -75 12
 0 75 12
 
@@ -579,7 +579,7 @@ Strolling on the Quad you encounter a familiar visage. The Deer you fought with 
 Give Deer the Granola
 Keep your Granola
 The granola bar has been smashed into regular granola in your back pocket. You pour it into your hand, then feed the Deer. It eats the granola with the same fervor you eat granola bars. You feel a connection form with the Deer and Mother Nature itself. A dramatic wind blows past you. After finishing, the Deer gives you a nod; you nod back. You need to get another granola bar.
-You paid good money for this Granola Bar. And you’re not the kind of person to waste 42 cents. You take a fighting stance. The Deer rushes you, horns first. You dodge the antlers. The Deer comes back around and charges again. Leaping over it, you land on its back. Smashing the back of its neck, it crumples to the ground defeated. Sweet free deer meat!
+You paid good money for this granola bar and you’re not the kind of person to waste 42 cents. You take a fighting stance. The Deer rushes you, horns first. You dodge the antlers. The Deer comes back around and charges again. Leaping over it, you land on its back. Smashing the back of its neck, it crumples to the ground defeated. Sweet, free deer meat!
 0 -1 15
 0 150 0
 
@@ -588,7 +588,7 @@ Your friends see your decline and stage an intervention to persuade you to delet
 Delete the app
 Keep the app
 You're thankful for your friends. You grow closer to them and have time to focus back on school work.
-You're sucked deeper into the app. This choice cost you your friends. You become depressed. Your performance in school significantly declines more.
+You're sucked deeper into the app. This choice cost you your friends. You become depressed. Your performance in school significantly declines.
 .15 0 2
 -.75 0 -4
 
