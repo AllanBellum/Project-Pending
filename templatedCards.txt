@@ -333,7 +333,7 @@ You find a flier on campus that is vague on details but offers a whole lot of mo
 0 500 0
 
 0302
-Whoops, you forgot to do your homework and it’s due tomorrow. You think that you can finish it before tomorrow, but only if  you start right now. But honestly is it worth it? It’s just going to stress you out more than you’d want. Maybe just letting it slide and taking the hit to your grade would be a better approach.
+Ever since you participated in that scientific testing you’ve felt like you’ve been — metaphorically — dying . Your bones feel like pudding, you’re always cold, and your skin feels like paper. You could go to the hospital, but who’s got the time and money?
 Go to the hospital 
 Don’t go to the hospital
 Well you sure do. Turns out that study was not above board and pumped a bunch of deadly stuff into you. If you had gone to the hospital one day too late they wouldn’t have been able to do anything. Good thing you actually went to the hospital and didn’t die. Though, it was kind of expensive.
