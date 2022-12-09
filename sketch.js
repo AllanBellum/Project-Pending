@@ -1,12 +1,14 @@
 vWidth = 1366;
 vHeight = 768;
-
+passed = 1;
 xs = 0;
 spin = 0;
 textPos = 0;
 lastBack = 0;
 textSpin = 0;
 runningAnimation = false;
+let grade = "Freshman";
+let semester = "Fall Semester";
 
 progressBar = [];
 let myFont;
@@ -14,14 +16,24 @@ cardSize = 8 //number of elements on card
 var cardStorage = new Array();
 let currentCard; //card being read by program
 let cardFace;
+let flipTo;
+let hovering = false;
 
 let buttons = [];
 
 let lines;
 
 let gpa = 2.0;
+let gpaIndicator = "-";
 let mHealth = 100;
+let mHealthIndicator = "-";
 let money = 0;
+let moneyIndicator = "-";
+let indicatorPos = 0;
+let statArrowOpacity = 255;
+let runningStatAnimation = false;
+
+let mute = false;
 
 
 // This class will create a button that detects a mouse click and does a function
@@ -44,106 +56,282 @@ class Button {
 }
 
 
-function preload() {
-	lines = loadStrings('templatedCards.txt');
-	myFont = loadFont('Assets/Fonts/Papernotes.ttf');
-	notecardImg = loadImage('Assets/Imgs/Notecard.png');
+
+function preload(){  
+  lines = loadStrings('templatedCards.txt');
+  myFont = loadFont('Assets/Fonts/Papernotes.ttf');
+  notecardImg = loadImage('Assets/Imgs/Notecard.png');
 	backgroundGoodImg = loadImage('Assets/Imgs/Background-Good.png');
 	backgroundPoorImg = loadImage('Assets/Imgs/Background-Poor.png');
 	backgroundBadImg = loadImage('Assets/Imgs/Background-Bad.png');
 	backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
 
-	intro = loadSound('Assets/Music/CDintroSong.mp3');
-	loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
-	loopGood = loadSound('Assets/Music/CDLoopGood.mp3');
-	loopBad = loadSound('Assets/Music/CDLoopBad.mp3')
+	paperSFX = loadSound('Assets/PaperFlipSFX.mp3');
+
+	upArrowImg = loadImage('Assets/Imgs/UpArrow.png');
+	downArrowImg = loadImage('Assets/Imgs/DownArrow.png');
+  mutedIcon = loadImage('Assets/Imgs/mutedIcon.png');
+  soundIcon = loadImage('Assets/Imgs/soundIcon.png');
+    
+  intro = loadSound('Assets/Music/CDintroSong.mp3');
+  loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
+  loopGood = loadSound('Assets/Music/CDLoopGood.mp3');
+  loopBad = loadSound('Assets/Music/CDLoopBad.mp3')
+
 }
 
 
-function setup() {
-	createCanvas(vWidth, vHeight, WEBGL);
-	ortho(); //Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
+function setup() {  
+  createCanvas(vWidth, vHeight, WEBGL);
+  ortho();//Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
 
-	addBackground();
-	//addProgressBar();
-	addCard();
-	displayStats();
-	// GPA text should be at position x=-536 y=310
-	// Money text is position x=-100 y=310
-	// Mental Health is position x=383 y=310
-	//--------------------------------------------------------------------------------------------------------------------------------------------------------
-	//Loads cards into memory
-	i = 0; //line
-	k = 0; //card
-	EOF = false;
-	while (EOF == false) {
-		cardStorage.push([]);
-		for (j = 0; j < cardSize; ++j) {
-			cardStorage[k].push(lines[i]);
-			if (lines[i] == "EOF") {
-				EOF = true;
-			}
-			++i //increment of line within for loop
-		}
-		++k;
-		if (lines[i] == "EOF") { //this check shouldn't be necesary if the EOF is correctly placed in the text file
-			EOF = true;
-		}
-		++i; //increment of line to clear blankspace between cards
-	}
+  addBackground();
+  addCard();
+  displayStats(); 
+  addCal();
+  addcaltext();
+  
+  // GPA text should be at position x=-536 y=310
+  // Money text is position x=-100 y=310
+  // Mental Health is position x=383 y=310
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+//Loads cards into memory
+  i = 0; //line
+  k = 0; //card
+  EOF = false;
+  while (EOF == false){
+    cardStorage.push([]);
+    for (j = 0; j < cardSize; ++j) {
+      cardStorage[k].push(lines[i]);
+      if (lines[i] == "EOF"){
+        EOF = true;
+      }
+      ++i //increment of line within for loop
+    }
+    ++k;
+    if (lines[i] == "EOF"){ //this check shouldn't be necesary if the EOF is correctly placed in the text file
+        EOF = true;
+    }
+    ++i; //increment of line to clear blankspace between cards
+  }
 
-	currentCard = 0;
-	cardFace = "front";
-
-	mousePressed();
+  currentCard = 0;
+  cardFace = "front"; 
+    
+    mousePressed();
+    image(soundIcon, -684, -43);
 }
 
+let hoveringOn = "";
+function draw(){    
+    drawAnimation();
+    
+    addCal();
+    addcaltext();
+    
+    determinetime();
+    //addcaltext();
 
-function draw() {
-	if (runningAnimation) {
-		drawAnimation();
-	}
 
-	displayCardText();
+    //137, 75, 275, 150
+    if (cardFace == "front" && !runningAnimation) {
+        redrawCanvas();
+        if (mouseX >= ((vWidth / 2) + -137) - (275 / 2) && mouseX <= ((vWidth / 2) + -137) + (275 / 2) &&
+			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
+            hovering = true;
+            hoveringOn = "l";
+			push();
+            fill(255, 255, 0, 60);
+            noStroke();
+            translate(-137, 75, 0);
+            box(275, 150, 0);
+            pop();
+		} else if (mouseX >= ((vWidth / 2) + 137) - (275 / 2) && mouseX <= ((vWidth / 2) + 137) + (275 / 2) &&
+			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
+            hovering = true;
+            hoveringOn = "r";
+			push();
+            fill(255, 255, 0, 60);
+            noStroke();
+            translate(137, 75, 0);
+            box(275, 150, 0);
+            pop();
+        } else if (hovering && (hoveringOn == "r" || hoveringOn == "l")) {
+            hovering = false;
+        }
+    }
+    
+    
+    if (gpaIndicator != "-" || mHealthIndicator != "-" || moneyIndicator != "-") {
+        drawStatsAnimation();
+    }
+    
+    displayCardText();
+    
+    playSound();
 
-	playSound();
+
+
+    new Button(-605, 0, 200, 200, function(){//mute button located on/around laptop
+      if (mute){mute = false;}
+      else {mute = true;}
+      redrawCanvas()
+    });
+  
 }
 
 
 function drawAnimation() {
-    if(cardFace != "front" && textSpin < 3) {
-        if(cardFace == "back1") {
-            spin += .1;
-            textSpin += .1;
-        } else if (cardFace == "back2") {
-            spin -= .1;
-            textSpin -= .1;
-        }
-        
-    } else if (cardFace == "front") {
-        if (xs != -25) {
-            xs+=25;
-            textPos+=25;
+    if (runningAnimation) {
+        if (flipTo != "front") {
+            if (Math.abs(spin) < 180) {
+                if (flipTo == "back1") {
+                    spin -= 5;
+                    textSpin -= 5;
+                } else {
+                    spin += 5;
+                    textSpin += 5;
+                }
+                if (Math.abs(spin) == 90) {
+                    cardFace = flipTo;
+                    textSpin = -spin;
+                }
+            } else {
+                spin = 0;
+                textSpin = 0;
+                runningAnimation = false;
+                flipTo = "front";
+            }
+            
         } else {
-            xs+=25;
-            textPos+=25;
-            runningAnimation = false;
+            if (xs < 1000 && xs != -25) {
+                xs+=25;
+                textPos+=25;
+            } else if (xs >= 1000) {
+                xs = -1000;
+                textPos = -1000;
+                cardFace = flipTo;
+                nextCard();
+            } else if (xs == -25) {
+                xs+=25;
+                textPos+=25;
+                runningAnimation = false;
+                flipTo = "back";
+            }
+        }
+        redrawCanvas();
+    }
+    
+}
+
+function drawStatsAnimation() {
+    // Increase and decrease arrow animation
+    if (!runningStatAnimation) {
+        if (gpaIndicator != "-") {
+            push();
+            noStroke();
+            tint(255, 255);
+            
+            if (gpaIndicator == "u") {
+                image(upArrowImg, -585, 280, 40, 40);
+            } else {
+                image(downArrowImg, -585, 280, 40, 40);
+            }
+            
+            pop();
+            runningStatAnimation = true;
+        }
+
+        if (moneyIndicator != "-") {
+            push();
+            noStroke();
+            
+            if (moneyIndicator == "u") {
+                image(upArrowImg, -150, 280, 40, 40);
+            } else {
+                image(downArrowImg, -150, 280, 40, 40);
+            }
+            
+            pop();
+            runningStatAnimation = true;
+
+        }
+
+        if (mHealthIndicator != "-") {
+            push();
+            noStroke();
+            if (mHealthIndicator == "u") {
+                image(upArrowImg, 335, 280, 40, 40);
+            } else {
+                image(downArrowImg, 335, 280, 40, 40);
+            }
+            pop();
+            runningStatAnimation = true;
         }
         
+        
+    } else {
+        if (statArrowOpacity <= 0) {
+            runningStatAnimation = false;
+            statArrowOpacity = 255;
+            gpaIndicator = "-";
+            moneyIndicator = "-";
+            mHealthIndicator = "-";
+            indicatorPos = 0;
+        }
+        
+        if (gpaIndicator != "-") {
+            redrawCanvas();
+            push();
+            noStroke();
+            tint(255, statArrowOpacity - 5);
+
+            if (gpaIndicator == "u") {
+                image(upArrowImg, -585, 280 - indicatorPos, 40, 40);
+            } else {
+                image(downArrowImg, -585, 280 + indicatorPos, 40, 40);
+            }
+
+            pop();
+        }
+
+        if (moneyIndicator != "-") {
+            redrawCanvas();
+            push();
+            noStroke();
+            tint(255, statArrowOpacity - 5);
+
+            if (moneyIndicator == "u") {
+                image(upArrowImg, -150, 280 - indicatorPos, 40, 40);
+            } else {
+                image(downArrowImg, -150, 280 + indicatorPos, 40, 40);
+            }
+
+            pop();
+        }
+
+        if (mHealthIndicator != "-") {
+            redrawCanvas();
+            push();
+            noStroke();
+            tint(255, statArrowOpacity - 5);
+
+            if (mHealthIndicator == "u") {
+                image(upArrowImg, 335, 280 - indicatorPos, 40, 40);
+            } else {
+                image(downArrowImg, 335, 280 + indicatorPos, 40, 40);
+            }
+
+            pop();
+        }
+        
+        statArrowOpacity = statArrowOpacity - 5;
+        indicatorPos += .5;
+
     }
     
-    if(spin >= 3 || spin <= -3) {
-        spin = 0;
-        textSpin = 0;
-        runningAnimation = false;
-    }
-    
-    if(xs > 1000) {
-        xs = -1000;
-        textPos = -1000;
-    }
-    redrawCanvas();
 }
+
 
 function mousePressed() {
 
@@ -183,25 +371,34 @@ function addCard() {
 	pop();
 }
 
+// This is the Calendar box
+function addCal() {
+    push();
+    translate (-5,-357);
+    fill(0, 105, 62);
+    box(400,48) 
+    pop();
+ 
+}
 
-// This is the progress bar
-function addProgressBar() {
-	// Bar dimensions
-	let w = 1000;
-	let h = 39;
-	let y = -338;
-
-	//Sections
-	let cardsPerYr = 16;
-	let total = 16 * 4;
-
-	for (let i = 0; i < total; i++) {
-		push();
-		fill(100, 100, 100);
-		translate(-(w / 2) + ((w / total) * i), y, 0);
-		append(progressBar, box(w / total, h, 10));
-		pop();
-	}
+function addcaltext() {
+    push();
+    textFont(myFont);
+    textSize(32);
+    fill(209, 188, 1);
+    textAlign(CENTER);
+    translate(0, 0, 50);
+    text(grade + ' - ', -120,-350)
+    pop();
+  
+    push();
+    textFont(myFont);
+    textSize(32);
+    fill(209, 188, 1);
+    translate(0, 0, 50);
+    textAlign(RIGHT);
+    text(semester,150,-349); 
+    pop();
 }
 
 
@@ -211,15 +408,46 @@ function displayStats() {
 	textSize(30);
 	fill(209, 188, 1);
 	text("GPA: " + (gpa).toFixed(1), -536, 310);
-	text("Money: " + money, -100, 310);
+	text("Money: $" + money, -100, 310);
 	text("Mental Health: " + mHealth, 383, 310);
 	pop();
+}
+
+
+function determinetime(){
+  
+  if (passed >= 1 && passed < 5){
+    grade = 'Freshman'
+    semester = 'Fall Semester'
+  } else if ( passed >= 5 && passed <= 8){
+    grade = 'Freshman'
+    semester = 'Spring Semester'
+  } else if ( passed >= 9 && passed <= 12){
+    grade = 'Sophmore'
+    semester = 'Fall Semester'
+  } else if ( passed >= 13 && passed <= 16){
+    grade = 'Sophmore'
+    semester = 'Spring Semester'
+  } else if ( passed >= 17 && passed <= 20){
+    grade = 'Junior'
+    semester = 'Fall Semester'
+  } else if ( passed >= 21 && passed <= 24){
+    grade = 'Junior'
+    semester = 'Spring Semester'
+  } else if ( passed >= 25 && passed <= 28){
+    grade = 'Senior'
+    semester = 'Fall Semester'
+  } else if ( passed >= 29 && passed <= 33){
+    grade = 'Senior'
+    semester = 'Spring Semester'
+  } 
 }
 
 function getOutcomeVal(lineN) {
 	// Cards in text go gpa money mHealth 
 	// For example 0 1 0
 	let vals = cardStorage[currentCard][lineN].split(" ");
+
 	if (gpa + parseFloat(vals[0]) > 4.0) {
 		gpa = 4.0;
 	} else if (gpa + parseFloat(vals[0]) < 0.0) {
@@ -237,6 +465,25 @@ function getOutcomeVal(lineN) {
 	} else {
 		mHealth += parseInt(vals[2]);
 	}
+    
+    // Arrow animations
+    if(parseFloat(vals[0]) > 0) {
+        gpaIndicator = "u";
+    } else if (parseFloat(vals[0]) < 0) {
+        gpaIndicator = "d";
+    }
+    
+    if(parseFloat(vals[1]) > 0) {
+        moneyIndicator = "u";
+    } else if (parseFloat(vals[1]) < 0) {
+        moneyIndicator = "d";
+    }
+    
+    if(parseFloat(vals[2]) > 0) {
+        mHealthIndicator = "u";
+    } else if (parseFloat(vals[2]) < 0) {
+        mHealthIndicator = "d";
+    }
 
 
 	//document.write(gpa + " " + mHealth + " " + money);\
@@ -261,19 +508,6 @@ function displayCardText() {
 	fill(0, 0, 0);
 
 	let tCardFace = cardFace
-
-	if (runningAnimation) {
-		if (cardFace == "back1" || cardFace == "back2") {
-			if (spin < 1.5) {
-				tCardFace = "front";
-
-			}
-			/*else {
-			               print("2: " + textSpin);
-			               //textSpin = 3 - textSpin
-			           }*/
-		}
-	}
 
 	if (tCardFace == "front") {
 		textAlign(CENTER);
@@ -302,11 +536,11 @@ function displayCardText() {
 		translate(0, 0, 100);
 
 		// Draw animation
+        angleMode(DEGREES);
 		rotateY(textSpin);
 
 		text(cardStorage[currentCard][2], textPos - 275, 25, 260, 150); //Option 1
 		pop();
-
 
 		push();
 		fill(0, 0, 0);
@@ -326,18 +560,18 @@ function displayCardText() {
 
 		if (!runningAnimation) {
 			new Button(-137, 75, 275, 150, function() {
-				cardFace = "back1";
+				flipTo = "back1";
 				getOutcomeVal(6);
 				runningAnimation = true;
-				redrawCanvas();
+                paperSFX.play();
 			});
 
 
 			new Button(137, 75, 275, 150, function() {
-				cardFace = "back2";
+				flipTo = "back2";
 				getOutcomeVal(7);
 				runningAnimation = true;
-				redrawCanvas();
+                paperSFX.play();
 			});
 		}
 	}
@@ -353,16 +587,13 @@ function displayCardText() {
 		// Draw animation
 		rotateY(textSpin);
 
-		text(cardStorage[currentCard][4], -280, -147, 560, 320); // Outcome 1
+		text(cardStorage[currentCard][4], textPos - 280, -147, 560, 320); // Outcome 1
 		pop();
 
 
 		if (!runningAnimation) {
 			new Button(0, -7, 569, 344, function() {
-				nextCard();
-				cardFace = "front";
 				runningAnimation = true;
-				redrawCanvas();
 			});
 		}
 
@@ -380,14 +611,11 @@ function displayCardText() {
 		// Draw animation
 		rotateY(textSpin);
 
-		text(cardStorage[currentCard][5], -280, -147, 560, 320); // Outcome 2
+		text(cardStorage[currentCard][5], textPos - 280, -147, 560, 320); // Outcome 2
 
 		if (!runningAnimation) {
 			new Button(0, -7, 569, 344, function() {
-				nextCard();
-				cardFace = "front";
 				runningAnimation = true;
-				redrawCanvas();
 			});
 		}
 		pop();
@@ -397,19 +625,24 @@ function displayCardText() {
 	}
 }
 
-
 function redrawCanvas() {
-	background(220);
-	addBackground();
-	progressBar = [];
-	//addProgressBar();
-	buttons = [];
-	addCard();
-	displayStats();
+    addBackground();
+    buttons = [];
+
+    if (mute){image(mutedIcon, -684, -43);} //changeing laptop screen depending on mute status
+    else {image(soundIcon, -684, -43);}
+     
+    addCard();
+    displayStats();
+    
+    addCal();
+    addcaltext();
+ 
 }
 
 function nextCard() { // function to include code for selecting new card for any cases not specified it will move to the next sequential card
 	let newCard;
+	passed++;
 	//example of what condition should look like for branching card, xxxx is cardID
 	/*else if (cardStorage[currentCard][0] == "xxxx") {
 	    if (cardFace == "back1")                          //this conditional can be based on any variables including which decision was made on this card or the GPA, Wealth, or Mental Health. Multiple if else statements are also accesable if more than 2 branches is desired, could also include just a cardID assignment to jump cards uncondiationally
@@ -534,7 +767,7 @@ function nextCard() { // function to include code for selecting new card for any
 		newCard = "0020";
 	}
 	else if (cardStorage[currentCard][0] == "9999") {
-		newCard = "9999"
+		reload();
 	}else {
         
     } //default case
@@ -553,26 +786,29 @@ function nextCard() { // function to include code for selecting new card for any
     
 }
 
-let introDuration = 166.716;
+let introDuration = 15.151;
 let fadeTimer = 3;
 
-function playSound() {
-	if (!intro.isPlaying() && !loopNuetral.isPlaying()) { //Music startup function, plays intro then the loop tracks
-		intro.play(0);
+function playSound(){
+  if (mute){loopNuetral.setVolume(0); loopGood.setVolume(0); loopBad.setVolume(0); intro.setVolume(0);}
+  else{
+    if(intro.isPlaying){intro.setVolume(1);}
+    if (!intro.isPlaying() && !loopNuetral.isPlaying()){ //Music startup function, plays intro then the loop tracks
+    intro.play(0);
+    
+    loopNuetral.playMode('sustain');
+    loopNuetral.play(introDuration);
 
-		loopNuetral.playMode('sustain');
-		loopNuetral.play(introDuration);
+    loopGood.playMode('sustain'); 
+    loopGood.play(introDuration, 1, 0.0);
+    
+    loopBad.playMode('sustain');
+    loopBad.play(introDuration, 1, 0.0);
 
-		loopGood.playMode('sustain');
-		loopGood.play(introDuration, 1, 0.0);
+    userStartAudio(); //allows music to play after use interacts with the window
 
-		loopBad.playMode('sustain');
-		loopBad.play(introDuration, 1, 0.0);
-
-		userStartAudio(); //allows music to play after use interacts with the window
-
-	}
-	if (loopNuetral.isPlaying() && !intro.isPlaying()) { //track switching for loops, 
+    }
+   if (loopNuetral.isPlaying() && !intro.isPlaying()) { //track switching for loops, 
 		if (gpa > 3 && mHealth > 75) {
 			loopNuetral.setVolume(0, fadeTimer);
 			loopGood.setVolume(1, fadeTimer);
@@ -592,4 +828,39 @@ function playSound() {
 			backgroundImg = backgroundPoorImg
 		} //defaults track to nuetral
 	}
+}
+
+function reload() {
+    vWidth = 1366;
+    vHeight = 768;
+
+    xs = 0;
+    spin = 0;
+    textPos = 0;
+    lastBack = 0;
+    textSpin = 0;
+    runningAnimation = false;
+
+    passed = 1;
+    grade = "Freshman";
+    semester = "Fall Semester";
+
+    currentCard = 0;
+    cardFace = "front"; 
+
+
+    gpa = 2.0;
+    mHealth = 100;
+    money = 0;
+    
+    intro.stop();
+    loopNuetral.stop();
+    loopGood.stop();
+    loopBad.stop();
+    
+    redrawCanvas();
+    playSound();
+
+    // Keep mute status
+    //let mute = false;
 }

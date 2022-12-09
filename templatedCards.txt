@@ -596,8 +596,8 @@ You're sucked deeper into the app. This choice cost you your friends. You become
 Game over
 Good Game
 Good Game Well Played 
-to be continued... 
-to be continued...
+Play again! 
+Play again!
 0, 0, 0
 0, 0, 0
 EOF
