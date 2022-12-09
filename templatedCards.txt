@@ -125,13 +125,13 @@ The D&D session was top tier stuff. Plus the DM bought pizza so you didn’t hav
 0 12 5
 
 0015
- You just had a major falling out with a friend. You feel like your world has entered a state of flux. Nothing feels right anymore. All of your worst mistakes and failures come flooding back to you. Nothing feels right anymore and you feel like the worst person to walk the earth. What are you going to do?
-Talk to someone about
-Push it all down and go to the gym
-You call up an old friend and just start to unfurl. You start bawling your eyes out, but when all is said and done you feel better. You feel like you can start moving forward instead of holding yourself back. It still hurts obviously, but the wound feels like it can properly heal.
-Who knew that physical exercise can’t address serious psychological issues? Not you. If anything you just made things worse for yourself. You even crush your toe with a dumbbell. Ow. 
-0 0 8
-0 0 -14
+Your sleep quality has been trash lately. Everyday you wake up you are plagued by day ruining tension headaches and you are done with it. You narrow the reasons down to two possible causes. One: That your pillow is causing your headaches by propping your head up at an odd angle. Or Two: Watching YouTube until you fall asleep is causing it. 
+The pillow is nice, and you have stopped waking up with killer tension headaches. But you still don’t feel great when you wake up. 
+Stop watching YouTube
+The pillow is nice, and you have stopped waking up with killer tension headaches. But you still don’t feel great when you wake up.
+You’ve stopped waking up with tension headaches! Success! And you’ve also started waking up with more energy as a nice bonus. Wahoo
+0 -15 7
+0 0 25
 
 0016
 Everything about your job is terrible. Your boss sucks, your coworkers are irritating, and the job is mind numbing beyond all belief. You can’t stay here any longer. The question is whether this place is so unbearable that you quit then find a job, or find a job then quit?
@@ -170,13 +170,13 @@ You don’t have time for something as time intensive as martial arts, you have 
 .5 0 0
 
 0020
-Your sleep quality has been trash lately. Everyday you wake up you are plagued by day ruining tension headaches and you are done with it. You narrow the reasons down to two possible causes. One: That your pillow is causing your headaches by propping your head up at an odd angle. Or Two: Watching YouTube until you fall asleep is causing it. 
-The pillow is nice, and you have stopped waking up with killer tension headaches. But you still don’t feel great when you wake up. 
-Stop watching YouTube
-The pillow is nice, and you have stopped waking up with killer tension headaches. But you still don’t feel great when you wake up.
-You’ve stopped waking up with tension headaches! Success! And you’ve also started waking up with more energy as a nice bonus. Wahoo
-0 -15 7
-0 0 25
+You just had a major falling out with a friend. You feel like your world has entered a state of flux. Nothing feels right anymore. All of your worst mistakes and failures come flooding back to you. Nothing feels right anymore and you feel like the worst person to walk the earth. What are you going to do?
+Talk to someone about
+Push it all down and go to the gym
+You call up an old friend and just start to unfurl. You start bawling your eyes out, but when all is said and done you feel better. You feel like you can start moving forward instead of holding yourself back. It still hurts obviously, but the wound feels like it can properly heal.
+Who knew that physical exercise can’t address serious psychological issues? Not you. If anything you just made things worse for yourself. You even crush your toe with a dumbbell. Ow. 
+0 0 8
+0 0 -14
 
 0021
 The stress is getting to you. You need to take a break for the day and do something relaxing. There are so many possible activities to do, your friends are all in class so social activities are out the window. And you don’t want to blow a ton of cash on something else. You’ve also been staring at a computer screen for the past couple days so you don’t want to stare at them much more. You have two ideas you could choose from.
