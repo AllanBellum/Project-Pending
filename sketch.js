@@ -649,7 +649,7 @@ function nextCard() { // function to include code for selecting new card for any
 	passed++;
 	//example of what condition should look like for branching card, xxxx is cardID
 	/*else if (cardStorage[currentCard][0] == "xxxx") {
-	    if (flipTo == "back1")                          //this conditional can be based on any variables including which decision was made on this card or the GPA, Wealth, or Mental Health. Multiple if else statements are also accesable if more than 2 branches is desired, could also include just a cardID assignment to jump cards uncondiationally
+	    if (cardFace == "back1")                          //this conditional can be based on any variables including which decision was made on this card or the GPA, Wealth, or Mental Health. Multiple if else statements are also accesable if more than 2 branches is desired, could also include just a cardID assignment to jump cards uncondiationally
 	      newCard = "xxxx";
 	    else
 	      newCard = "xxxx";}
@@ -668,88 +668,88 @@ function nextCard() { // function to include code for selecting new card for any
 		} else {
 			newCard = "0007"
 		}
-	} else if (cardStorage[currentCard][0] == "0100" && flipTo == "back2") {
+	} else if (cardStorage[currentCard][0] == "0100" && cardFace == "back2") {
 		newCard = "9999";
 	} else if (cardStorage[currentCard][0] == "0101" || cardStorage[currentCard][0] == "0100" || cardStorage[currentCard][0] == "0200" || cardStorage[currentCard][0] == "0300" || cardStorage[currentCard][0] == "0400") { //leaving branch
 		newCard = "0007";
-	} else if(cardStorage[currentCard][0] == "0005" && flipTo == "back2"){
+	} else if(cardStorage[currentCard][0] == "0005" && cardFace == "back2"){
 		newCard = "1025";
-	}else if(cardStorage[currentCard][0] == "0010" && flipTo == "back2"){
+	}else if(cardStorage[currentCard][0] == "0010" && cardFace == "back2"){
 		newCard = "1005";
-	}else if(cardStorage[currentCard][0] == "0015" && flipTo == "back1"){
+	}else if(cardStorage[currentCard][0] == "0015" && cardFace == "back1"){
 		newCard = "1006";
-	}else if(cardStorage[currentCard][0] == "0019" && flipTo == "back1"){
+	}else if(cardStorage[currentCard][0] == "0019" && cardFace == "back1"){
 		newCard = "1007";
 	}else if(cardStorage[currentCard][0] == "0021"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1014";
 		else
 			newCard = "1017";
 	}else if(cardStorage[currentCard][0] == "1014"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1015";
 		else
 			newCard = "1016";
 	}else if(cardStorage[currentCard][0] == "1017"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1018";
 		else
 			newCard = "1019";
 	}else if(cardStorage[currentCard][0] == "0026" && gpa >3.5){
 			newCard = "0401";
 	}else if(cardStorage[currentCard][0] == "0401"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1021";
 		else
 			newCard = "1024";
 	}else if(cardStorage[currentCard][0] == "1021"){
-		if(flipTo == "back2")
+		if(cardFace == "back2")
 			newCard = "1022";
 		else 
 			newCard = "0027";
 	}else if(cardStorage[currentCard][0] == "1022"){
 		newCard = "1023";
 	}else if(cardStorage[currentCard][0] == "1023"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1003";
 		else
 			newCard = "1004";
 	}else if(cardStorage[currentCard][0] == "0012" && mHealth < 35){
 			newCard = "0202";
 	}else if(cardStorage[currentCard][0] == "0202"){
-		if(flipTo == "back2")
+		if(cardFace == "back2")
 			newCard = "1011";
 		else
 			newCard = "0013";
 	}else if(cardStorage[currentCard][0] == "1011"){
-		if(flipTo == "back2")
+		if(cardFace == "back2")
 			newCard = "1012";
 		else
 			newCard = "0013";
-	}else if(cardStorage[currentCard][0] == "1012" && flipTo == "back2"){
-		if(flipTo == "back2")
+	}else if(cardStorage[currentCard][0] == "1012" && cardFace == "back2"){
+		if(cardFace == "back2")
 			newCard = "1013";
 		else
 			newCard = "0013";
 	}else if(cardStorage[currentCard][0] == "0023" && money < 32){
 		newCard = "0301";
 	}else if(cardStorage[currentCard][0] == "0301"){
-		if(flipTo == "back2")
+		if(cardFace == "back2")
 			newCard = "0302";
 		else
 			newCard = "0024";
-	}else if(cardStorage[currentCard][0] == "0302" && flipTo == "back2"){
-		if(flipTo == "back2")
+	}else if(cardStorage[currentCard][0] == "0302" && cardFace == "back2"){
+		if(cardFace == "back2")
 			newCard = "9999";
 		else
 			newCard = "0024";
 	}else if(cardStorage[currentCard][0] == "0027"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1010";
 		else 
 			newCard = "1009";
 	}else if(cardStorage[currentCard][0] == "1008"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1008";
 		else 
 			newCard = "1020";
@@ -769,7 +769,7 @@ function nextCard() { // function to include code for selecting new card for any
 		newCard = "0016";
 	}else if(cardStorage[currentCard][0] == "1007"){
 		newCard = "0020";
-	}else if(cardStorage[currentCard][0] == "0100" && flipTo == "back2"){
+	}else if(cardStorage[currentCard][0] == "0100" && cardFace == "back2"){
 		newCard = "9999";
 	}else if (cardStorage[currentCard][0] == "9999" || cardStorage[currentCard][0] == "9998") {
 		reload();
@@ -853,7 +853,7 @@ function reload() {
     grade = "Freshman";
     semester = "Fall Semester";
 
-    currentCard = 0;
+    currentCard = 1; //Bypass tutorial cards
     cardFace = "front"; 
 
 
