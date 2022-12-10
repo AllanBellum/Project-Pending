@@ -122,6 +122,7 @@ function setup() {
     
     mousePressed();
     image(soundIcon, -684, -43);
+    print(cardStorage)
 }
 
 let hoveringOn = "";
@@ -654,7 +655,13 @@ function nextCard() { // function to include code for selecting new card for any
 	    else
 	      newCard = "xxxx";}
 	*/
-	if (cardStorage[currentCard][0] == "0006") { //branching based on stats
+	if (cardStorage[currentCard][0] == "0100" && cardFace == "back2") {
+		newCard = "9999";
+    }else if(cardStorage[currentCard][0] == "1003" || cardStorage[currentCard][0] == "1004"){
+			newCard = "9999";
+	} else if (passed == 33){
+        newCard = "9998"
+    }else if (cardStorage[currentCard][0] == "0006") { //branching based on stats
 		if (gpa < 1.0) {
 			newCard = "0101";
 		} else if (gpa < 2.0) {
@@ -668,9 +675,7 @@ function nextCard() { // function to include code for selecting new card for any
 		} else {
 			newCard = "0007"
 		}
-	} else if (cardStorage[currentCard][0] == "0100" && cardFace == "back2") {
-		newCard = "9999";
-	} else if (cardStorage[currentCard][0] == "0101" || cardStorage[currentCard][0] == "0100" || cardStorage[currentCard][0] == "0200" || cardStorage[currentCard][0] == "0300" || cardStorage[currentCard][0] == "0400") { //leaving branch
+    }else if (cardStorage[currentCard][0] == "0101" || cardStorage[currentCard][0] == "0100" || cardStorage[currentCard][0] == "0200" || cardStorage[currentCard][0] == "0300" || cardStorage[currentCard][0] == "0400") { //leaving branch
 		newCard = "0007";
 	} else if(cardStorage[currentCard][0] == "0005" && cardFace == "back2"){
 		newCard = "1025";
@@ -755,8 +760,6 @@ function nextCard() { // function to include code for selecting new card for any
 			newCard = "1020";
 	}else if(cardStorage[currentCard][0] == "1016" || cardStorage[currentCard][0] == "1019"){
 			newCard = "0022";
-	}else if(cardStorage[currentCard][0] == "1003" || cardStorage[currentCard][0] == "1004"){
-			newCard = "9999";
 	}else if(cardStorage[currentCard][0] == "1009" || cardStorage[currentCard][0] == "1020"){
 			newCard = "0028";
 	}else if(cardStorage[currentCard][0] == "1025"){
@@ -769,12 +772,8 @@ function nextCard() { // function to include code for selecting new card for any
 		newCard = "0016";
 	}else if(cardStorage[currentCard][0] == "1007"){
 		newCard = "0020";
-	}else if(cardStorage[currentCard][0] == "0100" && cardFace == "back2"){
-		newCard = "9999";
-	}else if (cardStorage[currentCard][0] == "9999" || cardStorage[currentCard][0] == "9998") {
+    }else if (cardStorage[currentCard][0] == "9999" || cardStorage[currentCard][0] == "9998") {
 		reload();
-	}else if(cardStorage[currentCard][0] == "9998"){
-		newCard = "9998"
     } else {
         
   } //default case
@@ -849,7 +848,7 @@ function reload() {
     textSpin = 0;
     runningAnimation = false;
 
-    passed = -1;//-1 to allow for tutorial cards
+    passed = 1;//-1 to allow for tutorial cards
     grade = "Freshman";
     semester = "Fall Semester";
 
