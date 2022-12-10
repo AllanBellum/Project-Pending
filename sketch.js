@@ -113,6 +113,7 @@ function setupGame() {
 
 
 function draw(){
+    playSound();
 	if (gameStarted) {
 		if (runningAnimation) {
 			drawAnimation();
@@ -120,7 +121,6 @@ function draw(){
 		
 		displayCardText();
 		
-		playSound();
 	
 	
 		new Button(-605, 0, 200, 200, function(){//mute button located on/around laptop
