@@ -64,7 +64,7 @@ function preload(){
 	backgroundGoodImg = loadImage('Assets/Imgs/Background-Good.png');
 	backgroundPoorImg = loadImage('Assets/Imgs/Background-Poor.png');
 	backgroundBadImg = loadImage('Assets/Imgs/Background-Bad.png');
-	backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
+	backgroundImg = backgroundPoorImg
 
 	paperSFX = loadSound('Assets/PaperFlipSFX.mp3');
 
@@ -775,7 +775,7 @@ function nextCard() { // function to include code for selecting new card for any
 		reload();
 	}else if(cardStorage[currentCard][0] == "9998"){
 		newCard = "9998"
-	}else {
+    } else {
         
   } //default case
 
