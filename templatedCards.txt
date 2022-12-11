@@ -32,7 +32,7 @@ You go to class and tough it out.
 You decide that it’s better to try and recover from your illness rather than tough it out. The next day you feel a lot better! You are really able to buckle down and catch up on your classwork! You feel great!
 Doing this was a mistake; you can barely pay attention in class. You can also feel your classmates stare as you hack and cough all throughout the lecture. You didn’t learn anything and you are thoroughly embarrassed.
 .1 0 5
--.1 -1 -5
+-.5 -50 -20
 
 0003
 Your friends want to hang out and play some video games with you but you have a test tomorrow. You feel underprepared, but you have also felt super stressed out lately. Do you hang out with your friends? 
@@ -41,7 +41,7 @@ Study for the test
 You decide that you need a break. You go and hang out with your bros. You play a varied assortment of games. It was a blast and was just the break you needed. Come the day of the test you remember a lot more than you expected to, but ultimately do 'just okay'. You're satisfied with the result, but felt you could have done better.
 You really buckle down and go into a hardcore study session. The information is filling up your brain giving you a better understanding of the material than before. The day of the test you fly through the questions you know every answer and you ace the test. You’re relieved it’s over, but you feel burnt out.
 .1 0 2.5
-.2 -1 -2.5
+.2 -20 -13
 
 0004
 You think that living on campus is getting expensive and your parents live close enough to school that you could reasonably commute to class. But, you love the experience of dorm life and feel that commuting wouldn’t be as fulfilling. Do you start commuting to class?
@@ -49,8 +49,8 @@ Start commuting to class
 Continue living on campus
 You can save a lot more money and are more able to pay your tuition in upcoming semesters. You miss the communal space of campus life, but hey, what are you going to do?
 You’re glad you continue living on campus. Your bank account is as empty, but that’s okay. Despite its ups and downs, living on campus is still better than living with your parents.
-0 100 -2.5
-0 0 2.5
+0 100 -20
+0 0 20
 
 0005
 You feel that with all of the things going on and the clubs you’ve been attending that you need a way to keep up with both your friends and club activities. All of them are on legally distinct social media platforms, do you create an account or do you live unconnected from your peers?
@@ -59,7 +59,7 @@ Create the account
 You wonder what could be if you join, but decide you really don’t want to link another thing to your email account.
 You waste so much of your time aimlessly scrolling the depths of the platform and forgetting to do schoolwork. You have noticed a significant worsening in your mood recently.
 0 0 0
--.05 0 -2.5
+-1 -150 -50
 
 0006
 You’re working on a research project for one of your courses and you find a promising article, but it’s behind a paywall. Putting aside your critiques of making this kind of information less accessible than it should be, you ask yourself.
@@ -67,7 +67,7 @@ Pay the troll
 Refuse such behavior
 The article was perfect for your paper. It really brings your paper together. All of your points just flow perfectly into each other and the paper is just woven like an ancient tapestry that threads are still as strong and taught today as they were hundreds of years ago. You got a perfect score. Also, you get charged like four more times because you didn’t realize it was a subscription.
 Your paper is fine, sufficient, and nothing to write home about. You’re glad you didn’t subscribe to the website that hosted the paper; it was a subscription that you would have forgotten to cancel and get charged, like, four more times than preferred. Your score was just okay.
-.8 -75 0
+.5 -75 0
 -.2 75 0
 
 0007
@@ -76,7 +76,7 @@ Stay in Bed
 Push through it and get out of bed
 You continue to lie in bed, convinced that lying there will give you more energy. But, an hour goes by and you still feel tired. The only reason you get out is because you need to pee really badly. Maybe you did get enough sleep but just woke up weirdly. Either way, you’re slow to get going today. 
 You feel like death for a little bit, but once you’re actually moving you feel a lot better. Your morning routine goes smoothly. And, after you’ve finished, you feel better than usual. Today’s gonna be a good day.
-0 0 0
+0 0 -5
 0 0 3
 
 0008
@@ -103,7 +103,7 @@ Pfft, who believes in aliens?
 I’d love to get abducted by aliens
 You decide to stay home and study instead. Aliens, at least aliens intelligent enough to create interstellar travel, are so unlikely to actually exist that camping out on the roof of the student center seems like a waste of time. That is until you see your friends the next day visibly shaken. None of them want to talk about what happened. What happened last night?
 You and your friends sneak onto the student center’s roof after hours and camp out. You tell scary stories and eat s'mores, going to sleep on the roof at around 11PM. That is until you are awoken by a strange glowing light and you start floating in the air -- that is your last memory of that night. You wake up back on the student center roof holding a manilla envelope containing a wad of 20 dollar bills, the answers to your exam next week, and a 'thank you' note with a bug-eyed green alien sticker on it. What the Funk.
-0.4 0 -5
+0.2 0 -5
 .8 60 -25
 
 0011
@@ -112,7 +112,7 @@ Go
 Don't Go
 You were right, everything was fine except for that uncle and getting stuck talking to him. Who the heck thinks that America should invade and conquer the moon and kill all the “moon demons”? At least your parents let you take a lion’s share of the leftovers, feeding you for weeks.
 You kinda regret not going -- you wanted to catch up with your cousins and parents. Plus, the turkey and stuffing are always good. At least you got some great studying in.
-0 5.5 -4
+0 20 -12
 2 0 0
 
 0012
@@ -148,8 +148,8 @@ Get a new pillow
 Stop watching YouTube
 The pillow is nice and you have stopped waking up with killer tension headaches. But, you still don’t feel great when you wake up.
 You’ve stopped waking up with tension headaches! Success! And, you’ve also started waking up with more energy as a nice bonus. Wahoo!
-0 -15 7
-0 0 25
+0 -15 4
+0 0 10
 
 0016
 Everything about your job is terrible. Your boss sucks, your coworkers are irritating, and the job is mind-numbing beyond all belief. You can’t stay here any longer. The question is whether this place is so unbearable that you quit then find a job, or find a job then quit?
@@ -166,8 +166,8 @@ Slack off completely
 Do some schoolwork
 Spring Break is less restful than you were hoping it was going to be; the specter of upcoming school work due next week looms over your relaxation. Spending time with friends and catching up on some games you got a while ago is pretty great. You feel a lot less stressed once school rolls back around, yet you were hoping for more.
 You are able to finish all of your work except your project about halfway through the break. You got a lot more relaxation than you expected and were able to catch up on some of your games. Still, you haven’t completely de-stressed once school rolls back around, but it was more than you expected.
-0 0 40
-20 0 20
+0 0 20
+10 0 10
 
 0018
 You watched an incredibly weird video on YouTube. For some reason, the video has filled you with a complex melancholic feeling that you can’t fully place. You’re not really sure what to do with yourself.
@@ -175,8 +175,8 @@ Stare out the window pensively
 Take a nap
 Man...
 You get a headache after waking up.
-0 0 4
-0 0 -4
+0 0 8
+0 0 -14
 
 0019
 You have been watching a lot of martial arts movies lately. They’re astounding displays of physical aptitude that show the resolve of the human spirit. You’re so hyped on the movies that you’re thinking about getting into martial arts for real. Though, it might be kind of expensive.
@@ -184,8 +184,8 @@ Find a Way
 Don’t bother
 You scout out some details on the martial art you want to learn, a good place to start learning, and getting some gear in order. Eventually, you find the perfect place and start going there and it is hard work. You’d thought this would’ve been easier, but it’s still rewarding. You start to feel real growth within a few weeks.
 You don’t have time for something as time intensive as martial arts, you have exams to study for. They might be in a few months, but the principal still stands. You throw yourself into your studies. You still watch martial arts movies, but now you always wonder “What if?”
-0 -40 35
-.5 0 0
+0 -75 35
+.4 0 0
 
 0020
 You just had a major falling-out with a friend. All of your worst mistakes and failures come flooding back to you. Nothing feels right anymore and you feel like the worst person to walk the earth. What are you going to do?
@@ -194,7 +194,7 @@ Push it all down and go to the gym
 You call up an old friend and just start to unfurl. You start bawling your eyes out, but when all is said and done you feel better. You feel like you can start moving forward instead of holding yourself back. It still hurts, obviously, but the wound feels like it can properly heal.
 Who knew that physical exercise can’t address serious psychological issues? Not you. If anything you just made things worse for yourself. You even crush your toe with a dumbbell. Ow. 
 0 0 8
-0 0 -14
+0 0 -60
 
 0021
 The stress is getting to you but there are so many things to do. Your friends are in class so social activities aren't an option. And you don’t want to blow a ton of cash on something. You’ve also been staring at a computer screen for a while. You have two ideas you could choose from:
@@ -202,8 +202,8 @@ Go for a Hike
 Read a Book
 All those people who told you to take a hike were right -- this is pretty great. It’s a warm breezy day. Clouds drifted lazily across the sky. The hiking trails themselves were mostly barren aside from one or two other people. Also the trees man, the trees. They were, like, super nice looking. At one point, you sit on a rock and just take it all in. You feel at peace.
 You look at a small stack of books on your desk picking out Book by Mr. & Mrs. Book, starring the main character Book. It doesn’t take long for you to get sucked into the narrative of Book fighting against the evil hoards of Book Burners and bringing knowledge to the people of Booklessopolis. Everything about it hits just right, from the prose to the characters to the intricate plot. Hours pass by without you noticing. By the time you put the book down, you notice that it’s about the time you go to bed. You flop into bed and fall right to sleep.
-0 0 17
-0 0 17
+0 0 7
+0 0 7
 
 0022
 There are many horror stories from that social media platform. You're glad you didn't join. Your friends invite you bowling. Do you go?
@@ -211,8 +211,8 @@ Go bowling!
 Stay home
 Your friends are fun and you manage to win the game! There were some new friends in the group that you met. Your headspace is clear and you are able to focus on school and work even better.
 You decide you better not go. You see the fun your friends had and wish you went. You got nothing done while at home.
-.02 -5 2
-0 0 -1
+.02 -30 2
+0 0 -20
 
 0023
 It’s a cold winter night and you can’t sleep. You look outside your window.  Snow covers the ground and the soft lighting outside lends beauty to the scene you are witness to. You are far too restless to go back to sleep, but the exhaustion of the day still weighs on you.
@@ -229,8 +229,8 @@ Drive to find a spare tire
 Call dad
 The flat is making it difficult to drive. Every turn is harder than usual, speeding up from a standstill is a nightmare, and you have to wrestle with the wheel to keep the car from careening into oncoming traffic, until WHAM! Another car smashes into you. You’re unhurt, but your car is totaled. This is going to cost you a lot of money.
 You call up your dad and he’s there in 20 minutes. He has a spare but insists on teaching you how to change a tire by demonstrating how to do it, then undoing it for you to do. You already know how to change a tire. It was a trying experience.
-0 -50 0
-0 0 -2.5
+0 -200 -20
+0 0 -3
 
 0025
 You have been procrastinating all day. You finally feel up to actually doing your work that’s due tomorrow. At 11:45 PM. You really don’t want to bother dealing with this tomorrow, but it might be a better idea to just deal with it tomorrow.
@@ -248,7 +248,7 @@ Get new headset
 You really don’t mind using your laptop mic nearly as much as you’d thought you would. You also don’t need a mic nearly as much as you’d thought. So, just using the headset as a set of over-ear headphones is good enough.
 You decide to get something a little nicer than your last headset. It’s a little more pricey than you’d hope, but it's pretty solid.
 0 0 0
-0 -99 0
+0 -199 0
 
 0027
 You see that FSU is putting on a production of Spider-Man: Turn Off The Dark. You have no idea how they got the rights to this. You’ve always thought of yourself as lead material. There are also openings for crew members, some of the more technical ones are even paid.
@@ -256,8 +256,8 @@ Audition to be Spider-Man
 Try to be a Crew Member
 You audition and only end up being the understudy to Spider-Man. But, that doesn’t matter since the lead broke their entire body in rehearsals so you get to be the lead role. With the reviews coming in, turns out that putting on a production of this play was a terrible idea. Critics wonder why FSU would even put on a production of a notorious flop with a soundtrack made by Bono. They also point out how your performance was the only saving grace of the whole thing, killing it in the role. 
 You got brought on to work on some of the technical aspects of the stage play. It pays well, but there are a lot of incidents of people getting injured on set. You are able to deal with it, mostly, until the lead crashes onto the floor right in front of you, breaking their entire body. Legs weren’t supposed to go that way.
-0 28 0
-0 75 -60
+0 12 12
+0 50 -60
 
 0028
 Whoops, you forgot to do your homework and it’s due tomorrow. You think that you can finish it, but only if you start right now. But, honestly, is it worth it? It’s just going to stress you out. Maybe just letting it slide and taking the hit to your grade would be a better approach.
@@ -265,8 +265,8 @@ Do your work
 Just don’t
 You did it. You got it done, you worked hard, sweated it out, and at the end of an all-nighter, you completed it. You feel like you could sleep for a solid day straight, but you gotta go to class. You turn in your homework and you feel better that you finished it. You fall asleep in class.
 You decide that you messed up, but aren’t going to break your back to fix it. It’s oddly liberating. Taking the hit to your GPA doesn’t feel great, but you have already made peace with that fact. You enjoy a relaxing evening and get a good night's sleep.
-.6 0 -5
--.3 0 10
+.3 0 -20
+-.6 0 10
 
 0029
 You’re exploring town with your friends and some drunk guy bumps into you. The guy yells at you and you start yelling back. Then, the dude reels back and punches you square in your nose. Blood starts to flood from your nose you think it might be broken.
@@ -275,7 +275,7 @@ Blackmail the guy who punched you
 You get rushed to the hospital by your friends. Your nose will be fine, it’s not broken. Also turns out the guy who punched you is a lawyer and if this gets out he might lose his job at his law firm. He pays your medical bills and then some. You don’t really care about trying to get the guy fired, so you take the money, because, money.
 Turns out the guy was a lawyer. This whole event spirals out into a protracted legal battle that lasts for months. Not only do you have to pay legal fees, but you’re fined for blackmail. This whole event wears on your psyche and eats into study time. Maybe trying to blackmail people is a terrible idea. Who woulda guessed?
 0 200 0
--.4 -200 -30
+-1 -400 -40
 
 0100
 Your GPA has fallen below school standards and you have been placed on academic probation. After a meeting with your advisor, you know of 2 options...
@@ -292,8 +292,8 @@ Change majors
 Stick with your current major
 Your major change was a blessing. Much less work and much more enjoyable. This decision was very good for you.
 You stick with your major and continue to struggle. Eventually, you get kicked out of the school. You lose the drive to continue your education.
-1.5 0 12.5
--1.2 0 -12.5
+1.5 0 6
+-1.5 0 -13
 
 0200
 Your mental health has been falling lately and you're in a bad place. You wonder if you should see a therapist and get the help you need.
@@ -310,8 +310,8 @@ Change majors
 Suffer through
 You decided to change your major to one you enjoy more. Luckily, some credits from your previous major transfer. This change does end up costing you money, as it set you back in major progress.
 You've decided to stick to your major as you're already halfway through. You wish you enjoyed your major more.
-.02 0 5
-0 0 -5
+.1 0 5
+0 0 -15
 
 0202
 Your mental health has severely declined. You've always wanted an animal, so now you're considering getting an emotional support animal.
@@ -319,8 +319,8 @@ Get an animal
 Don't get an animal
 You get a little puppy and get him registered. You couldn't be happier. Only issue is that the puppy is expensive and takes much of your time.
 You decide against the dog. Not much of your life changes, except that you continue down the rabbit hole of depression.
--0.2 -20, 15
-0 0 -2.5
+-0.2 -30, 5
+0 0 -5
 
 0202
 You sit at your computer screen dead-eyed and slack-jawed. You need to do your work, but you don’t have any motivation. You start to get a headache. After a good while of staring blankly you can’t take it anymore you need to do something else.
@@ -337,8 +337,8 @@ Find a new job
 Ask your parents for money
 Finding a new job was easier than you expected. Many people are hiring. You now have more spending money; however, work takes much of your time leading to a decline in your GPA and mental health.
 Your parents said yes... for the last time. You're thankful for the help, and you tell them so. You're able to maintain your grades, but you worry about your relationship with them.
--0.2 1500 -3
-0 600 -1
+-0.6 120 -15
+0 50 -10
 
 0301
 You have a whopping 32 cents in your bank account, and who knows how much debt you're in. You need cash. NOW! 
@@ -355,7 +355,7 @@ Go to the hospital
 Don’t go to the hospital
 Well, you sure do. Turns out that study was not board-approved and pumped a bunch of deadly stuff into you. If you had gone to the hospital one day too late they wouldn’t have been able to do anything. Good thing you actually went to the hospital and didn’t die. Though, it was kind of expensive.
 You sure don’t, but you should’ve, since it turns out you were literally dying, not metaphorically. You pass away in your bed never knowing why you died, though, it probably had something to do with those scientific tests you were subjected to. Probably only a coincidence though. You die. Try again.
-0 -150 0
+0 -400 0
 0 0 0
 
 0400
@@ -373,8 +373,8 @@ Aid the Dean
 Aid the Deer
 That talk of suffering consequences shakes you to your core. Just sounds like a bad time, so you join the fight against the Deer. A few punches and kicks later it goes down. The Dean turns to you “Here, take this a tithe for your assistance. There will be more to come as well” he says handing you a thick stack of $100 Bills. You are in disbelief.
 No one can tell you what to do! Good thing you can still remember those capoeira lessons you took last summer. With the assistance of the Deer, you make short work of the Dean. As he falls to the ground you hear a faint whisper, almost a hiss: “consequences”. You shrug it off hoping that this won’t come back to bite you. You give the Deer a high-five and then steal the Dean’s wallet. 
-20 150 0
-50 500 0
+1 150 0
+-3 500 0
 
 1000
 You have an opportunity to study abroad in Florence! Do you go?
@@ -382,7 +382,7 @@ Go study abroad
 Stay home
 Florence was a fantastic experience. You still learned a lot and had an amazing, though expensive, time with friends.
 You stayed home, but all of your friends had gone. You are lonely, but at least you didn't go on an expensive trip.
-0.5 -2000 20
+0.5 -200 20
 0 0 -10
 
 1001
@@ -409,8 +409,8 @@ I don’t need anything. I just want to take you down
 If that’s how it is, I’ll gladly take you up on your offer
 The fight between you and the Dean is breathtaking, but your cause is just; You cannot falter here and now. You weave past the Dean’s blows before landing your finishing move. “You’ve bested me, you at least deserve your diploma,” the Dean said pulling your diploma from their suit jacket. You gracefully accept it. Then a TV crew comes running out onto the roof. They start to interview you on how you were able to defeat the Dean of Fake State University, one of the most powerful people in the world. You give an amazing interview and become an instant celebrity. You write a bestselling memoir, start in multiple movies, and even get a Netflix Comedy Special. What’s next for this rising star? 
 The fight between you and the Dean is breathtaking, but they are no match for your overwhelming skill and power. And as the Dean lay on the ground bloody, bleeding, and... uh... bleedy... yeah. They pull a deed for ownership of the school out of their suit jacket. You rip it from their hands, spit in their face, and start doing a little victory dance. This is the first step towards your ultimate goal - WORLD DOMINATION!!! That thing that you’ve always wanted since you were a very little kid. Complete subjugation of the human race is at your fingertips now that you're the Dean of Students of Fake State University, one of the highest seats of power in the whole world. Things look grim for the world, but bright for you!
-100000 1000000 1000000
-100000 1000000 1000000
+10000000 1000000000 1000000000
+100000000 1000000000 1000000000
 
 1004
 You receive an email from an unfamiliar address: “Roof of the Student Center, tomorrow, Noon”. When you go you see the Dean, back turned to you. You both assume your fighting stance. “If you win this I won’t be able to show my face around here anymore. You can have the school.”
@@ -419,7 +419,7 @@ If that’s how it is, I’ll gladly take you up on your offer
 The fight between you and the Dean is breathtaking, but your cause is just; You cannot falter here and now. You weave past the Dean’s blows before landing your finishing move. “You’ve bested me, you at least deserve your diploma,” the Dean said pulling your diploma from their suit jacket. You gracefully accept it. Then a TV crew comes running out onto the roof. They start to interview you on how you were able to defeat the Dean of Fake State University, one of the most powerful people in the world. You give an amazing interview and become an instant celebrity. You write a bestselling memoir, start in multiple movies, and even get a Netflix Comedy Special. What’s next for this rising star? 
 The fight between you and the Dean is breathtaking, but you’re no match for their overwhelming speed, power, and technique. You get crushed like a soda can in 27 seconds flat. The Dean pulls your college diploma from their suit jacket and tears it up while laughing maniacally. Maybe challenging the Dean of Students at Fake State University(one of the most powerful people in the world) was a bad idea. To top this terrible situation off you spontaneously combust. Worst. Day. Ever.
 100000 1000000 1000000
--100000 -1000000 -1000000
+-100000000000 -10000000000 -10000000000
 
 1005
 You have had a hard time since you got abducted by aliens. At least, you think you got abducted by aliens. The uncertainty is what’s really getting to you. On your way to class, you notice a flier posted on a bulletin board. It advertises a free alien abductee support group at FSU.
@@ -436,7 +436,7 @@ Stop
 Don’t stop
 Within a week of stopping you start to feel more rested after waking up. It’s still hard, but a lot more doable than you expected. Still, you kinda miss the steady stream of online stuff to watch as you drift off, but hey necessary evils and all that.
 You refuse to stop. Nothing will ever make you stop. And if they think they can, they are sorely mistaken. The only way to stop you is to pry your phone from your COLD DEAD HANDS!
-0 0 15
+0 0 7
 0 0 0
 
 1007
@@ -445,8 +445,8 @@ Start training
 Move on with your day
 Nobody calls you a marital fartist! You start grinding hard at your marital arts goals and continue to get stronger. You push away all of the weaker martial artists you know and focus on your own skill. By the time the tournament rolls around you crush everyone, including him. You get a nice big cash prize, with an addition of turtle wax - nice. Stepping out of the ring you wonder “Was it worth doing all this over a guy with frosted tips?” The victory is like the middle of a donut, empty.
 You don’t feel particularly razzed by a guy with the attitude of an 80’s movie bully who looks like a nu-metal fanboy from the 90s. You go back to sparring with your friend. You really start to feel like you're a part of a community and your growth is quite impressive. You meet a lot of new people and some of them are pretty cool too. Also, turns out that guy got kicked out of the gym for constantly insulting people and challenging them to martial arts tournaments that he seemed to be funding.
-0 150 -28
-0 0 35
+0 150 -30
+0 0 15
 
 1008
 After acing the role of Spider-Man, you want more. The experience on the stage was exhilarating. The lights, the audience, the recognition -- it was intoxicating. There won’t be another FSU production for a while. Plus, finding an off-campus production will be a labor-intensive process. 
@@ -454,8 +454,8 @@ Wait for another FSU production
 Find a local production
 There is no need to rush, patience is a virtue, as they say. You have schoolwork to do and you’ll save a lot on gas. Best to focus on your grades rather than your ego.
 You need to satiate your craving for the stage. You scout out a local production near FSU. You audition and score the leading role, naturally. It eats into your time and gas ain’t free, but none of that matters. You feel like this is what you were meant to do. What you were meant to be. Nothing can stop you now.
-.5 12 0
--.2 -12 16
+.3 12 0
+-.5 -50 16
 
 1009
 FSU was putting on an original play written by a student. The anticipation. Your hair is standing on end. You go to the auditions. You (expectedly) knock the auditions out of the park. Eventually, you find that you got... What!? You got a stinking side role. You can't let this stand.
@@ -463,8 +463,8 @@ Raise a complaint
 Don't complain
 This must have been a mistake, how could they have not recognized that you were lead material? You should be the lead. You deserve to be the lead. So, you go and complain, things get heated, then next thing you know you're kicked off the production for “assaulting the casting director”, “verbally abusing the lead role’s actor,” and “arson”. Well, it’s their fault that you weren’t cast in the lead role.
 You were still a central character and to top that off, you get a solo. You make peace with not being the main character. You put your all into it. And once opening day rolls around you have forgotten any feeling of being slighted and put on the performance of your life. This show was a lot better than your others. Everyone on stage was incredibly talented. The feeling of being one part of a greater whole was pleasant. Also, your solo song being a highlight in the reviews of the shows wasn’t bad either.
-0 0 -35
-0 0 35
+0 0 -75
+0 0 20
 
 1010
 You notice that the next FSU production is upon you, but you’re not really sure if you want to even audition again. You’re not really in the mood for this -- you have a job and you gotta study. Is it even worth it to try this time?
@@ -473,7 +473,7 @@ Don’t Adition
 You never know if you don’t try. You audition and you get a nice minor role. Honestly, you don’t want to be in the spotlight right now. The show goes off without a hitch and everyone including you is on fire. It’s a good production and a good time.
 You move on with your life. You don’t have the time to even try to audition. You need to focus on your job and school right now. With the added focus you have you do even better, ace some tests, and even get a raise at work.
 0 0 20
-.6 21 0
+.3 21 0
 
 1011
 The next day you wake up and find yourself staring at your empty word processor again -- the same homework left unfinished. A blank page has never made you as anxious as this one is. You can’t handle it, you need to do something.
@@ -608,7 +608,7 @@ Keep the app
 You're thankful for your friends. You grow closer to them and have time to focus back on school work.
 You're sucked deeper into the app. This choice cost you your friends. You become depressed. Your performance in school significantly declines.
 .15 0 2
--.75 0 -4
+-1 0 -10
 
 9998
 You did it! You graduated college. You grit your teeth, pulled up your socks, and cried in the shower a couple times, but you made it through. With a degree in Fakeology from FSU you are guaranteed success.
