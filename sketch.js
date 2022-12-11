@@ -12,6 +12,7 @@ let semester = "Fall Semester";
 
 progressBar = [];
 let myFont;
+let latoFont;
 cardSize = 8 //number of elements on card
 var cardStorage = new Array();
 let currentCard; //card being read by program
@@ -35,6 +36,7 @@ let runningStatAnimation = false;
 
 let mute = false;
 
+let gameStarted = false;
 
 // This class will create a button that detects a mouse click and does a function
 class Button {
@@ -74,6 +76,7 @@ function preload(){
     laptopHighlight = loadImage('Assets/Imgs/computerHighlight.png');
   mutedIcon = loadImage('Assets/Imgs/mutedIcon.png');
   soundIcon = loadImage('Assets/Imgs/soundIcon.png');
+  welcomeBackground = loadImage('Assets/Imgs/FSUBackground.png');
     
   intro = loadSound('Assets/Music/CDintroSong.mp3');
   loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
@@ -86,18 +89,20 @@ function preload(){
 function setup() {  
   createCanvas(vWidth, vHeight, WEBGL);
   ortho();//Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
+}
 
-  addBackground();
+function setupGame() {
+	addBackground();
   addCard();
   displayStats(); 
   addCal();
   addcaltext();
-  
-  // GPA text should be at position x=-536 y=310
+	
+	// GPA text should be at position x=-536 y=310
   // Money text is position x=-100 y=310
   // Mental Health is position x=383 y=310
-//--------------------------------------------------------------------------------------------------------------------------------------------------------
-//Loads cards into memory
+  //--------------------------------------------------------------------------------------------------------------------------------------------------------
+  //Loads cards into memory
   i = 0; //line
   k = 0; //card
   EOF = false;
@@ -122,65 +127,63 @@ function setup() {
     
     mousePressed();
     image(soundIcon, -684, -43);
-    print(cardStorage)
 }
 
 let hoveringOn = "";
 function draw(){    
-    drawAnimation();
-    
-    addCal();
-    addcaltext();
-    
-    determinetime();
-    //addcaltext();
+      playSound();
+  	if (gameStarted) {
+
+      drawAnimation();
+
+      addCal();
+      addcaltext();
+
+      determinetime();
+      //addcaltext();
 
 
-    //137, 75, 275, 150
-    if (cardFace == "front" && !runningAnimation) {
-        redrawCanvas();
-        if (mouseX >= ((vWidth / 2) + -137) - (275 / 2) && mouseX <= ((vWidth / 2) + -137) + (275 / 2) &&
-			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
-            hovering = true;
-            hoveringOn = "l";
-			push();
-            fill(255, 255, 0, 60);
-            noStroke();
-            translate(-137, 75, 0);
-            box(275, 150, 0);
-            pop();
-		} else if (mouseX >= ((vWidth / 2) + 137) - (275 / 2) && mouseX <= ((vWidth / 2) + 137) + (275 / 2) &&
-			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
-            hovering = true;
-            hoveringOn = "r";
-			push();
-            fill(255, 255, 0, 60);
-            noStroke();
-            translate(137, 75, 0);
-            box(275, 150, 0);
-            pop();
-        } else if (hovering && (hoveringOn == "r" || hoveringOn == "l")) {
-            hovering = false;
-        }
-    }
-    
-    
-    if (gpaIndicator != "-" || mHealthIndicator != "-" || moneyIndicator != "-") {
-        drawStatsAnimation();
-    }
-    
-    displayCardText();
-    
-    playSound();
+      //137, 75, 275, 150
+      if (cardFace == "front" && !runningAnimation) {
+          redrawCanvas();
+          if (mouseX >= ((vWidth / 2) + -137) - (275 / 2) && mouseX <= ((vWidth / 2) + -137) + (275 / 2) &&
+        mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
+              hovering = true;
+              hoveringOn = "l";
+        push();
+              fill(255, 255, 0, 60);
+              noStroke();
+              translate(-137, 75, 0);
+              box(275, 150, 0);
+              pop();
+      } else if (mouseX >= ((vWidth / 2) + 137) - (275 / 2) && mouseX <= ((vWidth / 2) + 137) + (275 / 2) &&
+        mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
+              hovering = true;
+              hoveringOn = "r";
+        push();
+              fill(255, 255, 0, 60);
+              noStroke();
+              translate(137, 75, 0);
+              box(275, 150, 0);
+              pop();
+          } else if (hovering && (hoveringOn == "r" || hoveringOn == "l")) {
+              hovering = false;
+          }
+      }
 
 
+      if (gpaIndicator != "-" || mHealthIndicator != "-" || moneyIndicator != "-") {
+          drawStatsAnimation();
+      }
 
-    new Button(-605, 0, 200, 200, function(){//mute button located on/around laptop
-      if (mute){mute = false;}
-      else {mute = true;}
-      redrawCanvas()
-    });
-  
+      displayCardText();
+
+      new Button(-605, 0, 200, 200, function(){//mute button located on/around laptop
+        if (mute){mute = false;}
+        else {mute = true;}
+        redrawCanvas()
+      });
+    }  else welcome();
 }
 
 
@@ -629,6 +632,7 @@ function displayCardText() {
 }
 
 function redrawCanvas() {
+	startBtn.hide();
     addBackground();
     buttons = [];
 
@@ -880,4 +884,38 @@ function highlighting(){
         else 
             image(laptopHighlight, -684, -43);
     }
+}
+
+
+function addWelcomeBG() {
+	push();
+	noStroke();
+	texture(welcomeBackground);
+	translate(0, 0, -200);
+	plane(vWidth, vHeight);
+	pop();
+}
+let welcomeStarted = false;
+let startBtn;
+function welcome() {
+	background('#dfdfce');
+	addWelcomeBG();
+	if (!welcomeStarted) {
+		/* It is important that this happens only once, otherwise
+		multiple buttons will be created and be diffucult to hide
+		once the game starts*/
+		startBtn = createButton("Begin Your Studies");
+		startBtn.size(300, AUTO);
+		startBtn.position(vWidth / 2 - 150, 650);
+		startBtn.style('background-color', '#00693E');
+		startBtn.style('font-size:1.5rem');
+		startBtn.style('color', '#D1BC01');
+		startBtn.mousePressed(() => {
+			// startBtn.style('display:none');
+			startBtn.hide();
+			gameStarted = true;
+			setupGame();
+		})
+	}
+	welcomeStarted = true;
 }
