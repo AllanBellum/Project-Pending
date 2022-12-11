@@ -616,6 +616,8 @@ Life is Good
 Do a Freeze-Frame Ending
 Good Job. Want to play again?
 You forgot this wasn't an 80's movie, and you fall flat on your face. Still, life is good. Play again?
+0, 0, 0
+0, 0, 0
 
 9999
 Game over
