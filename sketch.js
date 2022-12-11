@@ -698,7 +698,7 @@ function nextCard() { // function to include code for selecting new card for any
 	}else if(cardStorage[currentCard][0] == "0023" && gpa >3.5){
 			newCard = "0401";
 	}else if(cardStorage[currentCard][0] == "0401"){
-		if(flipTo == "back1")
+		if(flipTo == "back2")
 			newCard = "1021";
 		else
 			newCard = "1024";
