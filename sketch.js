@@ -12,6 +12,7 @@ let semester = "Fall Semester";
 
 progressBar = [];
 let myFont;
+let latoFont;
 cardSize = 8 //number of elements on card
 var cardStorage = new Array();
 let currentCard; //card being read by program
@@ -35,6 +36,7 @@ let runningStatAnimation = false;
 
 let mute = false;
 
+let gameStarted = false;
 
 // This class will create a button that detects a mouse click and does a function
 class Button {
@@ -64,7 +66,7 @@ function preload(){
 	backgroundGoodImg = loadImage('Assets/Imgs/Background-Good.png');
 	backgroundPoorImg = loadImage('Assets/Imgs/Background-Poor.png');
 	backgroundBadImg = loadImage('Assets/Imgs/Background-Bad.png');
-	backgroundImg = loadImage('Assets/Imgs/Background-Good.png');
+	backgroundImg = backgroundPoorImg
 
 	paperSFX = loadSound('Assets/PaperFlipSFX.mp3');
 
@@ -74,6 +76,7 @@ function preload(){
     laptopHighlight = loadImage('Assets/Imgs/computerHighlight.png');
   mutedIcon = loadImage('Assets/Imgs/mutedIcon.png');
   soundIcon = loadImage('Assets/Imgs/soundIcon.png');
+  welcomeBackground = loadImage('Assets/Imgs/FSUBackground.png');
     
   intro = loadSound('Assets/Music/CDintroSong.mp3');
   loopNuetral = loadSound('Assets/Music/CDLoopNtrl.mp3');
@@ -86,18 +89,20 @@ function preload(){
 function setup() {  
   createCanvas(vWidth, vHeight, WEBGL);
   ortho();//Enables an orthographic view. This will keep everyting "flat" so that we don't see the top or bottom of shapes.
+}
 
-  addBackground();
+function setupGame() {
+	addBackground();
   addCard();
   displayStats(); 
   addCal();
   addcaltext();
-  
-  // GPA text should be at position x=-536 y=310
+	
+	// GPA text should be at position x=-536 y=310
   // Money text is position x=-100 y=310
   // Mental Health is position x=383 y=310
-//--------------------------------------------------------------------------------------------------------------------------------------------------------
-//Loads cards into memory
+  //--------------------------------------------------------------------------------------------------------------------------------------------------------
+  //Loads cards into memory
   i = 0; //line
   k = 0; //card
   EOF = false;
@@ -126,60 +131,59 @@ function setup() {
 
 let hoveringOn = "";
 function draw(){    
-    drawAnimation();
-    
-    addCal();
-    addcaltext();
-    
-    determinetime();
-    //addcaltext();
+      playSound();
+  	if (gameStarted) {
+
+      drawAnimation();
+
+      addCal();
+      addcaltext();
+
+      determinetime();
+      //addcaltext();
 
 
-    //137, 75, 275, 150
-    if (cardFace == "front" && !runningAnimation) {
-        redrawCanvas();
-        if (mouseX >= ((vWidth / 2) + -137) - (275 / 2) && mouseX <= ((vWidth / 2) + -137) + (275 / 2) &&
-			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
-            hovering = true;
-            hoveringOn = "l";
-			push();
-            fill(255, 255, 0, 60);
-            noStroke();
-            translate(-137, 75, 0);
-            box(275, 150, 0);
-            pop();
-		} else if (mouseX >= ((vWidth / 2) + 137) - (275 / 2) && mouseX <= ((vWidth / 2) + 137) + (275 / 2) &&
-			mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
-            hovering = true;
-            hoveringOn = "r";
-			push();
-            fill(255, 255, 0, 60);
-            noStroke();
-            translate(137, 75, 0);
-            box(275, 150, 0);
-            pop();
-        } else if (hovering && (hoveringOn == "r" || hoveringOn == "l")) {
-            hovering = false;
-        }
-    }
-    
-    
-    if (gpaIndicator != "-" || mHealthIndicator != "-" || moneyIndicator != "-") {
-        drawStatsAnimation();
-    }
-    
-    displayCardText();
-    
-    playSound();
+      //137, 75, 275, 150
+      if (cardFace == "front" && !runningAnimation) {
+          redrawCanvas();
+          if (mouseX >= ((vWidth / 2) + -137) - (275 / 2) && mouseX <= ((vWidth / 2) + -137) + (275 / 2) &&
+        mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
+              hovering = true;
+              hoveringOn = "l";
+        push();
+              fill(255, 255, 0, 60);
+              noStroke();
+              translate(-137, 75, 0);
+              box(275, 150, 0);
+              pop();
+      } else if (mouseX >= ((vWidth / 2) + 137) - (275 / 2) && mouseX <= ((vWidth / 2) + 137) + (275 / 2) &&
+        mouseY >= ((vHeight / 2) + 75) - (150 / 2) && mouseY <= ((vHeight / 2) + 75) + (150 / 2)) {
+              hovering = true;
+              hoveringOn = "r";
+        push();
+              fill(255, 255, 0, 60);
+              noStroke();
+              translate(137, 75, 0);
+              box(275, 150, 0);
+              pop();
+          } else if (hovering && (hoveringOn == "r" || hoveringOn == "l")) {
+              hovering = false;
+          }
+      }
 
 
+      if (gpaIndicator != "-" || mHealthIndicator != "-" || moneyIndicator != "-") {
+          drawStatsAnimation();
+      }
 
-    new Button(-605, 0, 200, 200, function(){//mute button located on/around laptop
-      if (mute){mute = false;}
-      else {mute = true;}
-      redrawCanvas()
-    });
-  
+      displayCardText();
+
+      new Button(-605, 0, 200, 200, function(){//mute button located on/around laptop
+        if (mute){mute = false;}
+        else {mute = true;}
+        redrawCanvas()
+      });
+    }  else welcome();
 }
 
 
@@ -628,6 +632,7 @@ function displayCardText() {
 }
 
 function redrawCanvas() {
+	startBtn.hide();
     addBackground();
     buttons = [];
 
@@ -649,12 +654,18 @@ function nextCard() { // function to include code for selecting new card for any
 	passed++;
 	//example of what condition should look like for branching card, xxxx is cardID
 	/*else if (cardStorage[currentCard][0] == "xxxx") {
-	    if (flipTo == "back1")                          //this conditional can be based on any variables including which decision was made on this card or the GPA, Wealth, or Mental Health. Multiple if else statements are also accesable if more than 2 branches is desired, could also include just a cardID assignment to jump cards uncondiationally
+	    if (cardFace == "back1")                          //this conditional can be based on any variables including which decision was made on this card or the GPA, Wealth, or Mental Health. Multiple if else statements are also accesable if more than 2 branches is desired, could also include just a cardID assignment to jump cards uncondiationally
 	      newCard = "xxxx";
 	    else
 	      newCard = "xxxx";}
 	*/
-	if (cardStorage[currentCard][0] == "0006") { //branching based on stats
+	if (cardStorage[currentCard][0] == "0100" && cardFace == "back2") {
+		newCard = "9999";
+    }else if(cardStorage[currentCard][0] == "1003" || cardStorage[currentCard][0] == "1004"){
+			newCard = "9999";
+	} else if (passed == 33){
+        newCard = "9998"
+    }else if (cardStorage[currentCard][0] == "0006") { //branching based on stats
 		if (gpa < 1.0) {
 			newCard = "0101";
 		} else if (gpa < 2.0) {
@@ -668,30 +679,28 @@ function nextCard() { // function to include code for selecting new card for any
 		} else {
 			newCard = "0007"
 		}
-	} else if (cardStorage[currentCard][0] == "0100" && flipTo == "back2") {
-		newCard = "9999";
-	} else if (cardStorage[currentCard][0] == "0101" || cardStorage[currentCard][0] == "0100" || cardStorage[currentCard][0] == "0200" || cardStorage[currentCard][0] == "0300" || cardStorage[currentCard][0] == "0400") { //leaving branch
+    }else if (cardStorage[currentCard][0] == "0101" || cardStorage[currentCard][0] == "0100" || cardStorage[currentCard][0] == "0200" || cardStorage[currentCard][0] == "0300" || cardStorage[currentCard][0] == "0400") { //leaving branch
 		newCard = "0007";
-	} else if(cardStorage[currentCard][0] == "0005" && flipTo == "back2"){
+	} else if(cardStorage[currentCard][0] == "0005" && cardFace == "back2"){
 		newCard = "1025";
-	}else if(cardStorage[currentCard][0] == "0010" && flipTo == "back2"){
+	}else if(cardStorage[currentCard][0] == "0010" && cardFace == "back2"){
 		newCard = "1005";
-	}else if(cardStorage[currentCard][0] == "0015" && flipTo == "back1"){
+	}else if(cardStorage[currentCard][0] == "0015" && cardFace == "back1"){
 		newCard = "1006";
-	}else if(cardStorage[currentCard][0] == "0019" && flipTo == "back1"){
+	}else if(cardStorage[currentCard][0] == "0019" && cardFace == "back1"){
 		newCard = "1007";
 	}else if(cardStorage[currentCard][0] == "0021"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1014";
 		else
 			newCard = "1017";
 	}else if(cardStorage[currentCard][0] == "1014"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1015";
 		else
 			newCard = "1016";
 	}else if(cardStorage[currentCard][0] == "1017"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1018";
 		else
 			newCard = "1019";
@@ -703,60 +712,58 @@ function nextCard() { // function to include code for selecting new card for any
 		else
 			newCard = "1024";
 	}else if(cardStorage[currentCard][0] == "1021"){
-		if(flipTo == "back2")
+		if(cardFace == "back2")
 			newCard = "1022";
 		else 
 			newCard = "0027";
 	}else if(cardStorage[currentCard][0] == "1022"){
 		newCard = "1023";
 	}else if(cardStorage[currentCard][0] == "1023"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1003";
 		else
 			newCard = "1004";
 	}else if(cardStorage[currentCard][0] == "0012" && mHealth < 35){
 			newCard = "0202";
 	}else if(cardStorage[currentCard][0] == "0202"){
-		if(flipTo == "back2")
+		if(cardFace == "back2")
 			newCard = "1011";
 		else
 			newCard = "0013";
 	}else if(cardStorage[currentCard][0] == "1011"){
-		if(flipTo == "back2")
+		if(cardFace == "back2")
 			newCard = "1012";
 		else
 			newCard = "0013";
-	}else if(cardStorage[currentCard][0] == "1012" && flipTo == "back2"){
-		if(flipTo == "back2")
+	}else if(cardStorage[currentCard][0] == "1012" && cardFace == "back2"){
+		if(cardFace == "back2")
 			newCard = "1013";
 		else
 			newCard = "0013";
 	}else if(cardStorage[currentCard][0] == "0023" && money < 32){
 		newCard = "0301";
 	}else if(cardStorage[currentCard][0] == "0301"){
-		if(flipTo == "back2")
+		if(cardFace == "back2")
 			newCard = "0302";
 		else
 			newCard = "0024";
-	}else if(cardStorage[currentCard][0] == "0302" && flipTo == "back2"){
-		if(flipTo == "back2")
+	}else if(cardStorage[currentCard][0] == "0302" && cardFace == "back2"){
+		if(cardFace == "back2")
 			newCard = "9999";
 		else
 			newCard = "0024";
 	}else if(cardStorage[currentCard][0] == "0027"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1010";
 		else 
 			newCard = "1009";
 	}else if(cardStorage[currentCard][0] == "1008"){
-		if(flipTo == "back1")
+		if(cardFace == "back1")
 			newCard = "1008";
 		else 
 			newCard = "1020";
 	}else if(cardStorage[currentCard][0] == "1016" || cardStorage[currentCard][0] == "1019"){
 			newCard = "0022";
-	}else if(cardStorage[currentCard][0] == "1003" || cardStorage[currentCard][0] == "1004"){
-			newCard = "9999";
 	}else if(cardStorage[currentCard][0] == "1009" || cardStorage[currentCard][0] == "1020"){
 			newCard = "0028";
 	}else if(cardStorage[currentCard][0] == "1025"){
@@ -769,13 +776,9 @@ function nextCard() { // function to include code for selecting new card for any
 		newCard = "0016";
 	}else if(cardStorage[currentCard][0] == "1007"){
 		newCard = "0020";
-	}else if(cardStorage[currentCard][0] == "0100" && flipTo == "back2"){
-		newCard = "9999";
-	}else if (cardStorage[currentCard][0] == "9999" || cardStorage[currentCard][0] == "9998") {
+    }else if (cardStorage[currentCard][0] == "9999" || cardStorage[currentCard][0] == "9998") {
 		reload();
-	}else if(cardStorage[currentCard][0] == "9998"){
-		newCard = "9998"
-	}else {
+    } else {
         
   } //default case
 
@@ -849,11 +852,11 @@ function reload() {
     textSpin = 0;
     runningAnimation = false;
 
-    passed = -1;//-1 to allow for tutorial cards
+    passed = 1;//-1 to allow for tutorial cards
     grade = "Freshman";
     semester = "Fall Semester";
 
-    currentCard = 0;
+    currentCard = 1; //Bypass tutorial cards
     cardFace = "front"; 
 
 
@@ -881,4 +884,38 @@ function highlighting(){
         else 
             image(laptopHighlight, -684, -43);
     }
+}
+
+
+function addWelcomeBG() {
+	push();
+	noStroke();
+	texture(welcomeBackground);
+	translate(0, 0, -200);
+	plane(vWidth, vHeight);
+	pop();
+}
+let welcomeStarted = false;
+let startBtn;
+function welcome() {
+	background('#dfdfce');
+	addWelcomeBG();
+	if (!welcomeStarted) {
+		/* It is important that this happens only once, otherwise
+		multiple buttons will be created and be diffucult to hide
+		once the game starts*/
+		startBtn = createButton("Begin Your Studies");
+		startBtn.size(300, AUTO);
+		startBtn.position(vWidth / 2 - 150, 650);
+		startBtn.style('background-color', '#00693E');
+		startBtn.style('font-size:1.5rem');
+		startBtn.style('color', '#D1BC01');
+		startBtn.mousePressed(() => {
+			// startBtn.style('display:none');
+			startBtn.hide();
+			gameStarted = true;
+			setupGame();
+		})
+	}
+	welcomeStarted = true;
 }
