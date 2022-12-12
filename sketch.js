@@ -707,7 +707,7 @@ function nextCard() { // function to include code for selecting new card for any
 	}else if(cardStorage[currentCard][0] == "0023" && gpa >3.5){
 			newCard = "0401";
 	}else if(cardStorage[currentCard][0] == "0401"){
-		if(flipTo == "back2")
+		if(cardFace == "back1")
 			newCard = "1021";
 		else
 			newCard = "1024";
@@ -762,10 +762,10 @@ function nextCard() { // function to include code for selecting new card for any
 			newCard = "1008";
 		else 
 			newCard = "1020";
-	}else if(cardStorage[currentCard][0] == "1016" || cardStorage[currentCard][0] == "1019"){
+	}else if(cardStorage[currentCard][0] == "1016" || cardStorage[currentCard][0] == "1019" || cardStorage[currentCard][0] == "1015" ||cardStorage[currentCard][0] == "1018"){
 			newCard = "0022";
 	}else if(cardStorage[currentCard][0] == "1009" || cardStorage[currentCard][0] == "1020"){
-			newCard = "0028";
+			newCard = "0026";
 	}else if(cardStorage[currentCard][0] == "1025"){
 		newCard = "0006";
 	}else if(cardStorage[currentCard][0] == "1005"){
