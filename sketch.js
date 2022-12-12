@@ -704,13 +704,13 @@ function nextCard() { // function to include code for selecting new card for any
 			newCard = "1018";
 		else
 			newCard = "1019";
-	}else if(cardStorage[currentCard][0] == "0023" && gpa >3.5){
+	}else if(cardStorage[currentCard][0] == "0024" && gpa >3.5){
 			newCard = "0401";
 	}else if(cardStorage[currentCard][0] == "0401"){
 		if(cardFace == "back1")
-			newCard = "1021";
-		else
 			newCard = "1024";
+		else
+			newCard = "1021";
 	}else if(cardStorage[currentCard][0] == "1021"){
 		if(cardFace == "back2")
 			newCard = "1022";
